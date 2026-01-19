@@ -15,6 +15,36 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_GUID: b425484c630e7d84ea8da170d0ab27eb
   m_SerializeEntries:
+  - m_GUID: 093be94ed6d114b3dbe2834f3de64be6
+    m_Address: ModalLevelSelect
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1fa179d6e52db4036b732476f21e8419
+    m_Address: ModalShop
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4edb871a9f43b40449d7e074d4a89eeb
+    m_Address: ModalTeam
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6db58417e33ea4773a6d3efaa814c277
+    m_Address: ModalLeaderboard
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a15824f8fed7b642923948caa368253
+    m_Address: ActivityLoading
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d609c04217db0460996ca9bed3d3f2aa
+    m_Address: ModalCollection
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f50cd5852ae5b3643933ca32a705adc8
     m_Address: ScreenHome
     m_ReadOnly: 0

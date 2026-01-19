@@ -1,16 +1,34 @@
+using System;
+using Cysharp.Threading.Tasks;
+using TW.UGUI.Core.Modals;
 using UnityEngine;
 
-public class ModalShop : MonoBehaviour
+public class ModalShop : Modal, IUITabLifecycleEvent
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [field: SerializeField] public ModalShopContext.UIPresenter UIPresenter { get; private set; }
+
+    protected override void Awake()
     {
-        
+        base.Awake();
+        AddLifecycleEvent(UIPresenter, 1);
+    }
+    public override async UniTask Initialize(Memory<object> args)
+    { 
+        await base.Initialize(args);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Initialize()
     {
-        
+        UIPresenter.Initialize(null).Forget();
+    }
+
+    public void OnTabEnter()
+    {
+
+    }
+
+    public void OnTabExit()
+    {
+
     }
 }
