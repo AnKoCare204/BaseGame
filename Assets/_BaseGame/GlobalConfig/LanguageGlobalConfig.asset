@@ -1,0 +1,736 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16ece12b4ba8ab4b9592c2d98bf6191, type: 3}
+  m_Name: LanguageGlobalConfig
+  m_EditorClassIdentifier: 
+  listLanguage: 0a00000027000000
+  languageContainers:
+  - language: 10
+    font: {fileID: 11400000, guid: 3de35dc874240144b9e12c8e193ad2db, type: 2}
+    textData:
+    - textId: 1
+      textValue: Play
+    - textId: 2
+      textValue: Hard
+    - textId: 3
+      textValue: Super Hard
+    - textId: 4
+      textValue: Home
+    - textId: 5
+      textValue: Shop
+    - textId: 6
+      textValue: LeaderBoard
+    - textId: 7
+      textValue: Team
+    - textId: 8
+      textValue: Lift & Serve
+    - textId: 9
+      textValue: Offer
+    - textId: 10
+      textValue: Quest
+    - textId: 11
+      textValue: NoAds
+    - textId: 12
+      textValue: Daily Rewards
+    - textId: 13
+      textValue: Level
+    - textId: 14
+      textValue: Special Offer
+    - textId: 15
+      textValue: Starter Pack
+    - textId: 16
+      textValue: Limited Pack
+    - textId: 17
+      textValue: Big Bundle
+    - textId: 18
+      textValue: Great Bundle
+    - textId: 19
+      textValue: Ultra Bundle
+    - textId: 20
+      textValue: Superior Bundle
+    - textId: 21
+      textValue: Legendary Bundle
+    - textId: 22
+      textValue: Settings
+    - textId: 23
+      textValue: Music
+    - textId: 24
+      textValue: Sound
+    - textId: 25
+      textValue: Vibration
+    - textId: 26
+      textValue: Restore Purchase
+    - textId: 27
+      textValue: Fill Your Heart
+    - textId: 28
+      textValue: 'Next heart time:'
+    - textId: 29
+      textValue: Watch <sprite=10>
+    - textId: 30
+      textValue: Full
+    - textId: 31
+      textValue: Remove Ads
+    - textId: 32
+      textValue: Remove Interupt Ads
+    - textId: 33
+      textValue: Remove Bottom Banner
+    - textId: 34
+      textValue: Bonus
+    - textId: 35
+      textValue: Purchased
+    - textId: 36
+      textValue: Win
+    - textId: 37
+      textValue: x2 Coin <sprite=10>
+    - textId: 38
+      textValue: Game Over
+    - textId: 39
+      textValue: Not enough time. Add more?
+    - textId: 40
+      textValue: Revive <sprite=10>
+    - textId: 41
+      textValue: Instant
+    - textId: 42
+      textValue: Missed Order
+    - textId: 43
+      textValue: Not enough time. Skip?
+    - textId: 44
+      textValue: Skip <sprite=10>
+    - textId: 45
+      textValue: Leave Game
+    - textId: 46
+      textValue: You will lose 1 life
+    - textId: 47
+      textValue: Leave
+    - textId: 48
+      textValue: Lose
+    - textId: 49
+      textValue: Get Booster
+    - textId: 50
+      textValue: Free
+    - textId: 51
+      textValue: Claim
+    - textId: 52
+      textValue: Storage
+    - textId: 53
+      textValue: Storage skewer combo
+    - textId: 54
+      textValue: Refresh
+    - textId: 55
+      textValue: Readjust all skewer position
+    - textId: 56
+      textValue: Ice Cube
+    - textId: 57
+      textValue: Freezes time for {0} seconds
+    - textId: 58
+      textValue: Cooking Torch
+    - textId: 59
+      textValue: Unfreeze the skewer with heat
+    - textId: 60
+      textValue: Hidden Grill
+    - textId: 61
+      textValue: Finish the matching order to unlock a new grill
+    - textId: 62
+      textValue: Deliveryman
+    - textId: 63
+      textValue: Complete the delivery order before time runs out
+    - textId: 64
+      textValue: Hidden Skewer
+    - textId: 65
+      textValue: Skewer is hidden until placed on the grill
+    - textId: 66
+      textValue: Frozen Skewer
+    - textId: 67
+      textValue: Finish the 3 order to melt frozen skewer
+    - textId: 68
+      textValue: Spicy Grill
+    - textId: 69
+      textValue: Grill specifically for spicy food
+    - textId: 70
+      textValue: Daily Quest
+    - textId: 71
+      textValue: Pass {0} levels
+    - textId: 72
+      textValue: Revived {0} times
+    - textId: 73
+      textValue: Watched {0} ads
+    - textId: 74
+      textValue: Grill {0} skewers sets
+    - textId: 75
+      textValue: Use {0} Storage
+    - textId: 76
+      textValue: Use {0} Rolling Pin
+    - textId: 77
+      textValue: Use {0} Ice
+    - textId: 78
+      textValue: Use {0} Refresh
+    - textId: 79
+      textValue: Skip {0} delivery
+    - textId: 80
+      textValue: Level
+    - textId: 81
+      textValue: Revived
+    - textId: 82
+      textValue: ADS
+    - textId: 83
+      textValue: Skewers
+    - textId: 84
+      textValue: Pack
+    - textId: 85
+      textValue: Torch
+    - textId: 86
+      textValue: Ice
+    - textId: 87
+      textValue: Refresh
+    - textId: 88
+      textValue: Delivery
+    - textId: 89
+      textValue: Daily Gifts
+    - textId: 90
+      textValue: Day
+    - textId: 91
+      textValue: Claim
+    - textId: 92
+      textValue: Coming soon
+    - textId: 93
+      textValue: 'Congratulation '
+    - textId: 94
+      textValue: Tap to claim
+    - textId: 95
+      textValue: Language
+    - textId: 96
+      textValue: Hard Level
+    - textId: 97
+      textValue: Super Hard Level
+    - textId: 98
+      textValue: Revive Pack
+    - textId: 99
+      textValue: Battle Pass
+    - textId: 100
+      textValue: Select a freezing skewer to melt
+    - textId: 101
+      textValue: Gold
+    - textId: 102
+      textValue: <color=#FFE036>Remove ads</color><br><color=#6BDEFF>Bundle</color>
+    - textId: 103
+      textValue: Lock
+    - textId: 104
+      textValue: Reach level {0} to unlock Rank!
+    - textId: 105
+      textValue: Join ranked tournament and earn exciting rewards!
+    - textId: 106
+      textValue: Week
+    - textId: 107
+      textValue: Rank
+    - textId: 108
+      textValue: Weekly Contest
+    - textId: 109
+      textValue: Join event
+    - textId: 110
+      textValue: Join
+    - textId: 111
+      textValue: Loading
+    - textId: 112
+      textValue: Score
+    - textId: 113
+      textValue: Beat levels!
+    - textId: 114
+      textValue: Take the lead!
+    - textId: 115
+      textValue: Win rewards!
+    - textId: 116
+      textValue: Tap to continue
+    - textId: 117
+      textValue: Profile edit
+    - textId: 118
+      textValue: Player id
+    - textId: 119
+      textValue: Avatar
+    - textId: 120
+      textValue: Frame
+    - textId: 121
+      textValue: Save
+    - textId: 122
+      textValue: Profile
+    - textId: 123
+      textValue: General stats
+    - textId: 124
+      textValue: Help provided
+    - textId: 125
+      textValue: Help received
+    - textId: 126
+      textValue: Team
+    - textId: 127
+      textValue: Reach level {0} to <br>unlock Team!
+    - textId: 128
+      textValue: 'When you join a team you will get:'
+    - textId: 129
+      textValue: <color=#7CF73F>Free</color> heart
+    - textId: 130
+      textValue: <color=#7CF73F>Free</color> rewards
+    - textId: 131
+      textValue: Teams
+    - textId: 132
+      textValue: Search
+    - textId: 133
+      textValue: Create
+    - textId: 134
+      textValue: Capacity
+    - textId: 135
+      textValue: View
+    - textId: 136
+      textValue: Team info
+    - textId: 137
+      textValue: Team score
+    - textId: 138
+      textValue: Required level
+    - textId: 139
+      textValue: Activity
+    - textId: 140
+      textValue: Team rank
+    - textId: 141
+      textValue: Ago
+    - textId: 142
+      textValue: Leader
+    - textId: 143
+      textValue: High
+    - textId: 144
+      textValue: Medium
+    - textId: 145
+      textValue: Low
+    - textId: 146
+      textValue: Team name
+    - textId: 147
+      textValue: Team Logo
+    - textId: 148
+      textValue: Enter team name...
+    - textId: 149
+      textValue: Team Description
+    - textId: 150
+      textValue: Enter team descriptions...
+    - textId: 151
+      textValue: Required Level
+    - textId: 152
+      textValue: Team edit
+    - textId: 153
+      textValue: First place will get their rewards!
+    - textId: 154
+      textValue: World
+    - textId: 155
+      textValue: Country
+    - textId: 156
+      textValue: Master
+    - textId: 157
+      textValue: My team
+    - textId: 158
+      textValue: Message
+    - textId: 159
+      textValue: Request
+    - textId: 160
+      textValue: Send
+    - textId: 161
+      textValue: Help
+    - textId: 162
+      textValue: Asking for lives!
+    - textId: 163
+      textValue: Edit
+    - textId: 164
+      textValue: Leave
+    - textId: 165
+      textValue: Transfer Leader
+    - textId: 166
+      textValue: View Profile
+    - textId: 167
+      textValue: Remove Member
+    - textId: 168
+      textValue: Leave Team?
+    - textId: 169
+      textValue: Yes
+    - textId: 170
+      textValue: No
+    - textId: 171
+      textValue: Are you sure you want to leave your team?
+    - textId: 172
+      textValue: Alert
+    - textId: 173
+      textValue: Team deleted successfully!
+    - textId: 174
+      textValue: Close
+    - textId: 175
+      textValue: Never
+    - textId: 176
+      textValue: Just now
+  - language: 39
+    font: {fileID: 11400000, guid: 3de35dc874240144b9e12c8e193ad2db, type: 2}
+    textData:
+    - textId: 1
+      textValue: "Ch\u01A1i"
+    - textId: 2
+      textValue: "Kh\xF3"
+    - textId: 3
+      textValue: "Si\xEAu Kh\xF3"
+    - textId: 4
+      textValue: "Trang ch\u1EE7"
+    - textId: 5
+      textValue: "C\u1EEDa h\xE0ng"
+    - textId: 6
+      textValue: "B\u1EA3ng x\u1EBFp h\u1EA1ng"
+    - textId: 7
+      textValue: "\u0110\u1ED9i"
+    - textId: 8
+      textValue: '#ERROR!'
+    - textId: 9
+      textValue: "\u01AFu \u0111\xE3i"
+    - textId: 10
+      textValue: "Nhi\u1EC7m v\u1EE5"
+    - textId: 11
+      textValue: "Kh\xF4ng qu\u1EA3ng c\xE1o"
+    - textId: 12
+      textValue: "Ph\u1EA7n Th\u01B0\u1EDFng H\xE0ng Ng\xE0y"
+    - textId: 13
+      textValue: "C\u1EA5p \u0111\u1ED9"
+    - textId: 14
+      textValue: "\u01AFu \u0111\xE3i \u0111\u1EB7c bi\u1EC7t"
+    - textId: 15
+      textValue: "G\xF3i kh\u1EDFi \u0111\u1EA7u"
+    - textId: 16
+      textValue: "G\xF3i gi\u1EDBi h\u1EA1n"
+    - textId: 17
+      textValue: "G\xF3i l\u1EDBn"
+    - textId: 18
+      textValue: "G\xF3i tuy\u1EC7t v\u1EDDi"
+    - textId: 19
+      textValue: "G\xF3i si\xEAu c\u1EA5p"
+    - textId: 20
+      textValue: "G\xF3i cao c\u1EA5p"
+    - textId: 21
+      textValue: "G\xF3i huy\u1EC1n tho\u1EA1i"
+    - textId: 22
+      textValue: "C\xC0I \u0110\u1EB6T"
+    - textId: 23
+      textValue: "\xC2m nh\u1EA1c"
+    - textId: 24
+      textValue: "\xC2m thanh"
+    - textId: 25
+      textValue: Rung
+    - textId: 26
+      textValue: "Kh\xF4i ph\u1EE5c mua h\xE0ng"
+    - textId: 27
+      textValue: "Th\xEAm tr\xE1i tim"
+    - textId: 28
+      textValue: "Th\u1EDDi gian tim ti\u1EBFp theo:"
+    - textId: 29
+      textValue: Xem <sprite=10>
+    - textId: 30
+      textValue: "\u0110\u1EA7y"
+    - textId: 31
+      textValue: "X\xF3a qu\u1EA3ng c\xE1o"
+    - textId: 32
+      textValue: "X\xF3a qu\u1EA3ng c\xE1o gi\xE1n \u0111o\u1EA1n"
+    - textId: 33
+      textValue: "X\xF3a bi\u1EC3u ng\u1EEF d\u01B0\u1EDBi"
+    - textId: 34
+      textValue: "Ti\u1EC1n th\u01B0\u1EDFng"
+    - textId: 35
+      textValue: "\u0110\xE3 mua"
+    - textId: 36
+      textValue: "Chi\u1EBFn th\u1EAFng"
+    - textId: 37
+      textValue: X2 xu <sprite=10>
+    - textId: 38
+      textValue: "K\u1EBFt th\xFAc"
+    - textId: 39
+      textValue: "Kh\xF4ng \u0111\u1EE7 th\u1EDDi gian. Th\xEAm th\u1EDDi gian?"
+    - textId: 40
+      textValue: "H\u1ED3i sinh <sprite=10>"
+    - textId: 41
+      textValue: "Ngay l\u1EADp t\u1EE9c"
+    - textId: 42
+      textValue: "\u0110\u01A1n h\xE0ng b\u1ECF l\u1EE1"
+    - textId: 43
+      textValue: "Kh\xF4ng \u0111\u1EE7 th\u1EDDi gian. B\u1ECF qua?"
+    - textId: 44
+      textValue: "B\u1ECF qua <sprite=10>"
+    - textId: 45
+      textValue: "R\u1EDDi kh\u1ECFi game"
+    - textId: 46
+      textValue: "B\u1EA1n s\u1EBD m\u1EA5t 1 m\u1EA1ng"
+    - textId: 47
+      textValue: "R\u1EDDi \u0111i"
+    - textId: 48
+      textValue: Thua
+    - textId: 49
+      textValue: "Nh\u1EADn t\u0103ng c\u01B0\u1EDDng"
+    - textId: 50
+      textValue: "Mi\u1EC5n ph\xED"
+    - textId: 51
+      textValue: "Nh\u1EADn"
+    - textId: 52
+      textValue: "T\xFAi tr\u1EEF"
+    - textId: 53
+      textValue: "Tr\u1EEF combo xi\xEAn v\xE0o t\xFAi"
+    - textId: 54
+      textValue: "L\xC0M M\u1EDAI"
+    - textId: 55
+      textValue: "\u0110i\u1EC1u ch\u1EC9nh l\u1EA1i v\u1ECB tr\xED xi\xEAn"
+    - textId: 56
+      textValue: "Vi\xEAn \u0111\xE1"
+    - textId: 57
+      textValue: "\u0110\xF3ng b\u0103ng th\u1EDDi gian {0} gi\xE2y"
+    - textId: 58
+      textValue: "\u0110\xE8n kh\xF2 n\u1EA5u \u0103n"
+    - textId: 59
+      textValue: "R\xE3 \u0111\xF4ng xi\xEAn b\u1EB1ng nhi\u1EC7t"
+    - textId: 60
+      textValue: "B\u1EBFp \u1EA9n"
+    - textId: 61
+      textValue: "Ho\xE0n th\xE0nh \u0111\u01A1n h\xE0ng ph\xF9 h\u1EE3p \u0111\u1EC3
+        m\u1EDF kh\xF3a b\u1EBFp m\u1EDBi"
+    - textId: 62
+      textValue: "NG\u01AF\u1EDCI GIAO H\xC0NG"
+    - textId: 63
+      textValue: "Ho\xE0n th\xE0nh \u0111\u01A1n giao h\xE0ng tr\u01B0\u1EDBc khi
+        h\u1EBFt gi\u1EDD"
+    - textId: 64
+      textValue: "Xi\xEAn \u1EA9n"
+    - textId: 65
+      textValue: "Xi\xEAn b\u1ECB \u1EA9n cho \u0111\u1EBFn khi \u0111\u1EB7t l\xEAn
+        b\u1EBFp"
+    - textId: 66
+      textValue: "Xi\xEAn \u0111\xF4ng l\u1EA1nh"
+    - textId: 67
+      textValue: "Ho\xE0n th\xE0nh 3 \u0111\u01A1n h\xE0ng \u0111\u1EC3 l\xE0m tan
+        xi\xEAn \u0111\xF4ng"
+    - textId: 68
+      textValue: "B\u1EBFp cay"
+    - textId: 69
+      textValue: "B\u1EBFp d\xE0nh ri\xEAng cho \u0111\u1ED3 cay"
+    - textId: 70
+      textValue: "Nhi\u1EC7m v\u1EE5 h\xE0ng ng\xE0y"
+    - textId: 71
+      textValue: "V\u01B0\u1EE3t {0} m\xE0n"
+    - textId: 72
+      textValue: "H\u1ED3i sinh {0} l\u1EA7n"
+    - textId: 73
+      textValue: "Xem {0} qu\u1EA3ng c\xE1o"
+    - textId: 74
+      textValue: "N\u01B0\u1EDBng {0} set xi\xEAn"
+    - textId: 75
+      textValue: "D\xF9ng {0} t\xFAi tr\u1EEF"
+    - textId: 76
+      textValue: "D\xF9ng {0} c\xE2y l\u0103n b\u1ED9t"
+    - textId: 77
+      textValue: "D\xF9ng {0} \u0111\xE1"
+    - textId: 78
+      textValue: "D\xF9ng {0} l\xE0m m\u1EDBi"
+    - textId: 79
+      textValue: "B\u1ECF qua {0} giao h\xE0ng"
+    - textId: 80
+      textValue: "C\u1EA5p \u0111\u1ED9"
+    - textId: 81
+      textValue: "H\u1ED3i sinh"
+    - textId: 82
+      textValue: "Qu\u1EA3ng c\xE1o"
+    - textId: 83
+      textValue: "Xi\xEAn"
+    - textId: 84
+      textValue: "G\xF3i"
+    - textId: 85
+      textValue: "\u0110\xE8n kh\xF2"
+    - textId: 86
+      textValue: "\u0110\xE1"
+    - textId: 87
+      textValue: "L\xE0m m\u1EDBi"
+    - textId: 88
+      textValue: "Giao h\xE0ng"
+    - textId: 89
+      textValue: "Qu\xE0 h\xE0ng ng\xE0y"
+    - textId: 90
+      textValue: "Ng\xE0y"
+    - textId: 91
+      textValue: "Nh\u1EADn"
+    - textId: 92
+      textValue: "S\u1EAFp ra m\u1EAFt"
+    - textId: 93
+      textValue: "Ch\xFAc m\u1EEBng"
+    - textId: 94
+      textValue: "Nh\u1EA5n \u0111\u1EC3 nh\u1EADn"
+    - textId: 95
+      textValue: "Ng\xF4n ng\u1EEF"
+    - textId: 96
+      textValue: "C\u1EA5p \u0111\u1ED9 Kh\xF3"
+    - textId: 97
+      textValue: "C\u1EA5p \u0111\u1ED9 Si\xEAu Kh\xF3"
+    - textId: 98
+      textValue: "G\xF3i H\u1ED3i Sinh"
+    - textId: 99
+      textValue: "Th\u1EBB Chi\u1EBFn Binh"
+    - textId: 100
+      textValue: "Ch\u1ECDn xi\xEAn b\u0103ng \u0111\u1EC3 gi\xE3 \u0111\xF4ng"
+    - textId: 101
+      textValue: "V\xE0ng"
+    - textId: 102
+      textValue: "<color=#6BDEFF>G\xF3i</color><br><color=#FFE036>X\xF3a qu\u1EA3ng
+        c\xE1o</color>"
+    - textId: 103
+      textValue: "Kh\xF3a"
+    - textId: 104
+      textValue: "\u0110\u1EA1t c\u1EA5p \u0111\u1ED9 {0} \u0111\u1EC3 m\u1EDF kh\xF3a
+        H\u1EA1ng!"
+    - textId: 105
+      textValue: "Tham gia gi\u1EA3i \u0111\u1EA5u x\u1EBFp h\u1EA1ng v\xE0 nh\u1EADn
+        ph\u1EA7n th\u01B0\u1EDFng h\u1EA5p d\u1EABn!"
+    - textId: 106
+      textValue: "Tu\u1EA7n"
+    - textId: 107
+      textValue: "H\u1EA1ng"
+    - textId: 108
+      textValue: "Cu\u1ED9c thi h\xE0ng tu\u1EA7n"
+    - textId: 109
+      textValue: "Tham gia s\u1EF1 ki\u1EC7n"
+    - textId: 110
+      textValue: Tham gia
+    - textId: 111
+      textValue: "\u0110ang t\u1EA3i"
+    - textId: 112
+      textValue: "\u0110i\u1EC3m"
+    - textId: 113
+      textValue: "V\u01B0\u1EE3t qua c\xE1c c\u1EA5p \u0111\u1ED9!"
+    - textId: 114
+      textValue: "D\u1EABn \u0111\u1EA7u n\xE0o!"
+    - textId: 115
+      textValue: "Gi\xE0nh ph\u1EA7n th\u01B0\u1EDFng!"
+    - textId: 116
+      textValue: "Ch\u1EA1m \u0111\u1EC3 ti\u1EBFp t\u1EE5c"
+    - textId: 117
+      textValue: "Ch\u1EC9nh s\u1EEDa h\u1ED3 s\u01A1"
+    - textId: 118
+      textValue: "ID ng\u01B0\u1EDDi ch\u01A1i"
+    - textId: 119
+      textValue: "\u1EA2nh \u0111\u1EA1i di\u1EC7n"
+    - textId: 120
+      textValue: "Khung \u1EA3nh"
+    - textId: 121
+      textValue: "L\u01B0u"
+    - textId: 122
+      textValue: "H\u1ED3 s\u01A1"
+    - textId: 123
+      textValue: "Th\u1ED1ng k\xEA chung"
+    - textId: 124
+      textValue: "\u0110\xE3 gi\xFAp \u0111\u1EE1"
+    - textId: 125
+      textValue: "\u0110\xE3 nh\u1EADn gi\xFAp \u0111\u1EE1"
+    - textId: 126
+      textValue: "\u0110\u1ED9i"
+    - textId: 127
+      textValue: "\u0110\u1EA1t c\u1EA5p \u0111\u1ED9 {0} \u0111\u1EC3 <br>m\u1EDF
+        kh\xF3a \u0110\u1ED9i!"
+    - textId: 128
+      textValue: "Khi tham gia \u0111\u1ED9i b\u1EA1n s\u1EBD nh\u1EADn \u0111\u01B0\u1EE3c:"
+    - textId: 129
+      textValue: "<color=#7CF73F>Mi\u1EC5n ph\xED</color> tim"
+    - textId: 130
+      textValue: "<color=#7CF73F>Mi\u1EC5n ph\xED</color> ph\u1EA7n th\u01B0\u1EDFng"
+    - textId: 131
+      textValue: "C\xE1c \u0111\u1ED9i"
+    - textId: 132
+      textValue: "T\xECm ki\u1EBFm"
+    - textId: 133
+      textValue: "T\u1EA1o"
+    - textId: 134
+      textValue: "S\u1EE9c ch\u1EE9a"
+    - textId: 135
+      textValue: Xem
+    - textId: 136
+      textValue: "Th\xF4ng tin \u0111\u1ED9i"
+    - textId: 137
+      textValue: "\u0110i\u1EC3m \u0111\u1ED9i"
+    - textId: 138
+      textValue: "C\u1EA5p \u0111\u1ED9 y\xEAu c\u1EA7u"
+    - textId: 139
+      textValue: "Ho\u1EA1t \u0111\u1ED9ng"
+    - textId: 140
+      textValue: "X\u1EBFp h\u1EA1ng \u0111\u1ED9i"
+    - textId: 141
+      textValue: "Tr\u01B0\u1EDBc"
+    - textId: 142
+      textValue: "Tr\u01B0\u1EDFng nh\xF3m"
+    - textId: 143
+      textValue: Cao
+    - textId: 144
+      textValue: "Trung b\xECnh"
+    - textId: 145
+      textValue: "Th\u1EA5p"
+    - textId: 146
+      textValue: "T\xEAn \u0111\u1ED9i"
+    - textId: 147
+      textValue: "Logo \u0111\u1ED9i"
+    - textId: 148
+      textValue: "Nh\u1EADp t\xEAn \u0111\u1ED9i..."
+    - textId: 149
+      textValue: "M\xF4 t\u1EA3 \u0111\u1ED9i"
+    - textId: 150
+      textValue: "Nh\u1EADp m\xF4 t\u1EA3 \u0111\u1ED9i..."
+    - textId: 151
+      textValue: "C\u1EA5p \u0111\u1ED9 y\xEAu c\u1EA7u"
+    - textId: 152
+      textValue: "Ch\u1EC9nh s\u1EEDa \u0111\u1ED9i"
+    - textId: 153
+      textValue: "H\u1EA1ng nh\u1EA5t s\u1EBD nh\u1EADn \u0111\u01B0\u1EE3c ph\u1EA7n
+        th\u01B0\u1EDFng c\u1EE7a m\xECnh!"
+    - textId: 154
+      textValue: "Th\u1EBF gi\u1EDBi"
+    - textId: 155
+      textValue: "Qu\u1ED1c gia"
+    - textId: 156
+      textValue: "Cao th\u1EE7"
+    - textId: 157
+      textValue: "\u0110\u1ED9i c\u1EE7a t\xF4i"
+    - textId: 158
+      textValue: "Tin nh\u1EAFn"
+    - textId: 159
+      textValue: "Y\xEAu c\u1EA7u"
+    - textId: 160
+      textValue: "G\u1EEDi"
+    - textId: 161
+      textValue: "Tr\u1EE3 gi\xFAp"
+    - textId: 162
+      textValue: "\u0110ang xin th\xEAm m\u1EA1ng s\u1ED1ng!"
+    - textId: 163
+      textValue: "Ch\u1EC9nh s\u1EEDa"
+    - textId: 164
+      textValue: "R\u1EDDi \u0111i"
+    - textId: 165
+      textValue: "Chuy\u1EC3n quy\u1EC1n \u0111\u1ED9i tr\u01B0\u1EDFng"
+    - textId: 166
+      textValue: "Xem h\u1ED3 s\u01A1"
+    - textId: 167
+      textValue: "X\xF3a th\xE0nh vi\xEAn"
+    - textId: 168
+      textValue: "R\u1EDDi \u0111\u1ED9i?"
+    - textId: 169
+      textValue: "C\xF3"
+    - textId: 170
+      textValue: "Kh\xF4ng"
+    - textId: 171
+      textValue: "B\u1EA1n c\xF3 ch\u1EAFc ch\u1EAFn mu\u1ED1n r\u1EDDi kh\u1ECFi
+        \u0111\u1ED9i kh\xF4ng?"
+    - textId: 172
+      textValue: "C\u1EA3nh b\xE1o"
+    - textId: 173
+      textValue: "X\xF3a \u0111\u1ED9i th\xE0nh c\xF4ng!"
+    - textId: 174
+      textValue: "\u0110\xF3ng"
+    - textId: 175
+      textValue: "Kh\xF4ng bao gi\u1EDD"
+    - textId: 176
+      textValue: "V\u1EEBa xong"
