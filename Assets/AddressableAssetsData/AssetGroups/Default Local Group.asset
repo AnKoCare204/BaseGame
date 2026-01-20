@@ -25,6 +25,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4145d591cdce4a3418a19815a17ca5c5
+    m_Address: ActivityBlock
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4edb871a9f43b40449d7e074d4a89eeb
     m_Address: ModalTeam
     m_ReadOnly: 0

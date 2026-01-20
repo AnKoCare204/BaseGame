@@ -178,10 +178,12 @@ MonoBehaviour:
   isPlayMusicAwake: 1
   musicSounds:
   - type: 1
-    clip: {fileID: 8300000, guid: 596e4b42831bd454aa258b2125695647, type: 3}
+    clip: {fileID: 8300000, guid: c89126678273e4a47a1515d8df7246b0, type: 3}
+  - type: 6
+    clip: {fileID: 8300000, guid: 8031f9683bbd5904c95937505abfe516, type: 3}
   sfxSound:
   - type: 2
-    clip: {fileID: 8300000, guid: 292aad821b16948af9cba9deaca16525, type: 3}
+    clip: {fileID: 8300000, guid: 77918ad877f8a674599ae3ed133bd9a7, type: 3}
   musicSource: {fileID: 8698139093969877978}
   sfxSource: {fileID: 2333303534903486107}
 --- !u!1 &6372617984053770869

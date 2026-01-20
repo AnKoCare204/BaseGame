@@ -43,11 +43,23 @@ namespace Manager
             LoadDescriptionText.text = "Loading Assets...";
             UpdateProgress(0.2f);
 
+            await UniTask.Delay(1000);
+
             LoadDescriptionText.text = "Loading UI...";
             UpdateProgress(0.7f);
-            // ViewOptions activityBlock = new ViewOptions(nameof(ActivityBlock));
-            // await ActivityContainer.Find(ContainerKey.Activities).ShowAsync(activityBlock);
-            // await DoneFirstLoading();
+            
+            // Tìm ActivityContainer với null check
+            if (ActivityContainer.TryFind(ContainerKey.Activities, out var activityContainer))
+            {
+                ViewOptions activityBlock = new ViewOptions(nameof(ActivityBlock));
+                await activityContainer.ShowAsync(activityBlock);
+            }
+            else
+            {
+                Debug.LogError($"ActivityContainer '{ContainerKey.Activities}' chưa được khởi tạo. Vui lòng đảm bảo container được tạo trước khi sử dụng.");
+            }
+            
+            await DoneFirstLoading();
             UpdateProgress(1);
             await WaitLoadingProgressCompleteAsync(this.GetCancellationTokenOnDestroy());
             IsLoadingComplete = true;
@@ -97,6 +109,13 @@ namespace Manager
         private bool IsLoadingCompletePredicate()
         {
             return IsLoadingComplete;
+        }
+
+        private async UniTask DoneFirstLoading()
+        {
+            ScreenOptions screenOptions = new ScreenOptions(nameof(ScreenHome), stack: false);
+            await ScreenContainer.Find(ContainerKey.Screens).PushAsync(screenOptions);
+            SoundManager.Instance.PlayMusic(SoundType.BgMainMenu);
         }
     }
 }

@@ -74,7 +74,7 @@ public class ModalLevelSelectContext
 
         private void InitLevelSprite()
         {
-            int level = GameManager.Instance.Level.Value;
+            // int level = GameManager.Instance.Level.Value;
             // LevelConfig levelConfig = LevelGlobalConfig.Instance.GetLevelConfig(GameManager.Instance.Level.Value);
             // btnLevelHard.SetActive(levelConfig is { levelType: LevelType.Hard });
             // btnLevelSuperHard.SetActive(levelConfig is { levelType: LevelType.SuperHard });
