@@ -2,7 +2,9 @@ using System;
 using UnityEngine;
 using System.Collections.Generic;
 using R3;
+#if R3_TRIGGER
 using R3.Triggers;
+#endif
 
 namespace SDK {
     public class EventManager : MonoBehaviour 
@@ -12,7 +14,11 @@ namespace SDK {
 
         private void Start()
         {
+#if R3_TRIGGER
             this.UpdateAsObservable().Subscribe(ExecuteNextFrameEvents).AddTo(this);
+#else
+            Debug.Log("R3_TRIGGER is not defined, please install R3 package com.cysharp.r3 to use EventManager");
+#endif
         }
 
         public static void StartListening(string eventName, Action listener)
@@ -52,7 +58,7 @@ namespace SDK {
             EventStack.Push(listener);
         }
 
-        private static void ExecuteNextFrameEvents(R3.Unit _)
+        private static void ExecuteNextFrameEvents(Unit _)
         {
             while (EventStack.Count > 0)
             {

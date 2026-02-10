@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 074fc6e48c4aeee4eaaa708414d919ed, type: 3}
+  m_Name: SDKAdsSetup
+  m_EditorClassIdentifier: 
+  IsActiveAppsflyer: 1
+  interstitialCappingTime: 30
+  maxAdsSetup:
+    sdkKey:
+      AndroidID: ZoNyqu_piUmpl33-qkoIfRp6MTZGW9M5xk1mb1ZIWK6FN9EBu0TXSHeprC3LMPQI7S3kTc1-x7DJGSV8S-gvFJ
+    interstitialAdUnitID:
+      AndroidID: b5c7c186839b11c3
+    rewardedAdUnitID:
+      AndroidID: 601c2ffbd20c5553
+    bannerAdUnitID:
+      AndroidID: 22281f5a8a803c7c
+    collapsibleBannerAdUnitID:
+      AndroidID: 
+    mrecAdUnitID:
+      AndroidID: 
+    appOpenAdUnitID:
+      AndroidID: 
+    isResetCounter: 1
+    rewardLoaded: 0
+    rewardAdsUnit: []
+    interstitialAdsUnit: []
+  admobAdsSetup:
+    interstitialAdUnitID:
+      AndroidID: []
+    rewardedAdUnitID:
+      AndroidID: []
+    bannerAdUnitID:
+      AndroidID: []
+    collapsibleBannerAdUnitID:
+      AndroidID: []
+    mrecAdUnitID:
+      AndroidID: []
+    appOpenAdUnitID:
+      AndroidID: []
+  ironSourceAdSetup:
+    appKey: 
+    interstitialID: 
+    rewardedID: 
+    bannerID: 
+  adsMediationType: 1
+  interstitialAdsMediationType: 1
+  rewardedAdsMediationType: 1
+  IsLinkToRemoveAds: 0
+  bannerAdsMediationType: 1
+  maxBannerAdsPosition: 0
+  isBannerShowingOnStart: 0
+  isAutoRefreshBannerByCode: 0
+  collapsibleBannerAdsMediationType: 0
+  adsPositionCollapsibleBanner: 0
+  isShowingOnStartCollapsibleBanner: 0
+  isAutoRefreshCollapsibleBanner: 0
+  isAutoRefreshExtendCollapsibleBanner: 0
+  autoRefreshTime: 30
+  isAutoCloseCollapsibleBanner: 0
+  autoCloseTime: 30
+  mrecAdsMediationType: 0
+  mrecAdsPosition: 0
+  appOpenAdsMediationType: 0

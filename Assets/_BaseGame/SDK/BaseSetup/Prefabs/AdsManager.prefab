@@ -1,0 +1,284 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1513433159871150065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3350496071912491279}
+  - component: {fileID: 7523129318430105987}
+  m_Layer: 0
+  m_Name: AdsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3350496071912491279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513433159871150065}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 523325769825781009}
+  - {fileID: 8512130178027376998}
+  - {fileID: 4856074513662410327}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7523129318430105987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513433159871150065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02046a2b833dc384abeb49e3663c7ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsCheatAds: 0
+  m_SDKSetup: {fileID: 11400000, guid: 44308bf01765e1a48ae509c432e251e4, type: 2}
+  m_AdsLoadingCooldown: 0
+  m_MaxLoadingCooldown: 5
+  m_InterstitialCappingAdsCooldown: 0
+  m_MaxInterstitialCappingTime: 30
+  m_LevelPassToShowInterstitial: 2
+  m_RewardInterruptCountTime: 0
+  m_MaxRewardInterruptCount: 5
+  m_IsActiveInterruptReward: 0
+  IsUpdateRemoteConfigSuccess: 0
+  IsInitedAdsType: 0
+  IsRemoveAds: 0
+  IsActiveMRECAds: 0
+  IsFirstOpen: 0
+  IsLinkRewardWithRemoveAds: 0
+  resumeAdsType: 0
+  m_MainAdsMediationType: 1
+  m_AdsConfigs:
+  - adsType: 2
+    adsMediationType: 1
+    isActive: 1
+    maxReloadTime: 3
+    adsMediations: []
+  - adsType: 1
+    adsMediationType: 1
+    isActive: 1
+    maxReloadTime: 3
+    adsMediations: []
+  - adsType: 0
+    adsMediationType: 1
+    isActive: 1
+    maxReloadTime: 3
+    adsMediations: []
+  - adsType: 4
+    adsMediationType: 0
+    isActive: 1
+    maxReloadTime: 3
+    adsMediations: []
+  - adsType: 3
+    adsMediationType: 0
+    isActive: 1
+    maxReloadTime: 3
+    adsMediations: []
+  - adsType: 5
+    adsMediationType: 0
+    isActive: 1
+    maxReloadTime: 3
+    adsMediations: []
+  m_AdsMediationControllers:
+  - {fileID: 1664383872516899532}
+  - {fileID: 361701755393429063}
+  - {fileID: 2106119536948214026}
+  IsAutoRefreshCollapsibleBanner: 0
+  IsAutoRefreshExtendCollapsibleBanner: 0
+  m_AutoRefreshTimeCollapsibleBanner: 30
+  IsAutoCloseCollapsibleBanner: 0
+  m_AutoCloseTimeCollapsibleBanner: 30
+  IsActiveResumeAdsIngame: 0
+--- !u!1 &5570945614407336880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8512130178027376998}
+  - component: {fileID: 361701755393429063}
+  m_Layer: 0
+  m_Name: AdmobMediationController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8512130178027376998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5570945614407336880}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3350496071912491279}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &361701755393429063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5570945614407336880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa6ee2423b1e2b4ca9dd7f1e9205027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsActive: 0
+  IsInited: 0
+  m_AdmobAdSetup:
+    interstitialAdUnitID:
+      AndroidID: []
+    rewardedAdUnitID:
+      AndroidID: []
+    bannerAdUnitID:
+      AndroidID: []
+    collapsibleBannerAdUnitID:
+      AndroidID: []
+    mrecAdUnitID:
+      AndroidID: []
+    appOpenAdUnitID:
+      AndroidID: []
+  m_BannerPosition: 1
+  IsBannerShowingOnStart: 0
+  m_CollapsibleBannerPosition: 1
+  IsCollapsibleBannerShowingOnStart: 0
+  m_MRECPosition: 1
+--- !u!1 &6062662992607247268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 523325769825781009}
+  - component: {fileID: 1664383872516899532}
+  m_Layer: 0
+  m_Name: MaxMediationController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &523325769825781009
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6062662992607247268}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3350496071912491279}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1664383872516899532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6062662992607247268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4d279ebb97674449a785d32e0eee1db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsActive: 0
+  IsInited: 0
+  m_MaxAdConfig:
+    sdkKey:
+      AndroidID: ZoNyqu_piUmpl33-qkoIfRp6MTZGW9M5xk1mb1ZIWK6FN9EBu0TXSHeprC3LMPQI7S3kTc1-x7DJGSV8S-gvFJ
+    interstitialAdUnitID:
+      AndroidID: b5c7c186839b11c3
+    rewardedAdUnitID:
+      AndroidID: 601c2ffbd20c5553
+    bannerAdUnitID:
+      AndroidID: 22281f5a8a803c7c
+    collapsibleBannerAdUnitID:
+      AndroidID: 
+    mrecAdUnitID:
+      AndroidID: 
+    appOpenAdUnitID:
+      AndroidID: 
+    isResetCounter: 1
+    rewardLoaded: 0
+    rewardAdsUnit: []
+    interstitialAdsUnit: []
+  m_BannerPosition: 7
+--- !u!1 &8919516335317368231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4856074513662410327}
+  - component: {fileID: 2106119536948214026}
+  m_Layer: 0
+  m_Name: IronsourceMediationController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4856074513662410327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8919516335317368231}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3350496071912491279}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2106119536948214026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8919516335317368231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4fadf3c769db13489da11e16425d5dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsActive: 0
+  IsInited: 0

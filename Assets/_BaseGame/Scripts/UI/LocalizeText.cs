@@ -58,7 +58,7 @@ public class LocalizeText : MonoBehaviour
                 trace = current.name + "/" + trace;
                 current = current.parent;
             }
-
+            
             Debug.Log(trace);
             Debug.LogError($"Error setting localized text for textId {textId} and language {language}: {e.Message}");
         }
