@@ -25,11 +25,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 05fcbbdfbac8c6d43830a77d53c32f22
-    m_Address: ModalStarBlazeInfo
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 08f37cb62fdff574e901939972abd10f
     m_Address: ModalRetryGame
     m_ReadOnly: 0
@@ -42,11 +37,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0ca11ead2d601ac48ae6d1364d0b252c
     m_Address: ModalWin
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 123924ddbaf9a894890f755196f01a3b
-    m_Address: ActivityBoosterShuffle
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -65,11 +55,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3a28746d491d4284a072c2767c48e010
-    m_Address: ModalTreetop
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 43e832192956d7c47a12ef4b0574f02a
     m_Address: ModalBooster
     m_ReadOnly: 0
@@ -85,18 +70,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 510574f3799e8d74f9bf20f5d06e6259
-    m_Address: ModalNewObstacle
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5166ac9ba941b9b49bbaea2e50c7f63a
     m_Address: ModalNoAds
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 525987c72e8944e2a6e3f9b3a4b67a75
-    m_Address: ActivityBoatRaceInfo
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -115,18 +90,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6b56abef119f1304e83c35960baef355
-    m_Address: ActivityBoosterFishingRod
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 72bcd805186a31c4fbcac5b6d930537f
     m_Address: ModalPause
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7524c13438344a9f9e6cd544a9a11057
-    m_Address: ModalJoinShipRaceStage3
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -135,38 +100,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7603fd58fa476554aba0bf8b08c4e0d8
-    m_Address: ActivityBoosterPackup
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7a5f1c1d13a373a47a830d924fc71e29
     m_Address: ActivityFocusButton
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 85cde767cc6a485bb4fa8f1ce48afb32
-    m_Address: ModalJoinShipRaceStage1
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 88d28a54b13c0734a9338a232093e1ec
     m_Address: ScreenInGame
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8b2bcecbc347418ab317ec976576668e
-    m_Address: ActivityShowRewardTreetop
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8d304579ef3d00a499ec9bb3768f24c6
-    m_Address: ModalUnlockTank
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 927a2474461d4f2e94525f2487d29e77
-    m_Address: ModalShipRaceStage1Info
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -177,16 +117,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 99f5996628306ee40880f4879ca12f12
     m_Address: ModalLeaveGame
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9e5ed7862fb4479880860a03d7505bf9
-    m_Address: ModalShipRaceStage3Info
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a26c4fb0afe24a94a985fa9455eee734
-    m_Address: ActivityFirstTut
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -210,28 +140,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: da2df921e5f54a24b304dee86522a818
-    m_Address: ModalShipRaceStage2Info
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: daa8b40c46db30e47ac0876ac0d7579d
-    m_Address: ActivityShowRewardOnTop
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e15e2b5648974b69b0d6e94c51a87169
-    m_Address: ActivityTreetopInfo
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e8b85e9fecbd26e49aee247a89b70ce2
     m_Address: ModalConfirmLose
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f20fa1a4a2a448f696ccb84738394c92
-    m_Address: ModalJoinShipRaceStage2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

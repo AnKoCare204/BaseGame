@@ -12,7 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a50d888ddedd54bac01e630c8b9317, type: 3}
   m_Name: PrefabGlobalConfig
   m_EditorClassIdentifier: Assembly-CSharp::PrefabGlobalConfig
-  levelPrefab: {fileID: 369924863975967743, guid: 74c36a84504753f408da07c752e803ef, type: 3}
-  bubblePrefab: {fileID: 704713385829843482, guid: 3755bada35160264bb40e2e8435da0b9, type: 3}
-  fishPrefab: {fileID: 7897586534516984073, guid: 867cf0fa68715924aba5c008ed45e381, type: 3}
-  UITreetopCheckpointPrefab: {fileID: 6902890746011972700, guid: 856771f22af0496681f51a3417d643f6, type: 3}
+  levelPrefab: {fileID: 4810034259627463063, guid: a804c934a1e984af097cd33276a752c4, type: 3}

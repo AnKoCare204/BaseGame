@@ -334,42 +334,9 @@ MonoBehaviour:
   - <AudioKey>k__BackingField: 32
     <AudioClip>k__BackingField:
     - {fileID: 8300000, guid: 43c2fa0346b89434ea567ddeb4095790, type: 3}
-  - <AudioKey>k__BackingField: 50
-    <AudioClip>k__BackingField:
-    - {fileID: 8300000, guid: df7377482b709324b89aa5f7d99ea45e, type: 3}
-  - <AudioKey>k__BackingField: 53
-    <AudioClip>k__BackingField:
-    - {fileID: 8300000, guid: f5b88b60ad6447e47a65cf2c1a239ba6, type: 3}
-  - <AudioKey>k__BackingField: 54
-    <AudioClip>k__BackingField:
-    - {fileID: 8300000, guid: a5ab49b427f66964992a392ec6e19a11, type: 3}
-  - <AudioKey>k__BackingField: 55
-    <AudioClip>k__BackingField:
-    - {fileID: 8300000, guid: 7aa492c949566d84b9110c2a8e00e964, type: 3}
-  - <AudioKey>k__BackingField: 56
-    <AudioClip>k__BackingField:
-    - {fileID: 8300000, guid: a0d5a6fc0f3546341aad2c0221b2d550, type: 3}
-  - <AudioKey>k__BackingField: 57
-    <AudioClip>k__BackingField:
-    - {fileID: 8300000, guid: ce31e145f1c999844abad671cb25e068, type: 3}
-  - <AudioKey>k__BackingField: 58
-    <AudioClip>k__BackingField:
-    - {fileID: 8300000, guid: 0afb87798686c2f4b8af8d0fbb293fec, type: 3}
-  - <AudioKey>k__BackingField: 59
-    <AudioClip>k__BackingField:
-    - {fileID: 8300000, guid: 588e7f21b2517da489024b0065b0420e, type: 3}
-  - <AudioKey>k__BackingField: 61
-    <AudioClip>k__BackingField:
-    - {fileID: 8300000, guid: cdf36452e7553dc43b66c375bd99ae61, type: 3}
-    - {fileID: 8300000, guid: 61d53dcde68dbcc44be509c10092c1d8, type: 3}
-    - {fileID: 8300000, guid: 529a8d84369422649a9e75ffcd84767d, type: 3}
-    - {fileID: 8300000, guid: ea550513d5b3dc54b950e52d0395d3ea, type: 3}
   - <AudioKey>k__BackingField: 60
     <AudioClip>k__BackingField:
     - {fileID: 8300000, guid: 546c5085c06e7a941a88c63509819cf6, type: 3}
-  - <AudioKey>k__BackingField: 62
-    <AudioClip>k__BackingField:
-    - {fileID: 8300000, guid: 18b4462fa0a80a64e9a39caf2623ac04, type: 3}
   - <AudioKey>k__BackingField: 70
     <AudioClip>k__BackingField:
     - {fileID: 8300000, guid: c898c80089e3cdd4ca9f133f088c677c, type: 3}
@@ -392,19 +359,6 @@ MonoBehaviour:
   - <AudioKey>k__BackingField: 1
     <AudioClip>k__BackingField:
     - {fileID: 8300000, guid: 02dab79f9c853634c8ace043a290a60e, type: 3}
-  <StarBlazeSfxArray>k__BackingField:
-  - <Key>k__BackingField: 0
-    <AudioClip>k__BackingField:
-    - {fileID: 8300000, guid: 8dfe4dc11ee2e184cb634c941881b694, type: 3}
-  - <Key>k__BackingField: 1
-    <AudioClip>k__BackingField:
-    - {fileID: 8300000, guid: c37b77bd9aeeaa745a8406ba9b92e767, type: 3}
-  - <Key>k__BackingField: 2
-    <AudioClip>k__BackingField:
-    - {fileID: 8300000, guid: ba847c05726a58a4a868de974dfe03c4, type: 3}
-  - <Key>k__BackingField: 3
-    <AudioClip>k__BackingField:
-    - {fileID: 8300000, guid: ba847c05726a58a4a868de974dfe03c4, type: 3}
   <SoundFxAudioSource>k__BackingField: {fileID: 3015113494178165656}
   <MusicAudioSource>k__BackingField: {fileID: 4985034068448896113}
   <SoundEmitter>k__BackingField: {fileID: 8814845370721096295, guid: 4ffcd48042f50f64398b3340c3a6eb43, type: 3}

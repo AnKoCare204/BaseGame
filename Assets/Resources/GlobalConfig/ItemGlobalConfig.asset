@@ -27,70 +27,36 @@ MonoBehaviour:
     Sprite: {fileID: 21300000, guid: ab79aaec82ffbdb4fbcf6739c6644f75, type: 3}
   - ResourceType: 53
     Sprite: {fileID: 21300000, guid: 51f0ad763c8530a4d99ae8d412a8e0b1, type: 3}
-  - ResourceType: 54
-    Sprite: {fileID: 21300000, guid: 1a7041e64208a7743bfc599bb71b253d, type: 3}
-  - ResourceType: 56
-    Sprite: {fileID: 21300000, guid: 5b60c26b0598eef408c38e75b17dd45d, type: 3}
   BooosterInfoDatas:
   - ResourceType: 51
-    Name: Add Slot
-    Description: Adds one more holding slot.
+    Name: Hint
+    Description: Instantly adds progress.
     LevelUnlock: 3
     UnlockGiftAmount: 2
-    ForceUsePrefillCount: 0
-    MessageNoUse: Holding area is already full size!
-    MessageHoldingFull: 
+    MessageNoUse: Can't use this booster now!
     Sprite: {fileID: 21300000, guid: 5ceb6492bfa7b4444bde676b2b470766, type: 3}
     Price: 300
     PriceX3: 1200
     UnlockMidLevel: 0
   - ResourceType: 52
-    Name: Fishing rod
-    Description: Fill two fish tanks.
+    Name: Undo
+    Description: Gives you more time.
     LevelUnlock: 6
     UnlockGiftAmount: 2
-    ForceUsePrefillCount: 0
-    MessageNoUse: No tank to fill!
-    MessageHoldingFull: 
+    MessageNoUse: Can't use this booster now!
     Sprite: {fileID: 21300000, guid: ab79aaec82ffbdb4fbcf6739c6644f75, type: 3}
     Price: 900
     PriceX3: 2400
     UnlockMidLevel: 0
   - ResourceType: 53
     Name: Shuffle
-    Description: Shuffle visible fish positions.
+    Description: Gives you more time.
     LevelUnlock: 9
     UnlockGiftAmount: 2
-    ForceUsePrefillCount: 0
-    MessageNoUse: Need at least 2 bubbles!
-    MessageHoldingFull: Holding area is full! Free a slot first.
+    MessageNoUse: Can't use this booster now!
     Sprite: {fileID: 21300000, guid: 51f0ad763c8530a4d99ae8d412a8e0b1, type: 3}
     Price: 600
     PriceX3: 1400
-    UnlockMidLevel: 0
-  - ResourceType: 54
-    Name: Pack Up
-    Description: Packs every fish in the holding area into a bag.
-    LevelUnlock: 12
-    UnlockGiftAmount: 2
-    ForceUsePrefillCount: 4
-    MessageNoUse: No fish in the holding area!
-    MessageHoldingFull: 
-    Sprite: {fileID: 21300000, guid: 1a7041e64208a7743bfc599bb71b253d, type: 3}
-    Price: 900
-    PriceX3: 2400
-    UnlockMidLevel: 0
-  - ResourceType: 56
-    Name: Unlock Tank
-    Description: Unlocks one more tank.
-    LevelUnlock: -1
-    UnlockGiftAmount: 1
-    ForceUsePrefillCount: 0
-    MessageNoUse: No locked tank left!
-    MessageHoldingFull: 
-    Sprite: {fileID: 21300000, guid: 5b60c26b0598eef408c38e75b17dd45d, type: 3}
-    Price: 900
-    PriceX3: 1800
     UnlockMidLevel: 0
   LevelDifficultyDatas:
   - Type: 1

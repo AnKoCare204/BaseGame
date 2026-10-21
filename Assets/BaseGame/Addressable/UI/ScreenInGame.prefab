@@ -131,6 +131,7 @@ MonoBehaviour:
   ForceTimescaleMode: 0
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
+  TimescaleMultiplier: 1
   RandomizeDuration: 0
   RandomDurationMultiplier: {x: 0.5, y: 1.5}
   DisplayFullDurationDetails: 0
@@ -180,10 +181,13 @@ MonoBehaviour:
     OnPause:
       m_PersistentCalls:
         m_Calls: []
+    OnStop:
+      m_PersistentCalls:
+        m_Calls: []
     OnResume:
       m_PersistentCalls:
         m_Calls: []
-    OnRevert:
+    OnChangeDirection:
       m_PersistentCalls:
         m_Calls: []
     OnComplete:
@@ -205,11 +209,13 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   DebugActive: 0
+  InScriptDrivenPause: 0
   FeedbacksList:
   - rid: 2695984365874446421
   - rid: 2695984365874446423
   KeepPlayModeChanges: 0
   PerformanceMode: 0
+  RestoreInitialValuesOnDisable: 0
   StopFeedbacksOnDisable: 0
   PlayCount: 0
   references:
@@ -221,11 +227,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: -626267592
         Label: Destination
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -321,7 +327,11 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         Duration: 0.2
+        UpdateDestinationEveryFrame: 0
         AnimatePositionX: 1
         AnimatePositionY: 1
         AnimatePositionZ: 1
@@ -370,6 +380,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: SeparatePositionCurve
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         SeparateRotationCurve: 0
         AnimateRotationTween:
           MMTweenDefinitionType: 1
@@ -408,6 +421,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: SeparateRotationCurve
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         SeparateScaleCurve: 0
         AnimateScaleTween:
           MMTweenDefinitionType: 1
@@ -446,6 +462,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: SeparateScaleCurve
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         GlobalAnimationCurve:
           serializedVersion: 2
           m_Curve: []
@@ -476,11 +495,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: 1087580452
         Label: CanvasGroup BlocksRaycasts
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -805,7 +824,7 @@ MonoBehaviour:
       - {fileID: 6329182380420824993}
       - {fileID: 2927883758557432119}
       - {fileID: 1486344578516482684}
-      - {fileID: 2205218194853994134}
+      - {fileID: 0}
       <AlertLevelDifficult>k__BackingField: {fileID: 2001987092651470774}
       <BoosterClaimRoot>k__BackingField: {fileID: 7832290440048217071}
       <NotificationItemUIPrefab>k__BackingField: {fileID: 1184967924912637546, guid: d43b5130a3042ec42ac39baa6bbac143, type: 3}
@@ -1405,6 +1424,7 @@ MonoBehaviour:
   ForceTimescaleMode: 0
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
+  TimescaleMultiplier: 1
   RandomizeDuration: 0
   RandomDurationMultiplier: {x: 0.5, y: 1.5}
   DisplayFullDurationDetails: 0
@@ -1454,10 +1474,13 @@ MonoBehaviour:
     OnPause:
       m_PersistentCalls:
         m_Calls: []
+    OnStop:
+      m_PersistentCalls:
+        m_Calls: []
     OnResume:
       m_PersistentCalls:
         m_Calls: []
-    OnRevert:
+    OnChangeDirection:
       m_PersistentCalls:
         m_Calls: []
     OnComplete:
@@ -1479,11 +1502,13 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   DebugActive: 0
+  InScriptDrivenPause: 0
   FeedbacksList:
   - rid: 2695984365874446421
   - rid: 2695984365874446424
   KeepPlayModeChanges: 0
   PerformanceMode: 0
+  RestoreInitialValuesOnDisable: 0
   StopFeedbacksOnDisable: 0
   PlayCount: 0
   references:
@@ -1495,11 +1520,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: -626267592
         Label: Destination
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -1595,7 +1620,11 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         Duration: 0.2
+        UpdateDestinationEveryFrame: 0
         AnimatePositionX: 1
         AnimatePositionY: 1
         AnimatePositionZ: 1
@@ -1644,6 +1673,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: SeparatePositionCurve
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         SeparateRotationCurve: 0
         AnimateRotationTween:
           MMTweenDefinitionType: 1
@@ -1682,6 +1714,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: SeparateRotationCurve
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         SeparateScaleCurve: 0
         AnimateScaleTween:
           MMTweenDefinitionType: 1
@@ -1720,6 +1755,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: SeparateScaleCurve
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         GlobalAnimationCurve:
           serializedVersion: 2
           m_Curve: []
@@ -1750,11 +1788,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: 2103327627
         Label: CanvasGroup BlocksRaycasts
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -3328,6 +3366,7 @@ MonoBehaviour:
   ForceTimescaleMode: 0
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
+  TimescaleMultiplier: 1
   RandomizeDuration: 0
   RandomDurationMultiplier: {x: 0.5, y: 1.5}
   DisplayFullDurationDetails: 0
@@ -3377,10 +3416,13 @@ MonoBehaviour:
     OnPause:
       m_PersistentCalls:
         m_Calls: []
+    OnStop:
+      m_PersistentCalls:
+        m_Calls: []
     OnResume:
       m_PersistentCalls:
         m_Calls: []
-    OnRevert:
+    OnChangeDirection:
       m_PersistentCalls:
         m_Calls: []
     OnComplete:
@@ -3402,10 +3444,12 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   DebugActive: 0
+  InScriptDrivenPause: 0
   FeedbacksList:
   - rid: 6296149508500226543
   KeepPlayModeChanges: 0
   PerformanceMode: 0
+  RestoreInitialValuesOnDisable: 0
   StopFeedbacksOnDisable: 0
   PlayCount: 0
   references:
@@ -3417,11 +3461,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: 1478967065
         Label: CanvasGroup
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -3549,9 +3593,13 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         RemapZero: 0
         RemapOne: 1
         InstantAlpha: 0
+        DestinationAlpha: 0
 --- !u!1 &4790678394479017231
 GameObject:
   m_ObjectHideFlags: 0
@@ -5414,6 +5462,7 @@ MonoBehaviour:
   ForceTimescaleMode: 0
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
+  TimescaleMultiplier: 1
   RandomizeDuration: 0
   RandomDurationMultiplier: {x: 0.5, y: 1.5}
   DisplayFullDurationDetails: 0
@@ -5463,10 +5512,13 @@ MonoBehaviour:
     OnPause:
       m_PersistentCalls:
         m_Calls: []
+    OnStop:
+      m_PersistentCalls:
+        m_Calls: []
     OnResume:
       m_PersistentCalls:
         m_Calls: []
-    OnRevert:
+    OnChangeDirection:
       m_PersistentCalls:
         m_Calls: []
     OnComplete:
@@ -5488,6 +5540,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   DebugActive: 0
+  InScriptDrivenPause: 0
   FeedbacksList:
   - rid: 8400063892763967530
   - rid: 9190055068363915363
@@ -5500,6 +5553,7 @@ MonoBehaviour:
   - rid: 8400063892763967531
   KeepPlayModeChanges: 0
   PerformanceMode: 0
+  RestoreInitialValuesOnDisable: 0
   StopFeedbacksOnDisable: 0
   PlayCount: 0
   references:
@@ -5511,11 +5565,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: -1538635758
         Label: Set Active
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -5581,6 +5635,7 @@ MonoBehaviour:
         DebugActive: 0
         TargetGameObject: {fileID: 7777297218292016005}
         ExtraTargetGameObjects: []
+        IgnorePlayDirection: 0
         SetStateOnInit: 0
         StateOnInit: 1
         SetStateOnPlay: 1
@@ -5599,11 +5654,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: 1971340233
         Label: Set Active
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -5669,6 +5724,7 @@ MonoBehaviour:
         DebugActive: 0
         TargetGameObject: {fileID: 7777297218292016005}
         ExtraTargetGameObjects: []
+        IgnorePlayDirection: 0
         SetStateOnInit: 0
         StateOnInit: 1
         SetStateOnPlay: 1
@@ -5687,11 +5743,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: -1046721344
         Label: CanvasGroup
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -5810,20 +5866,24 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         RemapZero: 0
         RemapOne: 1
         InstantAlpha: 0
+        DestinationAlpha: 0
     - rid: 9190055068363915364
       type: {class: MMF_CanvasGroup, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
         Active: 1
         UniqueID: 433543553
         Label: CanvasGroup
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -5942,20 +6002,24 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         RemapZero: 0
         RemapOne: 1
         InstantAlpha: 0
+        DestinationAlpha: 0
     - rid: 9190055068363915365
       type: {class: MMF_RectTransformSizeDelta, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
         Active: 1
         UniqueID: 1352004527
         Label: RectTransformSizeDelta
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -6056,6 +6120,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         RemapZero: {x: 0, y: 0}
         RemapOne: {x: 200, y: 0}
     - rid: 9190055068363915366
@@ -6064,11 +6131,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: 576714208
         Label: Image Alpha
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -6165,6 +6232,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: Mode
+          EnumConditions: 0100010000000000000000000000000000000000000000000000000000000000
         CurveRemapZero: 1
         CurveRemapOne: 0
         DestinationAlpha: 1
@@ -6175,11 +6245,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: 2061164019
         Label: RectTransformSizeDelta
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -6280,6 +6350,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         RemapZero: {x: 0, y: 0}
         RemapOne: {x: 100, y: 0}
     - rid: 9190055068363915368
@@ -6288,11 +6361,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: -1632320485
         Label: Image Alpha
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -6389,6 +6462,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: Mode
+          EnumConditions: 0100010000000000000000000000000000000000000000000000000000000000
         CurveRemapZero: 1
         CurveRemapOne: 0
         DestinationAlpha: 1
@@ -6399,11 +6475,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: -1041872804
         Label: Scale
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -6469,7 +6545,9 @@ MonoBehaviour:
         DebugActive: 0
         Mode: 0
         AnimateScaleTarget: {fileID: 5311270336552243708}
+        MovementMode: 0
         AnimateScaleDuration: 2
+        AnimatePositionSpeed: 1
         RemapCurveZero: 2
         RemapCurveOne: 1
         Offset: 0
@@ -6520,6 +6598,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: AnimateX
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         AnimateY: 0
         AnimateScaleTweenY:
           MMTweenDefinitionType: 1
@@ -6558,6 +6639,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: AnimateY
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         AnimateZ: 0
         AnimateScaleTweenZ:
           MMTweenDefinitionType: 1
@@ -6596,6 +6680,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: AnimateZ
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         UniformScaling: 1
         AllowAdditivePlays: 0
         DetermineScaleOnPlay: 0
@@ -7007,6 +7094,7 @@ MonoBehaviour:
   ForceTimescaleMode: 0
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
+  TimescaleMultiplier: 1
   RandomizeDuration: 0
   RandomDurationMultiplier: {x: 0.5, y: 1.5}
   DisplayFullDurationDetails: 0
@@ -7056,10 +7144,13 @@ MonoBehaviour:
     OnPause:
       m_PersistentCalls:
         m_Calls: []
+    OnStop:
+      m_PersistentCalls:
+        m_Calls: []
     OnResume:
       m_PersistentCalls:
         m_Calls: []
-    OnRevert:
+    OnChangeDirection:
       m_PersistentCalls:
         m_Calls: []
     OnComplete:
@@ -7081,6 +7172,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   DebugActive: 0
+  InScriptDrivenPause: 0
   FeedbacksList:
   - rid: 8400063892763967539
   - rid: 9190055068363915363
@@ -7093,6 +7185,7 @@ MonoBehaviour:
   - rid: 8400063892763967540
   KeepPlayModeChanges: 0
   PerformanceMode: 0
+  RestoreInitialValuesOnDisable: 0
   StopFeedbacksOnDisable: 0
   PlayCount: 0
   references:
@@ -7104,11 +7197,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: 1461602968
         Label: Set Active
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -7174,6 +7267,7 @@ MonoBehaviour:
         DebugActive: 0
         TargetGameObject: {fileID: 363521530290087505}
         ExtraTargetGameObjects: []
+        IgnorePlayDirection: 0
         SetStateOnInit: 0
         StateOnInit: 1
         SetStateOnPlay: 1
@@ -7192,11 +7286,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: 1276266559
         Label: Set Active
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -7262,6 +7356,7 @@ MonoBehaviour:
         DebugActive: 0
         TargetGameObject: {fileID: 363521530290087505}
         ExtraTargetGameObjects: []
+        IgnorePlayDirection: 0
         SetStateOnInit: 0
         StateOnInit: 1
         SetStateOnPlay: 1
@@ -7280,11 +7375,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: -1046721344
         Label: CanvasGroup
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -7403,20 +7498,24 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         RemapZero: 0
         RemapOne: 1
         InstantAlpha: 0
+        DestinationAlpha: 0
     - rid: 9190055068363915364
       type: {class: MMF_CanvasGroup, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
         Active: 1
         UniqueID: 433543553
         Label: CanvasGroup
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -7535,20 +7634,24 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         RemapZero: 0
         RemapOne: 1
         InstantAlpha: 0
+        DestinationAlpha: 0
     - rid: 9190055068363915365
       type: {class: MMF_RectTransformSizeDelta, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
         Active: 1
         UniqueID: 1352004527
         Label: RectTransformSizeDelta
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -7649,6 +7752,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         RemapZero: {x: 0, y: 0}
         RemapOne: {x: 200, y: 0}
     - rid: 9190055068363915366
@@ -7657,11 +7763,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: 576714208
         Label: Image Alpha
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -7758,6 +7864,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: Mode
+          EnumConditions: 0100010000000000000000000000000000000000000000000000000000000000
         CurveRemapZero: 1
         CurveRemapOne: 0
         DestinationAlpha: 1
@@ -7768,11 +7877,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: 2061164019
         Label: RectTransformSizeDelta
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -7873,6 +7982,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         RemapZero: {x: 0, y: 0}
         RemapOne: {x: 100, y: 0}
     - rid: 9190055068363915368
@@ -7881,11 +7993,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: -1632320485
         Label: Image Alpha
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -7982,6 +8094,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: Mode
+          EnumConditions: 0100010000000000000000000000000000000000000000000000000000000000
         CurveRemapZero: 1
         CurveRemapOne: 0
         DestinationAlpha: 1
@@ -7992,11 +8107,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: -1041872804
         Label: Scale
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -8062,7 +8177,9 @@ MonoBehaviour:
         DebugActive: 0
         Mode: 0
         AnimateScaleTarget: {fileID: 855853516630210104}
+        MovementMode: 0
         AnimateScaleDuration: 2
+        AnimatePositionSpeed: 1
         RemapCurveZero: 2
         RemapCurveOne: 1
         Offset: 0
@@ -8113,6 +8230,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: AnimateX
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         AnimateY: 0
         AnimateScaleTweenY:
           MMTweenDefinitionType: 1
@@ -8151,6 +8271,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: AnimateY
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         AnimateZ: 0
         AnimateScaleTweenZ:
           MMTweenDefinitionType: 1
@@ -8189,6 +8312,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: AnimateZ
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         UniformScaling: 1
         AllowAdditivePlays: 0
         DetermineScaleOnPlay: 0
@@ -8354,6 +8480,7 @@ MonoBehaviour:
   ForceTimescaleMode: 0
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
+  TimescaleMultiplier: 1
   RandomizeDuration: 0
   RandomDurationMultiplier: {x: 0.5, y: 1.5}
   DisplayFullDurationDetails: 0
@@ -8403,10 +8530,13 @@ MonoBehaviour:
     OnPause:
       m_PersistentCalls:
         m_Calls: []
+    OnStop:
+      m_PersistentCalls:
+        m_Calls: []
     OnResume:
       m_PersistentCalls:
         m_Calls: []
-    OnRevert:
+    OnChangeDirection:
       m_PersistentCalls:
         m_Calls: []
     OnComplete:
@@ -8428,11 +8558,13 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   DebugActive: 0
+  InScriptDrivenPause: 0
   FeedbacksList:
   - rid: 2695984365874446423
   - rid: 2695984365874446421
   KeepPlayModeChanges: 0
   PerformanceMode: 0
+  RestoreInitialValuesOnDisable: 0
   StopFeedbacksOnDisable: 0
   PlayCount: 0
   references:
@@ -8444,11 +8576,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: -626267592
         Label: Destination
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -8553,7 +8685,11 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         Duration: 0.2
+        UpdateDestinationEveryFrame: 0
         AnimatePositionX: 1
         AnimatePositionY: 1
         AnimatePositionZ: 1
@@ -8602,6 +8738,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: SeparatePositionCurve
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         SeparateRotationCurve: 0
         AnimateRotationTween:
           MMTweenDefinitionType: 1
@@ -8640,6 +8779,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: SeparateRotationCurve
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         SeparateScaleCurve: 0
         AnimateScaleTween:
           MMTweenDefinitionType: 1
@@ -8678,6 +8820,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: SeparateScaleCurve
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         GlobalAnimationCurve:
           serializedVersion: 2
           m_Curve: []
@@ -8708,11 +8853,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: 1087580452
         Label: CanvasGroup BlocksRaycasts
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -9516,9 +9661,6 @@ RectTransform:
   - {fileID: 4405921714516093077}
   - {fileID: 4778549448412110339}
   - {fileID: 9102251103659027784}
-  - {fileID: 8389007502671186338}
-  - {fileID: 5235006530750019732}
-  - {fileID: 4018785127050072087}
   m_Father: {fileID: 9198851810104181721}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -9694,6 +9836,7 @@ MonoBehaviour:
   ForceTimescaleMode: 0
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
+  TimescaleMultiplier: 1
   RandomizeDuration: 0
   RandomDurationMultiplier: {x: 0.5, y: 1.5}
   DisplayFullDurationDetails: 0
@@ -9743,10 +9886,13 @@ MonoBehaviour:
     OnPause:
       m_PersistentCalls:
         m_Calls: []
+    OnStop:
+      m_PersistentCalls:
+        m_Calls: []
     OnResume:
       m_PersistentCalls:
         m_Calls: []
-    OnRevert:
+    OnChangeDirection:
       m_PersistentCalls:
         m_Calls: []
     OnComplete:
@@ -9768,11 +9914,13 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   DebugActive: 0
+  InScriptDrivenPause: 0
   FeedbacksList:
   - rid: 2695984365874446423
   - rid: 2695984365874446421
   KeepPlayModeChanges: 0
   PerformanceMode: 0
+  RestoreInitialValuesOnDisable: 0
   StopFeedbacksOnDisable: 0
   PlayCount: 0
   references:
@@ -9784,11 +9932,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: -626267592
         Label: Destination
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -9893,7 +10041,11 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: 
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         Duration: 0.2
+        UpdateDestinationEveryFrame: 0
         AnimatePositionX: 1
         AnimatePositionY: 1
         AnimatePositionZ: 1
@@ -9942,6 +10094,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: SeparatePositionCurve
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         SeparateRotationCurve: 0
         AnimateRotationTween:
           MMTweenDefinitionType: 1
@@ -9980,6 +10135,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: SeparateRotationCurve
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         SeparateScaleCurve: 0
         AnimateScaleTween:
           MMTweenDefinitionType: 1
@@ -10018,6 +10176,9 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
           Initialized: 0
+          ConditionPropertyName: SeparateScaleCurve
+          EnumConditionPropertyName: 
+          EnumConditions: 0000000000000000000000000000000000000000000000000000000000000000
         GlobalAnimationCurve:
           serializedVersion: 2
           m_Curve: []
@@ -10048,11 +10209,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: 1087580452
         Label: CanvasGroup BlocksRaycasts
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -10294,7 +10455,9 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6705257805132041832, guid: 45c06af83fc97a94c999509ee7880b2e, type: 3}
+    - {fileID: 2983501558551900794, guid: 45c06af83fc97a94c999509ee7880b2e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10418,11 +10581,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7318412096668065537, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
       propertyPath: m_Name
-      value: BoosterSelector_AutoFill
+      value: BoosterSelector_Undo
       objectReference: {fileID: 0}
     - target: {fileID: 8599938742380570090, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
       propertyPath: _bursts.Array.data[0].used
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10444,136 +10607,6 @@ MonoBehaviour:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
   m_PrefabInstance: {fileID: 243088243663917871}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &696145530285405624
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1584031373880317078}
-    m_Modifications:
-    - target: {fileID: 3170096240802847256, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: <BoosterType>k__BackingField
-      value: 55
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7318412096668065537, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_Name
-      value: BoosterSelector_Swap
-      objectReference: {fileID: 0}
-    - target: {fileID: 7318412096668065537, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8599938742380570090, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: _bursts.Array.data[0].used
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
---- !u!224 &5235006530750019732 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-  m_PrefabInstance: {fileID: 696145530285405624}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2820943148468360771
 PrefabInstance:
@@ -10706,143 +10739,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5532815378325616070, guid: 938faab7a76ca5c4da1af3cfd2a7e227, type: 3}
   m_PrefabInstance: {fileID: 2820943148468360771}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &3847468260443997326
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1584031373880317078}
-    m_Modifications:
-    - target: {fileID: 3170096240802847256, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: <BoosterType>k__BackingField
-      value: 54
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 345
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7318412096668065537, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_Name
-      value: BoosterSelector_PackedUp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8599938742380570090, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: _bursts.Array.data[0].used
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
---- !u!114 &2205218194853994134 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3170096240802847256, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-  m_PrefabInstance: {fileID: 3847468260443997326}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e789d091713e52f4cb637b409cbc6905, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!224 &8389007502671186338 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-  m_PrefabInstance: {fileID: 3847468260443997326}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4566367691817328740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10961,7 +10857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8599938742380570090, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
       propertyPath: _bursts.Array.data[0].used
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11213,136 +11109,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7615338756180814461, guid: 938faab7a76ca5c4da1af3cfd2a7e227, type: 3}
   m_PrefabInstance: {fileID: 5315371957532693399}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &8559893564126272827
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1584031373880317078}
-    m_Modifications:
-    - target: {fileID: 3170096240802847256, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: <BoosterType>k__BackingField
-      value: 56
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.9166667
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.9166667
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7318412096668065537, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_Name
-      value: BoosterSelector_UnlockTank
-      objectReference: {fileID: 0}
-    - target: {fileID: 7318412096668065537, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8599938742380570090, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-      propertyPath: _bursts.Array.data[0].used
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
---- !u!224 &4018785127050072087 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4688051636236930348, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
-  m_PrefabInstance: {fileID: 8559893564126272827}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8947443457958225337
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11457,11 +11223,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7318412096668065537, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
       propertyPath: m_Name
-      value: BoosterSelector_AddSlot
+      value: BoosterSelector_Hint
       objectReference: {fileID: 0}
     - target: {fileID: 8599938742380570090, guid: 1831431867fdf224bba0544bbacf799c, type: 3}
       propertyPath: _bursts.Array.data[0].used
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
