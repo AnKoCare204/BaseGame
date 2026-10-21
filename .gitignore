@@ -73,3 +73,9 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Firebase SDK: FirebaseCppApp .bundle > 100 MB (GitHub chặn) — import lại từ unitypackage như FishSort
+Assets/Firebase
+Assets/Firebase.meta
+Assets/Firebase.zip
+Assets/Firebase.zip.meta
