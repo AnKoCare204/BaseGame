@@ -41,12 +41,16 @@ Assets/Samples/ADS FB AF IAP SDK/1.1.7/   SDK sample (AdsController, IAPControll
 
 1. Copy repo, đổi `productName` / `applicationIdentifier` / icon trong **từng** Build Profile (`Assets/Settings/Build Profiles`).
    Hiện chỉ có profile `Android - Cheat` (define `CHEAT_ONLY;UNITY_AD_MAX;UNITY_APPSFLYER;UNITY_AD_ADMOB`): tạo profile Release
-   bằng cách nhân bản và thay `CHEAT_ONLY` bằng `RELEASE_ONLY`. `UNITY_AD_MAX` cần plugin AppLovin MAX (`Assets/MaxSdk`, chưa có
-   trong repo) — import MAX hoặc bỏ define này nếu chỉ dùng AdMob.
+   bằng cách nhân bản và thay `CHEAT_ONLY` bằng `RELEASE_ONLY`. `UNITY_AD_MAX` dùng plugin AppLovin MAX (`Assets/MaxSdk`, bản của
+   FishSort kèm adapter mediation) — bỏ define này nếu chỉ dùng AdMob.
 2. Firebase: thay `google-services.json` / `GoogleService-Info.plist`, import lại Firebase SDK (thư mục `Assets/Firebase` không nằm
    trong git vì có file > 100 MB). Tạo key Remote Config theo `KeyRemoteConfig`.
 3. Ads / IAP / AppsFlyer: điền ID trong `Samples/ADS FB AF IAP SDK/1.1.7/Base Setup/AdsSetup`, gói IAP trong
-   `Resources/GlobalConfig/ShopGlobalConfig.asset`.
+   `Resources/GlobalConfig/ShopGlobalConfig.asset`. MAX: menu **AppLovin > Integration Manager** điền AdMob App ID Android
+   của game (`MaxSdk/Resources/AppLovinSettings.asset`, đang để trống — build vẫn chạy nhưng log lỗi và adapter Google không có
+   App ID). Tangle IAP (`Assets/Scripts/UnityPurchasing/generated`) lấy từ FishSort: Google Play key đang trống
+   (`IsPopulated = false`); muốn kiểm receipt Google thì chạy **Services > In-App Purchasing > Receipt Validation Obfuscator**
+   với license key của game (hiện `Purchaser` chỉ ghi log kết quả kiểm, không chặn mở khoá).
 4. Gameplay: viết lớp kế thừa `Level` (xem `SampleLevel.cs`):
    - dựng bàn trong `OnStartGame(LevelConfig)`, dọn trong `OnClear()`;
    - input qua `OnPointerDown / OnPointerUp / OnClick` (InputManager chỉ gửi khi không pause, không đè UI);
