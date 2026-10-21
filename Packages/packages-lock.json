@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.annulusgames.lit-motion": {
-      "version": "https://github.com/annulusgames/LitMotion.git?path=src/LitMotion/Assets/LitMotion",
+      "version": "https://github.com/annulusgames/LitMotion.git?path=src/LitMotion/Assets/LitMotion#ab6e92bfe78ff911def2fd3c4e9c79bb5a186946",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -9,7 +9,21 @@
         "com.unity.collections": "1.5.1",
         "com.unity.mathematics": "1.0.1"
       },
-      "hash": "1d170af70c7db3df372dc4796c843f81e780530c"
+      "hash": "ab6e92bfe78ff911def2fd3c4e9c79bb5a186946"
+    },
+    "com.antq.ads.fb.af.iap.sdk": {
+      "version": "https://github.com/AnKoCare/BackendClient.git?path=Packages/GameSDK#bb5aa73978f04a64b14c816cf34eda44261cd673",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "bb5aa73978f04a64b14c816cf34eda44261cd673"
+    },
+    "com.antq.event.tracking.sdk": {
+      "version": "https://github.com/AnKoCare/BackendClient.git?path=Packages/EventTracking#bb5aa73978f04a64b14c816cf34eda44261cd673",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "bb5aa73978f04a64b14c816cf34eda44261cd673"
     },
     "com.boxqkrtm.ide.cursor": {
       "version": "https://github.com/boxqkrtm/com.unity.ide.cursor.git",
@@ -20,79 +34,107 @@
       },
       "hash": "53e1baac3cde90c46934f82ee1d61802d2bd6651"
     },
-    "com.cysharp.memorypack": {
-      "version": "https://github.com/Cysharp/MemoryPack.git?path=src/MemoryPack.Unity/Assets/MemoryPack.Unity",
+    "com.coffee.softmask-for-ugui": {
+      "version": "https://github.com/mob-sakai/SoftMaskForUGUI.git?path=Packages/src#4d00ad8c608bf42c8668fdf192130fc16e21a130",
       "depth": 0,
       "source": "git",
-      "dependencies": {},
-      "hash": "e807380631237f73848dbad6c4465bb88618f512"
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
+      "hash": "4d00ad8c608bf42c8668fdf192130fc16e21a130"
+    },
+    "com.coffee.ui-effect": {
+      "version": "https://github.com/mob-sakai/UIEffect.git?path=Packages/src#5.9.0",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
+      "hash": "bbb5ae0f3e0389c797be1343f18634968bef18c0"
+    },
+    "com.coffee.ui-particle": {
+      "version": "https://github.com/mob-sakai/ParticleEffectForUGUI.git#4.9.0",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.particlesystem": "1.0.0"
+      },
+      "hash": "4dfcb9075e166fa53fee5decc51975bdc247cdad"
     },
     "com.cysharp.r3": {
-      "version": "https://github.com/Cysharp/R3.git?path=src/R3.Unity/Assets/R3.Unity",
+      "version": "https://github.com/Cysharp/R3.git?path=src/R3.Unity/Assets/R3.Unity#fdfb36e3d5af90ec06403714492ee85b2d8bf7cd",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.unity.modules.imgui": "1.0.0"
       },
-      "hash": "24d04125d68719816e24dfb79c60dd97ca396038"
+      "hash": "fdfb36e3d5af90ec06403714492ee85b2d8bf7cd"
     },
     "com.cysharp.unitask": {
-      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#ceac8d6946b1125fe782cd171fbcb245b567dbf9",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "73a63b7f672b88f7e9992f6917eb458a8cbb6fa9"
+      "hash": "ceac8d6946b1125fe782cd171fbcb245b567dbf9"
     },
     "com.cysharp.zlinq": {
-      "version": "https://github.com/Cysharp/ZLinq.git?path=src/ZLinq.Unity/Assets/ZLinq.Unity",
+      "version": "https://github.com/Cysharp/ZLinq.git?path=src/ZLinq.Unity/Assets/ZLinq.Unity#ce6fcff171ab2c5b1b41bf69239133be50c204d4",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "c6d15be4efecc0afca628fd194f8f62ee0b4bb15"
+      "hash": "ce6fcff171ab2c5b1b41bf69239133be50c204d4"
     },
     "com.cysharp.zstring": {
-      "version": "https://github.com/Cysharp/ZString.git?path=src/ZString.Unity/Assets/Scripts/ZString",
+      "version": "https://github.com/Cysharp/ZString.git?path=src/ZString.Unity/Assets/Scripts/ZString#604dc1eb5ada260a7be546d3d647482dc5bd0578",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "9fae2bebcf8768398905aba0e64a25f2384b4556"
+      "hash": "604dc1eb5ada260a7be546d3d647482dc5bd0578"
     },
     "com.github-glitchenzo.nugetforunity": {
-      "version": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity",
+      "version": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity#acc1c7bc9ea34c33b830e40316fca52553878d29",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "c2af83c9d4f8cdaada9d4a0e94de2f195d8e1d01"
+      "hash": "acc1c7bc9ea34c33b830e40316fca52553878d29"
     },
     "com.tw.acacheeverything": {
-      "version": "https://github.com/AnKoCare/TW-CustomPackage.git?path=Packages/TW.CacheEverything",
+      "version": "https://github.com/thinhwar123/TW-CustomPackage.git?path=Packages/TW.CacheEverything#c3e6b66914625aaed92fc995c9ee37d775d2fa9b",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "299c892874b1a24d2634809398c5333eee6f6737"
+      "hash": "c3e6b66914625aaed92fc995c9ee37d775d2fa9b"
+    },
+    "com.tw.datamodule": {
+      "version": "https://github.com/thinhwar123/TW-CustomPackage.git?path=Packages/TW.DataModule#c3e6b66914625aaed92fc995c9ee37d775d2fa9b",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "c3e6b66914625aaed92fc995c9ee37d775d2fa9b"
     },
     "com.tw.reactive": {
-      "version": "https://github.com/AnKoCare/TW-CustomPackage.git?path=Packages/TW.Reactive",
+      "version": "https://github.com/thinhwar123/TW-CustomPackage.git?path=Packages/TW.Reactive#c3e6b66914625aaed92fc995c9ee37d775d2fa9b",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "299c892874b1a24d2634809398c5333eee6f6737"
+      "hash": "c3e6b66914625aaed92fc995c9ee37d775d2fa9b"
     },
     "com.tw.ugui": {
-      "version": "https://github.com/AnKoCare/TW-CustomPackage.git?path=Packages/TW.UGUI",
+      "version": "https://github.com/thinhwar123/TW-CustomPackage.git?path=Packages/TW.UGUI#c3e6b66914625aaed92fc995c9ee37d775d2fa9b",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "299c892874b1a24d2634809398c5333eee6f6737"
+      "hash": "c3e6b66914625aaed92fc995c9ee37d775d2fa9b"
     },
     "com.tw.utility": {
-      "version": "https://github.com/AnKoCare/TW-CustomPackage.git?path=Packages/TW.Utility",
+      "version": "https://github.com/thinhwar123/TW-CustomPackage.git?path=Packages/TW.Utility#c3e6b66914625aaed92fc995c9ee37d775d2fa9b",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "3.2.1"
       },
-      "hash": "299c892874b1a24d2634809398c5333eee6f6737"
+      "hash": "c3e6b66914625aaed92fc995c9ee37d775d2fa9b"
     },
     "com.unity.2d.animation": {
       "version": "13.0.5",
@@ -357,12 +399,12 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.purchasing": {
-      "version": "5.1.2",
+      "version": "5.4.3",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0",
-        "com.unity.services.core": "1.14.0",
+        "com.unity.services.core": "1.18.0",
         "com.unity.modules.androidjni": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0",
         "com.unity.modules.unitywebrequest": "1.0.0"
