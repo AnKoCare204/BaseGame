@@ -17,7 +17,7 @@ public sealed class TextureRule
 
 /// Quy tắc import texture của FishSort (spec 2026-09-25, mục A1): ASTC cho Android/iOS, Default platform Compressed, không crunch.
 /// - OnPreprocessTexture: áp cho texture mới (chưa có tag trong userData), rồi ghi tag để không đè chỉnh tay về sau.
-/// - Menu Tools/FishSort/Perf/Reapply Texture Import Rules: áp lại cho toàn bộ texture trong phạm vi.
+/// - Menu Tools/Game/Perf/Reapply Texture Import Rules: áp lại cho toàn bộ texture trong phạm vi.
 public sealed class TextureImportRules : AssetPostprocessor
 {
     public const string UserDataTag = "TextureImportRules:v1";
@@ -119,7 +119,7 @@ public sealed class TextureImportRules : AssetPostprocessor
         Apply(importer, rule);
     }
 
-    [MenuItem("Tools/FishSort/Perf/Reapply Texture Import Rules")]
+    [MenuItem("Tools/Game/Perf/Reapply Texture Import Rules")]
     public static void ReapplyAll()
     {
         string[] guids = AssetDatabase.FindAssets("t:Texture2D", Roots);

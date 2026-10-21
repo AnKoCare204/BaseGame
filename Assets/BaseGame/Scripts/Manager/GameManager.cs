@@ -30,21 +30,8 @@ namespace Core
         Lose,
     }
 
-    /// <summary>Gate được gọi từ đâu: quyết định có đợi mạng không và báo lỗi thế nào.</summary>
-    public enum LevelGateContext
-    {
-        /// <summary>Nút Play ở Home: thiếu level thì hiện ComingSoon tại chỗ.</summary>
-        Home,
-
-        /// <summary>Next / Retry / cheat khi đang trong game: thiếu level thì về Home rồi hiện ComingSoon.</summary>
-        InGame,
-
-        /// <summary>Tự vào level lúc mở app: không đợi mạng, không hiện gì, thiếu level thì vào Home.</summary>
-        Boot,
-    }
-
     /// <summary>
-    /// Vòng đời game (khung AntFood/FishHunt): vào level, thắng, kẹt (Play On), thua, về Home.
+    /// Vòng đời game (khung AntFood/FishSort): vào level, thắng, kẹt (Play On), thua, về Home.
     /// Mọi điều hướng UI đi qua UIManager; gameplay gọi WinLevel / LoseLevel.
     /// </summary>
     public class GameManager : DDOLSingleton<GameManager>
@@ -71,13 +58,10 @@ namespace Core
         public int MaxLife => DefaultGlobalConfig.Instance.DefaultLife;
 
         public const string UnstableNetworkMessage = "Unstable network connection. \nPlease try again.";
-        private const string LevelDownloadingMessage = "New levels are downloading, please wait a moment...";
         private const string LevelLoadFailedMessage = "Could not load the level. \nPlease try again.";
 
         /// <summary>Kết quả của lần LoadCurrentLevel gần nhất chạy trong màn loading, để bước sau loading biết mà xử lý.</summary>
         private bool lastLevelLoadSucceeded = true;
-
-        private bool gateBlockShown;
 
         private void Start()
         {
@@ -116,7 +100,7 @@ namespace Core
         /// <summary>false = không nạp được level; khi đó không trừ mạng và số lần retry được trả lại.</summary>
         public async UniTask<bool> LoadCurrentLevel()
         {
-            if (!TutorialManager.Instance.TutData.IsPassFirstTut)
+            if (string.IsNullOrEmpty(UserData.Instance.FirstSessionDay))
             {
                 UserData.Instance.SetFirstSessionDay();
             }
@@ -164,7 +148,7 @@ namespace Core
             Debug.LogError($"[GameManager] Vào level lỗi: {e}");
         }
 
-        /// <summary>Chạy sau khi màn loading đóng. Gate đã chặn phần lớn lỗi; tới đây là file level hỏng.</summary>
+        /// <summary>Chạy sau khi màn loading đóng: báo lỗi nếu lần nạp level vừa rồi thất bại.</summary>
         private UniTask RecoverFromFailedLoadAtHome()
         {
             if (lastLevelLoadSucceeded) return UniTask.CompletedTask;
@@ -196,8 +180,6 @@ namespace Core
                 return false;
             }
 
-            if (!await EnsureUpcomingLevelReadyAsync(LevelGateContext.Home)) return false;
-
             await UIManager.Instance.ShowLoadingWithTask(LoadCurrentLevelFromMenuTask, RecoverFromFailedLoadAtHome);
             return true;
         }
@@ -205,7 +187,6 @@ namespace Core
         /// <summary>Thắng → level kế.</summary>
         public async UniTask TryLoadNextLevel()
         {
-            if (!await EnsureUpcomingLevelReadyAsync(LevelGateContext.InGame)) return;
 
             await UIManager.Instance.ShowLoadingWithTask(LoadCurrentLevelTask, RecoverFromFailedLoadInGame);
         }
@@ -219,72 +200,7 @@ namespace Core
                 return;
             }
 
-            if (!await EnsureUpcomingLevelReadyAsync(LevelGateContext.InGame)) return;
-
             await UIManager.Instance.ShowLoadingWithTask(LoadCurrentLevelTask, RecoverFromFailedLoadInGame);
-        }
-
-        // ================== GATE LEVEL ==================
-        // Level có trong APK (bake) hoặc bản server đã tải về: vào ngay.
-        // Bộ test đang bật và level này có bản test chưa tải: tải trước rồi mới vào, để lần đầu đã chơi đúng bản test.
-        // Level ngoài APK (mới thêm sau bản store): catalog level phải có address và tải xong mới vào;
-        // mọi trường hợp còn lại (catalog chưa nạp, chưa upload, tải lỗi) → ModalComingSoon.
-        // true = được phép vào level. Gọi TRƯỚC ShowLoadingWithTask ở mọi đường vào level.
-        public async UniTask<bool> EnsureUpcomingLevelReadyAsync(LevelGateContext context)
-        {
-            LevelConfig config = LevelGlobalConfig.Instance.GetLevelConfig(Level.Value, UserData.Instance.GetNextRetry(Level.Value));
-            bool silent = context == LevelGateContext.Boot;
-            bool ready = await LevelAddressableProvider.EnsureReadyAsync(config.ToRequest(), !silent,
-                silent ? null : OnLevelGatePhase);
-            if (ready || silent) return ready;
-
-            if (context == LevelGateContext.InGame)
-            {
-                // ComingSoon phải mở SAU khi đã về Home: mở ngay thì ShowScreenMainMenu sẽ đóng nó cùng các modal khác.
-                await UIManager.Instance.ShowLoadingWithTask(BackToMainMenuTask, BackToMainMenuThenComingSoon);
-                return false;
-            }
-
-            await ShowComingSoon();
-            return false;
-        }
-
-        private void OnLevelGatePhase(LevelGatePhase phase)
-        {
-            switch (phase)
-            {
-                case LevelGatePhase.Waiting:
-                    ShowGateBlock();
-                    break;
-                case LevelGatePhase.Downloading:
-                    ActivityNotificationOverlayContext.Events.ShowInfo?.Invoke(LevelDownloadingMessage);
-                    ShowGateBlock();
-                    break;
-                default:
-                    if (!gateBlockShown) break;
-                    gateBlockShown = false;
-                    ActivityNotificationOverlayContext.Events.HideLoadingBlock?.Invoke();
-                    break;
-            }
-        }
-
-        private void ShowGateBlock()
-        {
-            if (gateBlockShown) return;
-            gateBlockShown = true;
-            ActivityNotificationOverlayContext.Events.ShowLoadingBlock?.Invoke();
-        }
-
-        private static async UniTask ShowComingSoon()
-        {
-            ViewOptions options = new ViewOptions(nameof(ModalComingSoon));
-            await ModalContainer.Find(ContainerKey.Modals).PushAsync(options);
-        }
-
-        private async UniTask BackToMainMenuThenComingSoon()
-        {
-            await BackToMainMenuTaskComplete();
-            await ShowComingSoon();
         }
 
         /// <summary>Về Home (Win / Lose / Pause / Leave).</summary>
@@ -295,17 +211,7 @@ namespace Core
         
         private async UniTask BackToMainMenuTaskComplete()
         {
-            // Mỗi lần về Home: so lại catalog level trên CDN (giãn 5 phút), có đổi thì tải nền chunk mới.
-            LevelCatalog.CheckForUpdateAsync().Forget();
-
-            await StarBlazeManager.Instance.TryClaimReward();
-            
             await RewardManager.Instance.TryClaimRewardGamePlay();
-            
-            await TreetopManager.Instance.TryShowWinLevel();
-            await TreetopManager.Instance.TryShowLoseLevel();
-            await UIManager.Instance.AnimModalTreetopCompleted();
-            TreetopManager.Instance.ClearNeedShowUI();
 
             UIMainMenuTab.SetTabLock(this, false);
             
@@ -320,17 +226,14 @@ namespace Core
         private bool winFlowStarted;
 
         /// <summary>
-        /// Bàn báo thắng đã chắc (cá cuối vừa đặt chỗ vào bể, BoardModel.IsWinDecided) trong khi cá / bể còn bay cỡ 1.5 s. Trước đây
-        /// khoảng này HUD vẫn bấm được: Pause → Leave / Retry → Home chạy song song với WinLevel (nhảy level, ModalWin mở sai chỗ),
-        /// booster mở popup mua rồi bị đóng giữa chừng. Khoá ngay: state Win (booster, ô bể khoá, ModalPause không unpause), pause
-        /// input bàn, HUD hết bấm được, đóng modal đang mở (auto thu cá có thể quyết định thắng khi ModalPause đang mở).
-        /// Animation vẫn chạy (flight chỉ nhìn Token); bàn hết bận thì Level.OnBoardCompleted gọi WinLevel như cũ.
+        /// Bàn báo thắng đã chắc trong khi animation cuối còn chạy. Khoá ngay để HUD không bấm được (Pause → Leave / Retry chạy song
+        /// song với WinLevel làm nhảy level, booster mở popup mua rồi bị đóng giữa chừng): state Win, pause input bàn, tắt tương tác
+        /// HUD, đóng modal đang mở. Level gọi WinLevel ngay sau (xem Level.Win).
         /// </summary>
         public void PrepareWin()
         {
             if (IsState(GameState.Win) || IsState(GameState.Lose)) return;
             SetState(GameState.Win);
-            if (TutorialManager.Instance) TutorialManager.Instance.EndLevel();
             LevelManager.Instance.SetPause(true);
             ScreenInGameContext.Events.SetHudInteractable?.Invoke(false);
             UIManager.Instance.CloseAllModal().Forget();
@@ -349,7 +252,6 @@ namespace Core
             await UIManager.Instance.CloseAllModal();
             await UIManager.Instance.CloseAllActivities();
 
-            LevelManager.Instance.CurrentLevel.HideTankSlotAndHolding();
             ActivityContainer activityContainer = ActivityContainer.Find(ContainerKey.Activities);
             ViewOptions activityCompleted = new ViewOptions(nameof(ActivityCompleted));
             await activityContainer.ShowAsync(activityCompleted);
@@ -369,7 +271,7 @@ namespace Core
             LevelManager.Instance.CurrentRetryCount = -1;
             Level.Value += 1;
             
-            FeedMetaEventsOnWin();
+            CheckLevelFirstTry();
             
             await UIManager.Instance.ShowModalWin();
             PlayerResourceManager.Instance.AddResourceValue(ResourceType.Life, 1, ResourcePos.win_level.ToString(), ResourcePos.free.ToString());
@@ -395,7 +297,7 @@ namespace Core
             await showModalTask();
         }
 
-        /// <summary>Kẹt (đầy ô chờ, hết nước đi): mở ModalLose = Play On. Từ chối → ModalConfirmLose → chốt thua.</summary>
+        /// <summary>Kẹt (hết nước đi, hết giờ...): mở ModalLose = Play On. Từ chối → ModalConfirmLose → chốt thua.</summary>
         [Button]
         public async UniTask LoseLevel()
         {
@@ -406,9 +308,7 @@ namespace Core
         /// <summary>Chốt thua (sau khi từ chối Play On): ghi nhận rồi mở ModalConfirmLose (Try again / Home).</summary>
         public async UniTask FailedLevel()
         {
-            if (ShipRaceManager.Instance != null) ShipRaceManager.Instance.OnPlayerLoseLevel();
             LastLevelResult = "lose";
-            await ShowEventOnFailed();
             await UIManager.Instance.CloseAllModal();
             ViewOptions modalConfirmLose = new ViewOptions(nameof(ModalConfirmLose));
             await ModalContainer.Find(ContainerKey.Modals).PushAsync(modalConfirmLose, true);
@@ -452,23 +352,12 @@ namespace Core
             }
         }
         
+        /// <summary>
+        /// Gọi sau khi Remote Config đọc xong (LoadingManager). Chỗ xử lý tiến độ event còn treo của phiên trước (thắng/thua dở khi
+        /// tắt app): so PlayerData.GetLastLevelPlayed() với Level hiện tại. Template chưa có event nên để trống.
+        /// </summary>
         public void OnFirebaseInitialized()
         {
-            int currentLevel = Level.CurrentValue;
-            int lastLevelPlay = PlayerData.Instance.GetLastLevelPlayed();
-            if (lastLevelPlay == 0)
-            {
-            }
-            else if (currentLevel != lastLevelPlay)
-            {
-                StarBlazeManager.Instance.TryAutoClaimReward();
-            }
-            else
-            {
-                StarBlazeManager.Instance.TryAutoResetStreak();
-                TreetopManager.Instance.HandleFailOnLastProgress();
-                ShipRaceManager.Instance.HandleFailOnLastProgress();
-            }
         }
 
         [Button]
@@ -477,14 +366,6 @@ namespace Core
             PlayerResourceManager.Instance.AddResourceValue(ResourceType.InfiniteLife, amount, "", "");
         }
         
-        /// <summary>Cộng tiến trình mọi meta-event khi thắng một bàn — level.</summary>
-        private void FeedMetaEventsOnWin()
-        {
-            StarBlazeManager.Instance.AddProgressAndWinStreak();
-            TreetopManager.Instance.WinLevel();
-            ShipRaceManager.Instance?.AddPoint();
-            CheckLevelFirstTry();
-        }
         public void CheckLevelFirstTry()
         {
             if (PlayerData.Instance.IsFirstTryLevel())
@@ -495,29 +376,6 @@ namespace Core
         }
 
 
-        private async UniTask ShowEventOnFailed()
-        {
-            StarBlazeManager.Instance.ResetWinStreak();
-            TreetopManager.Instance.LoseLevel();
-            ShipRaceManager.Instance.OnPlayerLoseLevel();
-        }
-
-        #region StarBlaze
-
-        public void TrackStarBlazeClaimed(int value)
-        {
-            PlayerData.Instance.StarBlazeClaimed += value;
-            PlayerData.Instance.SaveData();
-        }
-
-        public void TrackSweetMealChampion(int value = 1)
-        {
-            PlayerData.Instance.SweetMealChampion += value;
-            PlayerData.Instance.SaveData();
-            // TrySyncPlayerInfoToServer();
-        }
-
-        #endregion
     }
 }
 

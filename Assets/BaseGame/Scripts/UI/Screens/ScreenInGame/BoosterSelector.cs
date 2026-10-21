@@ -16,7 +16,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// Nút booster trên HUD (port từ FishHunt): bind số lượng reactive, khóa theo level mở khóa, tutorial nhận booster,
+/// Nút booster trên HUD: bind số lượng reactive, khóa theo level mở khóa, tutorial nhận booster,
 /// hết booster thì mở ModalBooster. Loại booster = ResourceType (một enum duy nhất).
 /// </summary>
 public class BoosterSelector : MonoBehaviour
@@ -141,8 +141,7 @@ public class BoosterSelector : MonoBehaviour
     }
 
     /// <summary>
-    /// Tutorial mở khóa: booster bay từ popup về nút, tặng số lượng rồi (nếu bật) ép dùng thử; booster cần cá trong ô chờ (PackedUp) thì
-    /// tự bấm sẵn BoosterInfoData.ForceUsePrefillCount con lên ô chờ trước.
+    /// Tutorial mở khóa: booster bay từ popup về nút, tặng số lượng rồi ép dùng thử.
     /// </summary>
     public async UniTask GetBoosterOnTutorial(Vector3 root)
     {
@@ -182,19 +181,12 @@ public class BoosterSelector : MonoBehaviour
             .Bind(x => StateWrapTF.localScale = x).AddTo(this);
         ActiveBooster();
 
-        if (ForceUseBoosterRemoteConfigData.Instance.IsEnabled)
-        {
-            AddBoosterToForceUseAmount();
-            // PackedUp chỉ dùng được khi ô chờ có cá: tự bấm sẵn ForceUsePrefillCount con (cách nhau như bấm tay) trước khi tay chỉ vào nút,
-            // để lần dùng thử có tác dụng thật thay vì báo "No fish in the holding area!".
-            if (boosterData.ForceUsePrefillCount > 0 && LevelManager.Instance.CurrentLevel != null)
-                await LevelManager.Instance.CurrentLevel.PrefillHoldingAsync(boosterData.ForceUsePrefillCount);
-            // OnClickBooster bỏ qua khi IsPause: mở pause để lần bấm ép dùng thử có tác dụng (overlay focus chặn mọi input khác).
-            // Chuỗi intro của LevelManager chờ trọn luồng này nên không còn ai mở pause hộ như trước.
-            LevelManager.Instance.SetPause(false);
-            await GameManager.Instance.ForceUseBooster(BoosterType);
-            await GameManager.Instance.ForceUseBoosterCompleted();
-        }
+        // Ép dùng thử booster vừa mở khoá: tặng lượt dùng thử, khoanh sáng nút (ActivityFocusButton) và chờ người chơi bấm.
+        AddBoosterToForceUseAmount();
+        // OnClickBooster bỏ qua khi IsPause: mở pause để lần bấm ép dùng thử có tác dụng (overlay focus chặn mọi input khác).
+        LevelManager.Instance.SetPause(false);
+        await GameManager.Instance.ForceUseBooster(BoosterType);
+        await GameManager.Instance.ForceUseBoosterCompleted();
 
         Button.interactable = true;
         LevelManager.Instance.SetPause(false);
@@ -258,7 +250,7 @@ public class BoosterSelector : MonoBehaviour
 
         if (BoosterAmount.Value > 0)
         {
-            BoosterManager.Instance.UseBoosterOrNotify(BoosterType);   // dùng hoặc báo lý do bị chặn (dùng chung với ô bể khóa)
+            BoosterManager.Instance.UseBoosterOrNotify(BoosterType);   // dùng hoặc báo lý do bị chặn
         }
         else
         {

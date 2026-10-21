@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using TW.Utility.DesignPattern;
 
 /// <summary>
-/// Stub analytics gameplay giữ nguyên chữ ký của FishHunt/AntFood. Chỉ log trong Editor; khi gắn Firebase thì bơm nội dung vào từng hàm.
+/// Stub analytics gameplay giữ nguyên chữ ký của AntFood/FishSort. Chỉ log trong Editor; khi gắn Firebase thì bơm nội dung vào từng hàm.
 /// </summary>
 public class IngameFirebaseAnalystic : DDOLSingleton<IngameFirebaseAnalystic>
 {
@@ -20,9 +20,8 @@ public class IngameFirebaseAnalystic : DDOLSingleton<IngameFirebaseAnalystic>
     public static string CurrentGameMode => "Normal";
     public static AnalyticsParameter GameModeParam => new AnalyticsParameter("game_mode", CurrentGameMode);
 
-    /// <summary>Biến thể level đang chơi (0 = bản gốc), xem LevelVariantRule.</summary>
-    private static int CurrentVariant =>
-        LevelManager.Instance != null && LevelManager.Instance.LevelConfig != null ? LevelManager.Instance.LevelConfig.Variant : 0;
+    /// <summary>Biến thể level đang chơi (0 = bản gốc). Template chưa có biến thể; game có level biến thể thì trả số thật.</summary>
+    private static int CurrentVariant => 0;
 
     // Ngữ cảnh cho iap_*: status = kết quả màn chơi gần nhất ("start" khi chưa win/lose lần nào trong session),
     // is_after_inter = đã có inter hiển thị sau kết quả đó hay chưa.
@@ -76,7 +75,7 @@ public class IngameFirebaseAnalystic : DDOLSingleton<IngameFirebaseAnalystic>
             new ("remaining_coins", remaining_coins),
         };
 
-        for (var type = ResourceType.AddSlot; type <= ResourceType.UnlockTank; type++)
+        for (var type = ResourceTypeExtensions.FirstBooster; type <= ResourceTypeExtensions.LastBooster; type++)
         {
             int remaining = PlayerResourceManager.Instance.GetResource(type).Value;
             parameters.Add(new AnalyticsParameter("remaining_booster_" + type.ToString().ToLowerInvariant(), remaining));
@@ -106,7 +105,7 @@ public class IngameFirebaseAnalystic : DDOLSingleton<IngameFirebaseAnalystic>
             new ("remaining_coins", remaining_coins),
         };
 
-        for (var type = ResourceType.AddSlot; type <= ResourceType.UnlockTank; type++)
+        for (var type = ResourceTypeExtensions.FirstBooster; type <= ResourceTypeExtensions.LastBooster; type++)
         {
             int remaining = PlayerResourceManager.Instance.GetResource(type).Value;
             parameters.Add(new AnalyticsParameter("remaining_booster_" + type.ToString().ToLowerInvariant(), remaining));
@@ -146,7 +145,7 @@ public class IngameFirebaseAnalystic : DDOLSingleton<IngameFirebaseAnalystic>
             new ("remaining_coins", remaining_coins),
         };
 
-        for (var type = ResourceType.AddSlot; type <= ResourceType.UnlockTank; type++)
+        for (var type = ResourceTypeExtensions.FirstBooster; type <= ResourceTypeExtensions.LastBooster; type++)
         {
             int remaining = PlayerResourceManager.Instance.GetResource(type).Value;
             parameters.Add(new AnalyticsParameter("remaining_booster_" + type.ToString().ToLowerInvariant(), remaining));

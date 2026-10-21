@@ -145,7 +145,7 @@ public class PlayerResourceManager : Singleton<PlayerResourceManager>
                 // BattlePassData.Instance.BonusLife += value;
                 ResourceData.Instance.SaveData();
                 break;
-            case ResourceType.AddSlot or ResourceType.AutoFill or ResourceType.Shuffle or ResourceType.PackedUp or ResourceType.Swap or ResourceType.UnlockTank:
+            case ResourceType.Hint or ResourceType.Undo or ResourceType.Shuffle:
                 ResourceData.Instance.AddResourceValue(type, value);
                 IngameFirebaseAnalystic.Instance.TrackBoosterEarn(placement,type.ToString(),value,claimType);
                 UserPropertyManager.SetUserPropertyFirebase?.Invoke("booster_earn_count", ResourceData.Instance.totalBoostersEarned.ToString());
@@ -171,7 +171,7 @@ public class PlayerResourceManager : Singleton<PlayerResourceManager>
                 IngameFirebaseAnalystic.Instance.TrackCoinSpend(placement, spendType, value);
                 UserPropertyManager.SetUserPropertyFirebase?.Invoke("value_coins_spend_count", ResourceData.Instance.totalCoinsSpent.ToString());
                 break;
-            case ResourceType.AddSlot or ResourceType.AutoFill or ResourceType.Shuffle or ResourceType.PackedUp or ResourceType.Swap or ResourceType.UnlockTank:
+            case ResourceType.Hint or ResourceType.Undo or ResourceType.Shuffle:
                 ResourceData.Instance.SubResourceValue(type, value);
                 TrackLevelResourceSpend(isBooster: true, value);
                 IngameFirebaseAnalystic.Instance.TrackBoosterSpeend(placement,type.ToString(),value);

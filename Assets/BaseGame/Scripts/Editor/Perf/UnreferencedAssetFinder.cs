@@ -18,7 +18,7 @@ public static class UnreferencedAssetFinder
 
     private static readonly string[] SkipFragments = { "/Editor/", "/Demo/", "/Test/", "/Plugins/", "/Feel/", "Sprite Shaders Ultimate/Demo" };
 
-    [MenuItem("Tools/FishSort/Perf/Find Unreferenced Assets")]
+    [MenuItem("Tools/Game/Perf/Find Unreferenced Assets")]
     public static void Run()
     {
         var referenced = new Dictionary<string, int>();

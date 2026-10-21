@@ -55,12 +55,9 @@ public class UIItemInfo : MonoBehaviour
             case ResourceType.NoAds:
                 valueStr = "";
                 break;
-            case ResourceType.AddSlot:
-            case ResourceType.AutoFill:
+            case ResourceType.Hint:
+            case ResourceType.Undo:
             case ResourceType.Shuffle:
-            case ResourceType.PackedUp:
-            case ResourceType.Swap:
-            case ResourceType.UnlockTank:
                 valueStr = $"x{gameResource.Value.Value}";
                 break;
             case ResourceType.Badge:

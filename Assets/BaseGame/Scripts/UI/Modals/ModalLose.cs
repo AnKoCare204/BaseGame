@@ -98,7 +98,6 @@ namespace Core.UI.Modals
         {
             [field: SerializeField] public UIModel Model { get; private set; } = new();
             [field: SerializeField] public UIView View { get; set; } = new();
-            [field: SerializeField] public LoseEventPriority LoseEventPriority { get; private set; }
             private bool ShowWarning { get; set; }
 
             public async UniTask Initialize(Memory<object> args)
@@ -141,8 +140,8 @@ namespace Core.UI.Modals
             {
                 await ModalContainer.Find(ContainerKey.Modals).PopAsync(true);
                 await LevelManager.Instance.CurrentLevel.Revive();
-                IngameFirebaseAnalystic.Instance.TrackBoosterEarn(ResourcePos.revive.ToString(),"AddSlot_revive",1);
-                IngameFirebaseAnalystic.Instance.TrackBoosterSpeend(ResourcePos.revive.ToString(),"AddSlot_revive");
+                IngameFirebaseAnalystic.Instance.TrackBoosterEarn(ResourcePos.revive.ToString(),"play_on_revive",1);
+                IngameFirebaseAnalystic.Instance.TrackBoosterSpeend(ResourcePos.revive.ToString(),"play_on_revive");
                 GameManager.Instance.SetState(GameState.InGame);
                 LevelManager.Instance.SetPause(false);
                 ScreenInGameContext.Events.ShowBotPanel?.Invoke();
@@ -154,7 +153,7 @@ namespace Core.UI.Modals
                 if (!ShowWarning)
                 {
                     ShowWarning = true;
-                    bool canShowWarning = LoseEventPriority.IsAnyEventCanWarning();
+                    bool canShowWarning = LoseWarning.ShouldWarn();
                     if (canShowWarning)
                     {
                         View.GONormalDes.SetActive(false);

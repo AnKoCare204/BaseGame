@@ -13,7 +13,7 @@ using UnityEngine.UI;
 
 namespace Core.UI.Activities
 {
-    /// <summary>Overlay hướng dẫn khi booster cần chọn bể (Magnet, Swap): mô tả + nút hủy.</summary>
+    /// <summary>Overlay hướng dẫn khi booster cần chọn mục tiêu trên bàn: mô tả + nút đóng.</summary>
     public class ActivityTipBooster : Activity
     {
         [field: SerializeField] public ActivityTipBoosterContext.UIPresenter UIPresenter { get; private set; }
@@ -88,15 +88,7 @@ namespace Core.UI.Activities
             private void UpdatePosTip(ResourceType type)
             {
                 if (TipTransform == null) return;
-                switch (type)
-                {
-                    case ResourceType.AutoFill:
-                        if (PosTipLaser != null) TipTransform.position = PosTipLaser.position;
-                        break;
-                    case ResourceType.Swap:
-                        if (PosTipPropeller != null) TipTransform.position = PosTipPropeller.position;
-                        break;
-                }
+                // Booster cần chọn mục tiêu có thể đặt bảng gợi ý ở vị trí riêng (PosTipLaser / PosTipPropeller) theo loại.
             }
         }
 
@@ -125,7 +117,7 @@ namespace Core.UI.Activities
 
             private void OnButtonCloseClick()
             {
-                BoosterManager.Instance.CancelBooster(boosterType);
+                ActivityContainer.Find(ContainerKey.Activities).HideAsync(nameof(ActivityTipBooster)).Forget();
             }
 
             private void OnPlayerUseBoosterCompleted(ResourceType type)

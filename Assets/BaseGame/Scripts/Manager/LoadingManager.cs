@@ -53,17 +53,13 @@ public class LoadingManager : DDOLSingleton<LoadingManager>
 
         await UniTask.WaitUntil(ManagersReady, cancellationToken: this.GetCancellationTokenOnDestroy());
 
-        // Catalog level trên CDN nạp nền (không chặn loading): xong thì tải chunk quanh người chơi rồi sync mọi chunk đã đổi.
-        // Level bake trong APK chơi được ngay dù chưa nạp catalog.
-        LevelAddressableProvider.StartBootSync(UserData.Instance.CurrentLevel);
-
         SetDescription("Warming up...");
         UpdateProgress(0.4f);
         await WarmUpShadersAsync();
 
         SetDescription("Loading UI...");
         UpdateProgress(0.6f);
-        await UIManager.Instance.PreloadCoreViewsAsync(!InGameDataManager.Instance.InGameData.TutData.IsPassFirstTut);
+        await UIManager.Instance.PreloadCoreViewsAsync();
         UpdateProgress(0.9f);
         // Lỗi ở bước vào game không được chặn màn loading đầu, cũng không được chặn bước đọc Remote Config.
         if (!await LevelLoadGuard.RunAsync(DoneFirstLoading, LogFirstLoadingError))
@@ -122,11 +118,7 @@ public class LoadingManager : DDOLSingleton<LoadingManager>
         await UniTask.WaitUntil(() => FirebaseRemoteConfigManager.IsReady, cancellationToken: this.GetCancellationTokenOnDestroy());
         DefaultGlobalConfig.Instance.ReloadRemoteConfig();
         RemoteConfigManager.Instance.FetchRemote();
-        LevelGlobalConfig.Instance.ReloadRemoteConfig();
-        LevelAddressableProvider.RequestSyncAllChunks();
-        await StarBlazeManager.Instance.Initialize();
-        await TreetopManager.Instance.Initialized();
-        await ShipRaceManager.Instance.Initialize();
+        // Event LiveOps (nếu game có) khởi tạo ở đây, SAU FetchRemote: cấu hình event nằm trong Remote Config.
         AdsController.Instance.GetRemoteConfig();
         GameManager.Instance.OnFirebaseInitialized();
     }
@@ -190,9 +182,8 @@ public class LoadingManager : DDOLSingleton<LoadingManager>
 
     private async UniTask DoneFirstLoading()
     {
-        // Level tự vào lúc mở app phải có sẵn trên máy; không có thì rơi về Home thay vì vào level trống.
-        if (GameManager.Instance.TryLoadLevelPlaying() &&
-            await GameManager.Instance.EnsureUpcomingLevelReadyAsync(LevelGateContext.Boot))
+        // Người mới (level <= DefaultLevelPlaying) vào thẳng bàn, không qua Home.
+        if (GameManager.Instance.TryLoadLevelPlaying())
         {
             if (!PlayerResourceManager.Instance.HasLife && !PlayerResourceManager.Instance.HasInfiniteLife)
             {
@@ -207,6 +198,5 @@ public class LoadingManager : DDOLSingleton<LoadingManager>
         }
 
         await UIManager.Instance.ShowScreenMainMenu();
-        LevelCatalog.CheckForUpdateAsync().Forget();
     }
 }

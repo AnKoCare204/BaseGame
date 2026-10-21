@@ -32,12 +32,9 @@ public enum ItemGroupType
     MoneyGroup4 = 13,
     
     NoAds = 20,
-    AddSlot = 51,
-    AutoFill = 52,
+    Hint = 51,
+    Undo = 52,
     Shuffle = 53,
-    PackedUp = 54,
-    Swap = 55,
-    UnlockTank = 56,
     
     InfiniteLife = 102,
     BonusLife = 103,

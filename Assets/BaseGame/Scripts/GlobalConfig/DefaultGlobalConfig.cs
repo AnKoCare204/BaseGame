@@ -1,7 +1,7 @@
 using Sirenix.Utilities;
 using UnityEngine;
 
-/// <summary>Tham số toàn cục (khung AntFood). Giá trị mặc định theo Docs/GDD/04_Config.tsv và 09_Economy.tsv.</summary>
+/// <summary>Tham số toàn cục của game: mạng, giá Play On, mốc level hiện rate / vào thẳng bàn...</summary>
 [CreateAssetMenu(fileName = "DefaultGlobalConfig", menuName = "GlobalConfigs/DefaultGlobalConfig")]
 [GlobalConfig("Assets/Resources/GlobalConfig/")]
 public class DefaultGlobalConfig : GlobalConfig<DefaultGlobalConfig>
@@ -23,8 +23,6 @@ public class DefaultGlobalConfig : GlobalConfig<DefaultGlobalConfig>
     [field: SerializeField] public int WinGameReward { get; set; } = 20;
 
     [field: SerializeField, Tooltip("Giá Play On theo lần trong level")] public int[] ReviveCoins { get; set; } = { 900, 1900, 2300 };
-    [field: SerializeField, Tooltip("Số ô chờ cộng thêm mỗi lần Play On")] public int ReviveSlot { get; set; } = 2;
-    [field: SerializeField, Tooltip("Trần ô chờ sau khi cộng")] public int MaxHoldingSlots { get; set; } = 7;
     [field: SerializeField] public float TimeDelayLose { get; set; } = 0.5f;
 
     [field: SerializeField] public int[] NumberShowNoAds { get; set; } = { 3 };

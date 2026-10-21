@@ -23,7 +23,7 @@ public static class PerfTestMenu
         }
     }
 
-    [MenuItem("Tools/FishSort/Run Perf Tests")]
+    [MenuItem("Tools/Game/Run Perf Tests")]
     public static void Run()
     {
         TestRunnerApi api = ScriptableObject.CreateInstance<TestRunnerApi>();

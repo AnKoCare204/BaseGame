@@ -143,10 +143,6 @@ namespace Core.UI.Modals
                 }
 
                 View.MainView.interactable = false;
-                // ADsManager.ShowRewarded(ResourcePos.ingame, Model.BoosterSelector.BoosterType.ToSpendPos(),
-                //     () => OnAdsButtonBuyBoosterSuccess().Forget(), OnAdsButtonBuyBoosterFail);
-
-                // ADSAction.OnAdsRewardEvent?.Invoke(ResourcePos.ingame, ResourcePos.booster_addslot + (int)(Model.BoosterSelector.BoosterType - ResourceType.AddSlot), () => OnAdsButtonBuyBoosterSuccess().Forget(), OnAdsButtonBuyBoosterFail);
 
                 AnalyticsParameter[] parameters = new AnalyticsParameter[] {
                     new AnalyticsParameter("level", GameManager.Instance.Level.Value.ToString()),

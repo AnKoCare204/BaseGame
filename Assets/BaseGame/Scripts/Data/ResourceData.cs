@@ -46,12 +46,9 @@ namespace CoreData
             {
                 new GameResource(ResourceType.Life, 5),
                 new GameResource(ResourceType.Money, 1000),
-                new GameResource(ResourceType.AddSlot, 0),
-                new GameResource(ResourceType.AutoFill, 0),
+                new GameResource(ResourceType.Hint, 0),
+                new GameResource(ResourceType.Undo, 0),
                 new GameResource(ResourceType.Shuffle, 0),
-                new GameResource(ResourceType.PackedUp, 0),
-                new GameResource(ResourceType.Swap, 0),
-                new GameResource(ResourceType.UnlockTank, 0),
             };
             totalBoostersEarned = 0;
             totalBoostersSpent = 0;

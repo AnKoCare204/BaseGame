@@ -107,7 +107,7 @@ public class UIMainMenuTab : ACachedMonoBehaviour, IScreenLifecycleEventSimple
     private void HandleSwipe()
     {
         if (IsTabLocked) return;
-        // FishSort dùng Input System package: đọc con trỏ qua Pointer.current (chuột hoặc chạm).
+        // Project dùng Input System package: đọc con trỏ qua Pointer.current (chuột hoặc chạm).
         UnityEngine.InputSystem.Pointer pointer = UnityEngine.InputSystem.Pointer.current;
         if (pointer == null) return;
         Vector2 position = pointer.position.ReadValue();

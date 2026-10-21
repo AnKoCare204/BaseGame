@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using Core.GamePlay;
 using Core.Manager;
-using Core.Tutorial;
 using Core.UI.Activities;
 using Cysharp.Threading.Tasks;
 using TW.UGUI.MVPPattern;
@@ -25,7 +24,14 @@ using Spine.Unity;
 
 namespace Core.UI.Screens
 {
-    /// <summary>HUD trong bàn (prefab FishHunt): level, tiến độ x/Total, nút pause, thanh booster, thông báo, cảnh báo độ khó.</summary>
+    /// <summary>Phần HUD bật / tắt riêng được (tutorial ẩn bớt HUD ở level đầu).</summary>
+    public enum HudPart
+    {
+        Progress,
+        BoosterBar,
+    }
+
+    /// <summary>HUD trong bàn: level, tiến độ x/Total, nút pause, thanh booster, thông báo, cảnh báo độ khó.</summary>
     public class ScreenInGame : Screen
     {
         [field: SerializeField] public ScreenInGameContext.UIPresenter UIPresenter { get; private set; }
@@ -69,10 +75,6 @@ namespace Core.UI.Screens
             public static Action<HudPart, bool, bool> SetHudPart { get; set; }
             /// <summary>RectTransform của phần HUD (khung chữ tutorial trỏ vào). null nếu chưa nối.</summary>
             public static Func<HudPart, RectTransform> GetHudPartRect { get; set; }
-            /// <summary>FTUE: làm tối / trả HUD khi tutorial làm tối thế giới.</summary>
-            public static Action<bool> SetHudDim { get; set; }
-            /// <summary>FTUE: phần HUD đang làm sáng (giữ alpha 1 khi HUD tối).</summary>
-            public static Action<HudPart, bool> SetHudPartLit { get; set; }
         }
 
         [HideLabel]
@@ -128,12 +130,10 @@ namespace Core.UI.Screens
             [field: SerializeField] public MMF_Player AnimShowTopPanel { get; private set; }
             [field: SerializeField] public MMF_Player AnimHideTopPanel { get; private set; }
             [field: SerializeField] public GameObject BlockObject { get; private set; }
-            [field: SerializeField, Tooltip("Khung bộ đếm bể (TopPanel/.../FishCountBorer); FTUE ẩn ở L1 tới bước 2 của tutorial")]
+            [field: SerializeField, Tooltip("Khung bộ đếm tiến độ (TopPanel/...); tutorial có thể ẩn ở level đầu")]
             public GameObject ProgressRoot { get; private set; }
             [field: SerializeField, Tooltip("Thanh booster (ButtonGroup/BoosterBar); FTUE ẩn ở L1-L2 và L3 tới lúc mở Add Slot")]
             public GameObject BoosterBarRoot { get; private set; }
-            [field: SerializeField, Range(0f, 1f), Tooltip("FTUE: alpha của cả HUD khi tutorial làm tối (phần đang làm sáng giữ 1)")]
-            public float HudDimAlpha { get; private set; } = 0.3f;
             private bool IsActiveWarning { get; set; }
             private MotionHandle blackGroundMotionHandle;
 
@@ -154,7 +154,7 @@ namespace Core.UI.Screens
             public UniTask Initialize(Memory<object> args)
             {
                 if (BackGroundBlackImage != null) BackGroundBlackImage.gameObject.SetActive(false);
-                // FishSort không có tăng tốc / hút bụi: ẩn phần thừa của HUD FishHunt.
+                // Template không có tăng tốc / hút bụi: ẩn phần thừa của HUD.
                 if (BtnSpeedUp != null) BtnSpeedUp.gameObject.SetActive(false);
                 if (BtnBuySpeedUp != null) BtnBuySpeedUp.gameObject.SetActive(false);
                 UpdateProgress(0, 0);
@@ -332,14 +332,6 @@ namespace Core.UI.Screens
                 _ => null
             };
 
-            public void SetHudDim(bool on) => HudDim.SetDim(MainView, on, HudDimAlpha);
-
-            public void SetHudPartLit(HudPart part, bool lit)
-            {
-                RectTransform rect = GetHudPartRect(part);
-                HudDim.SetLit(rect != null ? rect.gameObject : null, lit);
-            }
-
             public void OnLevelChanged(int level)
             {
                 if (TextLevel == null) return;
@@ -386,8 +378,6 @@ namespace Core.UI.Screens
                 Events.SetHudInteractable = View.SetInteractable;
                 Events.SetHudPart = View.SetHudPart;
                 Events.GetHudPartRect = View.GetHudPartRect;
-                Events.SetHudDim = View.SetHudDim;
-                Events.SetHudPartLit = View.SetHudPartLit;
 
                 GameManager.Instance.IsPauseGame.Subscribe(CheckPauseGame).AddTo(View.MainView);
 
@@ -419,9 +409,6 @@ namespace Core.UI.Screens
                 Events.SetHudInteractable = null;
                 Events.SetHudPart = null;
                 Events.GetHudPartRect = null;
-                Events.SetHudDim = null;
-                Events.SetHudPartLit = null;
-                View.SetHudDim(false);
 
                 GameGlobalEvent.OnPlayerSelectBoosterTarget -= OnPlayerSelectBoosterTarget;
                 GameGlobalEvent.OnCancelBoosterTarget -= OnCancelBoosterTarget;
@@ -479,8 +466,8 @@ namespace Core.UI.Screens
                 if (View.NoAdsSwitchPosition != null) View.NoAdsSwitchPosition.Apply(hasBanner);
                 View.ShowInteractPanel();
                 InitBoosterSelectors();
-                Level level = LevelManager.Instance != null ? LevelManager.Instance.CurrentLevel : null;
-                View.UpdateProgress(0, level != null && level.Data != null ? level.Data.TotalFish : 0);
+                // Level phát GameGlobalEvent.OnProgressChanged khi dựng bàn; ở đây chỉ xoá số của ván trước.
+                View.UpdateProgress(0, 0);
                 if (hasBanner) EventAdsManager.ShowBannerAds?.Invoke(true);
             }
 

@@ -44,7 +44,7 @@ public static class UiAtlasBuilder
         ("UI_Popup", new[] { "UI/WinLose", "UI/PopupGames", "UI/Effect" }, TextureImporterFormat.ASTC_6x6),
     };
 
-    [MenuItem("Tools/FishSort/Perf/Rebuild UI Atlases")]
+    [MenuItem("Tools/Game/Perf/Rebuild UI Atlases")]
     public static void Rebuild()
     {
         MoveOutOfAtlases();

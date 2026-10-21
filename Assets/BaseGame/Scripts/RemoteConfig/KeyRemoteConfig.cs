@@ -1,22 +1,13 @@
+/// <summary>Key Remote Config trên Firebase (tên enum = tên key). Thêm key mới ở cuối, tạo key + JSON mẫu trên Firebase của game.</summary>
 public enum KeyRemoteConfig
 {
     revive_config,
     ingame_booster_config,
     endgame_reward_config,
     start_gold_config,
-    force_use_booster_config,
     inter_ads_capping_config,
-    starblaze_config,
-    skyjump_config,
-    treetop_mission_config,
-    event_offer,
-    event_offer_test,
     noads_popup_config,
-    level_ingame_config,
-    test_level_ingame_config,
     inter_level_config,
     inter_lose_config,
     ingame_banner_config,
-    idle_hint_config,
-    shiprace_config
 }

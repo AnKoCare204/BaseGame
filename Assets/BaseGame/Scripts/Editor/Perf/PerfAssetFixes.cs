@@ -9,7 +9,7 @@ public static class PerfAssetFixes
         "Assets/BaseGame/Graphics/Materials/Pattern/Rotate.mat", "Assets/BaseGame/Graphics/Materials/Pattern/PatternScoll.mat", "Assets/BaseGame/Graphics/Sprites/MatTilingSprite.mat",
     };
 
-    [MenuItem("Tools/FishSort/Perf/Clear Pattern Material Layers")]
+    [MenuItem("Tools/Game/Perf/Clear Pattern Material Layers")]
     public static void ClearPatternMaterialLayers()
     {
         foreach (string path in PatternMaterials)
@@ -26,7 +26,7 @@ public static class PerfAssetFixes
         }
     }
 
-    [MenuItem("Tools/FishSort/Perf/Apply Audio Import Settings")]
+    [MenuItem("Tools/Game/Perf/Apply Audio Import Settings")]
     public static void ApplyAudioImportSettings()
     {
         int music = 0, sfx = 0;
@@ -60,7 +60,7 @@ public static class PerfAssetFixes
         Debug.Log($"[PerfAssetFixes] audio: {music} nhạc streaming, {sfx} sfx preload");
     }
 
-    [MenuItem("Tools/FishSort/Perf/Remove Null SetActive Feedbacks (ActivityFirstTut)")]
+    [MenuItem("Tools/Game/Perf/Remove Null SetActive Feedbacks (ActivityFirstTut)")]
     public static void RemoveNullSetActiveFeedbacks()
     {
         string path = "Assets/BaseGame/Addressable/UI/ActivityFirstTut.prefab";
@@ -84,13 +84,13 @@ public static class PerfAssetFixes
         return true;
     }
 
-    [MenuItem("Tools/FishSort/Perf/Shader Variants: Clear Tracked")]
+    [MenuItem("Tools/Game/Perf/Shader Variants: Clear Tracked")]
     public static void ClearTrackedVariants()
     {
         if (CallShaderUtil("ClearCurrentShaderVariantCollection")) Debug.Log("[PerfAssetFixes] đã xoá danh sách variant đang theo dõi");
     }
 
-    [MenuItem("Tools/FishSort/Perf/Shader Variants: Save Tracked + Assign")]
+    [MenuItem("Tools/Game/Perf/Shader Variants: Save Tracked + Assign")]
     public static void SaveTrackedVariants()
     {
         if (!CallShaderUtil("SaveCurrentShaderVariantCollection", VariantsPath)) return;
@@ -115,7 +115,7 @@ public static class PerfAssetFixes
         Debug.Log("[PerfAssetFixes] đã gán vào GraphicsSettings.m_PreloadedShaders và LoadingManager.ShaderVariants");
     }
 
-    [MenuItem("Tools/FishSort/Perf/Repoint DesignConfig Pearl")]
+    [MenuItem("Tools/Game/Perf/Repoint DesignConfig Pearl")]
     public static void RepointDesignConfigPearl()
     {
         Object config = AssetDatabase.LoadMainAssetAtPath("Assets/Resources/GlobalConfig/DesignConfig.asset");

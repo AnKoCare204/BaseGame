@@ -102,13 +102,9 @@ public class BoosterInfoData
     public string Name;
     public string Description;
     public int LevelUnlock;
-    [Tooltip("Số booster tặng khi mở khóa (GDD 08_Boosters: Hint 3, Magnet 2, Shuffle 2, ExtraSlot 1, Swap 2; Undo đã bỏ)")]
+    [Tooltip("Số booster tặng khi mở khóa")]
     public int UnlockGiftAmount = 1;
-    [Tooltip("Ép dùng thử khi mở khóa: số cá tự bấm lên ô chờ trước khi ép bấm (PackedUp cần cá trong ô chờ mới có tác dụng); 0 = không bấm trước. Luôn chừa ít nhất một ô chờ trống.")]
-    public int ForceUsePrefillCount;
     public string MessageNoUse;
-    [Tooltip("Thông báo riêng khi không dùng được vì ô chờ đầy (Shuffle); trống = dùng MessageNoUse")]
-    public string MessageHoldingFull;
     [PreviewField] public Sprite Sprite;
     public int Price;
     public int PriceX3;

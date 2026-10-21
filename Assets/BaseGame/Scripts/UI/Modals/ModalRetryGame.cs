@@ -78,7 +78,6 @@ namespace Core.UI.Modals
         {
             [field: SerializeField] public UIModel Model { get; private set; } = new();
             [field: SerializeField] public UIView View { get; set; } = new();
-            [field: SerializeField] public LoseEventPriority LoseEventPriority { get; private set; }
             
             private bool ShowWarning { get; set; }
 
@@ -96,7 +95,7 @@ namespace Core.UI.Modals
                 if (!ShowWarning)
                 {
                     ShowWarning = true;
-                    bool canShowWarning = LoseEventPriority.IsAnyEventCanWarning();
+                    bool canShowWarning = LoseWarning.ShouldWarn();
                     if (canShowWarning)
                     {
                         View.GONormalDes.SetActive(false);

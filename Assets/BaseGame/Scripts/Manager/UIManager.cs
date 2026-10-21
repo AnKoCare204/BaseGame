@@ -16,7 +16,7 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
 /// <summary>
-/// Facade điều hướng UI (port từ AntFood/FishHunt). Mọi screen/modal/activity chính đi qua đây.
+/// Facade điều hướng UI (khung AntFood/FishSort). Mọi screen/modal/activity chính đi qua đây.
 /// Quy ước: address Addressables = tên class (nameof).
 /// </summary>
 public class UIManager : Singleton<UIManager>
@@ -29,10 +29,9 @@ public class UIManager : Singleton<UIManager>
     /// Nạp sẵn prefab các màn dùng ngay sau boot (address = tên class) để lần Push của TW.UGUI không phải đọc bundle giữa gameplay.
     /// Giữ handle suốt phiên chơi; lỗi key chỉ log, boot vẫn tiếp tục. Không bật pooling (instantiate vẫn như cũ).
     /// </summary>
-    public async UniTask PreloadCoreViewsAsync(bool includeFirstTut)
+    public async UniTask PreloadCoreViewsAsync()
     {
         List<string> keys = new List<string> { nameof(ScreenInGame), nameof(ActivityLoading), nameof(ModalWin), nameof(ModalLose) };
-        if (includeFirstTut) keys.Add(nameof(ActivityFirstTut));
         foreach (string key in keys)
         {
             try
@@ -298,12 +297,6 @@ public class UIManager : Singleton<UIManager>
         }
     }
     
-    // ===== Event: StarBlaze =====
-    public async UniTask ShowModalStreakInfo()
-    {
-        ViewOptions viewOptions = new ViewOptions(nameof(ModalStarBlazeInfo));
-        await ModalContainer.Find(ContainerKey.Modals).PushAsync(viewOptions);
-    }
     
     // ===== Notification overlay =====
     [Button]
@@ -324,23 +317,6 @@ public class UIManager : Singleton<UIManager>
         ActivityNotificationOverlayContext.Events.ShowSuccess?.Invoke(message);
     }
 
-    public async UniTask AnimModalTreetopCompleted()
-    {
-        ModalContainer container = ModalContainer.Find(ContainerKey.Modals);
-        await UniTask.WaitUntil(IsTreetopClosed, cancellationToken: this.GetCancellationTokenOnDestroy());
-        return;
-
-        bool IsTreetopClosed()
-        {
-            if (container.IsInTransition) return false;
-            for (int i = 0; i < container.Modals.Count; i++)
-            {
-                if (container.Modals[i].View is ModalTreetop) return false;
-            }
-
-            return true;
-        }
-    }
 
     [Button]
     public void ShowWarning(string message)

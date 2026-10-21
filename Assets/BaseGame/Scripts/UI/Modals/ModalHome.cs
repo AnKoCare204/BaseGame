@@ -159,25 +159,7 @@ namespace Core.UI.Modals
 
             private async UniTask OnClickButtonPlay()
             {
-                int level = GameManager.Instance.Level.Value;
-                LevelGlobalConfig levelConfig = LevelGlobalConfig.Instance;
-                LevelPlayDecision decision = LevelMaxRule.DecidePlay(level, levelConfig.MaxPlayableLevel,
-                    levelConfig.LevelMaxInConfig, RemoteConfigManager.Instance.IsRemoteConfigLoaded);
-
-                // Hết kho level thật thì dừng ở Home, không trừ mạng và không vào màn chơi.
-                if (decision == LevelPlayDecision.UnstableNetwork)
-                {
-                    ActivityNotificationOverlayContext.Events.ShowError?.Invoke(GameManager.UnstableNetworkMessage);
-                    return;
-                }
-
-                if (decision == LevelPlayDecision.ComingSoon)
-                {
-                    ViewOptions comingSoonOptions = new ViewOptions(nameof(ModalComingSoon));
-                    await ModalContainer.Find(ContainerKey.Modals).PushAsync(comingSoonOptions);
-                    return;
-                }
-
+                // Game có giới hạn số level (hết level thật) thì kiểm ở đây và mở ModalComingSoon thay vì vào bàn.
                 if (InGameDataManager.Instance.InGameData.ResourceData.IsEnoughResourceValue(ResourceType.Life, 1) || PlayerResourceManager.Instance.HasInfiniteLife)
                 {
                     View.ButtonPlay.interactable = false;

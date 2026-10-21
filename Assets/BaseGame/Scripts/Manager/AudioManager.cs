@@ -29,39 +29,21 @@ public enum AudioKey
     SfxRewardClaim = 32,
     SfxCoinPop = 38,     // chùm xu bung ra lúc bắt đầu hiệu ứng xu bay
 
-    // ===== FishSort gameplay =====
-    SfxFishTap = 50,
-    SfxTankComplete = 53,
-    SfxBubblePop = 54,
-    SfxBubbleSpawn = 55,
-    SfxTankDrop = 56,
-    SfxHoldingWarning = 57,
-    SfxHoldingFull = 58,
-    SfxBoardClear = 59,
-    SfxTapDenied = 60,
-    SfxFishLand = 61,   // cá đáp xuống: dùng chung cho ô chờ và bể
-    SfxTankLeave = 62,
+    // ===== Gameplay chung (game mới thêm key gameplay riêng ở dải 50..69) =====
+    SfxTapDenied = 60,   // bấm bị từ chối / booster không dùng được
 
-    // ===== FishSort UI =====
+    // ===== UI popup =====
     SfxPopupOpen = 70,
     SfxPopupClose = 71,
     SfxToggle = 73,
 
-    // ===== FishSort tutorial =====
+    // ===== Booster =====
+    SfxBoosterUse = 80,
+    SfxBoosterUnlock = 87,
+
+    // ===== Tutorial =====
     SfxTutorialStep = 94,
     SfxTutorialDone = 95,
-
-    // ===== FishSort booster (code đã gọi, prefab chưa gán clip) =====
-    SfxBoosterAddSlot = 80,
-    SfxBoosterShuffle = 81,
-    SfxBoosterAutoFill = 82,
-    SfxBoosterPackedUp = 83,
-    SfxBagSuck = 84,
-    SfxBoosterUnlockTank = 85,
-    SfxBoosterSwap = 86,
-    SfxBoosterUnlock = 87,
-    /// <summary>Bóng khói (isIce) chạm đỉnh đủ lâu, lớp khói tan ra (BoardManager.TickIce).</summary>
-    SfxSmokeClear = 88,
 }
 
 [Serializable]
@@ -93,7 +75,6 @@ public class AudioManager : Singleton<AudioManager>
 
     // Mỗi cụm sfx có enum + mảng config riêng (AudioSfxKeys.cs), không dùng chung AudioKey.
     [field: Title("Event Sfx")]
-    [field: SerializeField] public SfxConfig<StarBlazeSfx>[] StarBlazeSfxArray { get; private set; }
     
     [field: SerializeField] public AudioSource SoundFxAudioSource { get; private set; }
     [field: SerializeField] public AudioSource MusicAudioSource { get; private set; }
@@ -138,8 +119,6 @@ public class AudioManager : Singleton<AudioManager>
         if (audioConfig == null) return;
         PlaySoundDelay(audioConfig.AudioClip.GetRandomElement(), delay).Forget();
     }
-    
-    public void PlaySoundFx(StarBlazeSfx key, float delay = 0) => PlayBankSfx(StarBlazeSfxArray, key, delay);
     private void PlayBankSfx<TKey>(SfxConfig<TKey>[] bank, TKey key, float delay) where TKey : struct, Enum
     {
         SfxConfig<TKey> config = FindSfxConfig(bank, key);

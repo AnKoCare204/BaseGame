@@ -35,9 +35,8 @@ public class UIRewardItem : MonoBehaviour
             case ResourceType.NoAds:
                 valueStr = "";
                 break;
-            case ResourceType.AddSlot:
-            case ResourceType.AutoFill:
-            case ResourceType.PackedUp:
+            case ResourceType.Hint:
+            case ResourceType.Undo:
             case ResourceType.Shuffle:
                 valueStr = $"x{gameResource.Value.Value}";
                 break;

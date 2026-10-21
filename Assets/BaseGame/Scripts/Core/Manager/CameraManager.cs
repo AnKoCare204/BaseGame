@@ -4,37 +4,32 @@ using UnityEngine;
 namespace Core.Manager
 {
     /// <summary>
-    /// Raycast từ vị trí chạm tới cá / bể và đổi vị trí world sang UI (khung AntFood).
-    /// Cá / ô cắm bể được tra từ collider qua bảng đăng ký (Fish.TryGetByCollider, TankSlotView.TryGetByCollider), không GetComponent.
+    /// Camera gameplay: raycast từ vị trí chạm, đổi vị trí màn hình ↔ world ↔ UI (khung AntFood/FishSort).
     /// </summary>
     public class CameraManager : Singleton<CameraManager>
     {
         [field: SerializeField] public Camera MainCamera { get; private set; }
-        [field: SerializeField] private LayerMask WhatIsFish { get; set; }
-        [field: SerializeField] private LayerMask WhatIsTank { get; set; }
-        [field: SerializeField, Tooltip("Tọa độ Z mặt phẳng bóng, dùng khi đổi điểm chạm sang world")] private float PlaneZ { get; set; }
+        [field: SerializeField, Tooltip("Tọa độ Z mặt phẳng gameplay, dùng khi đổi điểm chạm sang world")] private float PlaneZ { get; set; }
 
         private readonly RaycastHit[] hits = new RaycastHit[16];
         private float screenHeightWorldCache = -1f;
+
         protected override void Awake()
         {
             base.Awake();
             if (MainCamera == null) MainCamera = Camera.main;
-            if (WhatIsFish.value == 0) WhatIsFish = LayerMask.GetMask("Fish");
         }
 
         private Camera Cam => MainCamera != null ? MainCamera : Camera.main;
 
-        /// <summary>Camera để chiếu vị trí tutorial (FishSort chỉ có một camera).</summary>
+        /// <summary>Camera để chiếu vị trí tutorial.</summary>
         public Camera GetTutCamera() => Cam;
-        
-        /// <summary>Ported from Mahjong (used by ActivityShowRewardCastleClimb / UIResourceGroupInfo).</summary>
+
         public bool RectangleContainsScreenPoint(RectTransform rect, Vector2 screenPoint)
         {
             return RectTransformUtility.RectangleContainsScreenPoint(rect, screenPoint);
         }
 
-        /// <summary>Đặt vị trí world của camera chính. GamePlayRectManager.FitCameraToQueue gọi khi căn camera theo LevelRectQueue của level.</summary>
         public void SetCameraPosition(Vector3 worldPosition)
         {
             Camera cam = Cam;
@@ -52,95 +47,43 @@ namespace Core.Manager
             }
         }
 
-        /// <summary>
-        /// Cá dưới con trỏ (gần camera nhất). padding > 0: không trúng thẳng collider nào thì quét thêm hình cầu bán kính padding (m)
-        /// dọc tia chạm, để ngón tay che cá nhỏ vẫn bắt được khi đè / rê tay.
-        /// </summary>
-        public bool TryGetFish(out Fish fish, float padding = 0f)
+        /// <summary>Collider 3D gần camera nhất dưới một điểm màn hình, lọc theo layer.</summary>
+        public bool TryRaycast(Vector2 screenPoint, LayerMask mask, out RaycastHit hit)
         {
-            fish = null;
-            Camera cam = Cam;
-            if (cam == null) return false;
-            Ray ray = cam.ScreenPointToRay(PointerScreen);
-            int count = Physics.RaycastNonAlloc(ray, hits, Mathf.Infinity, WhatIsFish, QueryTriggerInteraction.Collide);
-            if (PickNearestFish(count, out fish) || padding <= 0f) return fish != null;
-            count = Physics.SphereCastNonAlloc(ray, padding, hits, Mathf.Infinity, WhatIsFish, QueryTriggerInteraction.Collide);
-            return PickNearestFish(count, out fish);
-        }
-
-        /// <summary>Cá gần camera nhất dưới một điểm màn hình, cùng quy tắc với <see cref="TryGetFish(out Fish, float)"/>.</summary>
-        public bool TryGetFishAt(Vector2 screenPoint, float padding, out Fish fish)
-        {
-            fish = null;
+            hit = default;
             Camera cam = Cam;
             if (cam == null) return false;
             Ray ray = cam.ScreenPointToRay(screenPoint);
-            int count = Physics.RaycastNonAlloc(ray, hits, Mathf.Infinity, WhatIsFish, QueryTriggerInteraction.Collide);
-            if (PickNearestFish(count, out fish) || padding <= 0f) return fish != null;
-            count = Physics.SphereCastNonAlloc(ray, padding, hits, Mathf.Infinity, WhatIsFish, QueryTriggerInteraction.Collide);
-            return PickNearestFish(count, out fish);
-        }
-
-        /// <summary>Trong count hit đầu của hits, con cá (Fish.TryGetByCollider) có distance nhỏ nhất.</summary>
-        private bool PickNearestFish(int count, out Fish fish)
-        {
-            fish = null;
-            float best = float.MaxValue;
-            for (int i = 0; i < count; i++)
-            {
-                if (!Fish.TryGetByCollider(hits[i].collider, out Fish candidate) || hits[i].distance >= best) continue;
-                best = hits[i].distance;
-                fish = candidate;
-            }
-
-            return fish != null;
-        }
-
-        /// <summary>Bấm trúng bóng có collider bấm (bóng đá, bóng băng; layer Fish). Gọi sau khi TryGetFish không trúng cá.</summary>
-        public bool TryGetBubble(out BubbleView view)
-        {
-            view = null;
-            Camera cam = Cam;
-            if (cam == null) return false;
-            Ray ray = cam.ScreenPointToRay(PointerScreen);
-            int count = Physics.RaycastNonAlloc(ray, hits, Mathf.Infinity, WhatIsFish, QueryTriggerInteraction.Collide);
-            float best = float.MaxValue;
-            for (int i = 0; i < count; i++)
-            {
-                if (!BubbleView.TryGetByCollider(hits[i].collider, out BubbleView candidate) || hits[i].distance >= best) continue;
-                best = hits[i].distance;
-                view = candidate;
-            }
-
-            return view != null;
-        }
-
-        public bool TryGetTank(out TankSlotView tank)
-        {
-            tank = null;
-            Camera cam = Cam;
-            if (cam == null) return false;
-            Ray ray = cam.ScreenPointToRay(PointerScreen);
-            int mask = WhatIsTank.value != 0 ? WhatIsTank.value : Physics.DefaultRaycastLayers;
             int count = Physics.RaycastNonAlloc(ray, hits, Mathf.Infinity, mask, QueryTriggerInteraction.Collide);
             float best = float.MaxValue;
             for (int i = 0; i < count; i++)
             {
-                if (!TankSlotView.TryGetByCollider(hits[i].collider, out TankSlotView candidate) || hits[i].distance >= best) continue;
+                if (hits[i].distance >= best) continue;
                 best = hits[i].distance;
-                tank = candidate;
+                hit = hits[i];
             }
 
-            return tank != null;
+            return count > 0;
         }
 
-        /// <summary>Điểm chạm chiếu lên mặt phẳng bóng z = PlaneZ.</summary>
-        public bool TryGetMousePosition(out Vector3 point)
+        /// <summary>Collider 2D dưới một điểm màn hình (game 2D dùng Physics2D).</summary>
+        public Collider2D OverlapPoint2D(Vector2 screenPoint, LayerMask mask)
+        {
+            Camera cam = Cam;
+            if (cam == null) return null;
+            Vector3 world = cam.ScreenToWorldPoint(screenPoint);
+            return Physics2D.OverlapPoint(world, mask);
+        }
+
+        /// <summary>Điểm chạm hiện tại chiếu lên mặt phẳng gameplay z = PlaneZ.</summary>
+        public bool TryGetMousePosition(out Vector3 point) => TryGetWorldPoint(PointerScreen, out point);
+
+        public bool TryGetWorldPoint(Vector2 screenPoint, out Vector3 point)
         {
             point = default;
             Camera cam = Cam;
             if (cam == null) return false;
-            Ray ray = cam.ScreenPointToRay(PointerScreen);
+            Ray ray = cam.ScreenPointToRay(screenPoint);
             Plane plane = new(Vector3.forward, new Vector3(0f, 0f, PlaneZ));
             if (!plane.Raycast(ray, out float enter)) return false;
             point = ray.GetPoint(enter);
@@ -169,7 +112,7 @@ namespace Core.Manager
             }
         }
 
-        /// <summary>Vị trí world (trên mặt phẳng bóng) tương ứng với một RectTransform UI.</summary>
+        /// <summary>Vị trí world (trên mặt phẳng z của referenceWorldPos) tương ứng với một RectTransform UI, vd nút booster.</summary>
         public Vector3 GetWorldPositionForBooster(Transform uiTarget, Vector3 referenceWorldPos)
         {
             Camera cam = Cam;
@@ -181,14 +124,14 @@ namespace Core.Manager
             Plane plane = new(Vector3.forward, new Vector3(0f, 0f, referenceWorldPos.z));
             return plane.Raycast(ray, out float enter) ? ray.GetPoint(enter) : referenceWorldPos;
         }
-        
+
         public float ScreenHeightWorld(Vector3 at)
         {
             if (screenHeightWorldCache > 0)
             {
                 return screenHeightWorldCache;
             }
-            Camera cam = MainCamera;
+            Camera cam = Cam;
             float pixelsPerUnit = (cam.WorldToScreenPoint(at + Vector3.up) - cam.WorldToScreenPoint(at)).magnitude;
             screenHeightWorldCache = pixelsPerUnit > 1e-3f ? cam.pixelHeight / pixelsPerUnit : 10f;
             return screenHeightWorldCache;
