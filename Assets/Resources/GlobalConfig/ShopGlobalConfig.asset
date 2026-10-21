@@ -120,10 +120,6 @@ MonoBehaviour:
       <Value>k__BackingField:
         value: 2
         EditorValue: 2
-    - <Type>k__BackingField: 54
-      <Value>k__BackingField:
-        value: 2
-        EditorValue: 2
     - <Type>k__BackingField: 53
       <Value>k__BackingField:
         value: 2
@@ -154,10 +150,6 @@ MonoBehaviour:
         value: 1
         EditorValue: 1
     - <Type>k__BackingField: 52
-      <Value>k__BackingField:
-        value: 1
-        EditorValue: 1
-    - <Type>k__BackingField: 54
       <Value>k__BackingField:
         value: 1
         EditorValue: 1
@@ -194,10 +186,6 @@ MonoBehaviour:
       <Value>k__BackingField:
         value: 3
         EditorValue: 3
-    - <Type>k__BackingField: 54
-      <Value>k__BackingField:
-        value: 3
-        EditorValue: 3
     - <Type>k__BackingField: 53
       <Value>k__BackingField:
         value: 3
@@ -228,10 +216,6 @@ MonoBehaviour:
         value: 6
         EditorValue: 6
     - <Type>k__BackingField: 52
-      <Value>k__BackingField:
-        value: 6
-        EditorValue: 6
-    - <Type>k__BackingField: 54
       <Value>k__BackingField:
         value: 6
         EditorValue: 6
@@ -268,10 +252,6 @@ MonoBehaviour:
       <Value>k__BackingField:
         value: 1
         EditorValue: 1
-    - <Type>k__BackingField: 54
-      <Value>k__BackingField:
-        value: 1
-        EditorValue: 1
     - <Type>k__BackingField: 53
       <Value>k__BackingField:
         value: 1
@@ -302,10 +282,6 @@ MonoBehaviour:
         value: 0
         EditorValue: 0
     - <Type>k__BackingField: 52
-      <Value>k__BackingField:
-        value: 0
-        EditorValue: 0
-    - <Type>k__BackingField: 54
       <Value>k__BackingField:
         value: 0
         EditorValue: 0
@@ -342,10 +318,6 @@ MonoBehaviour:
       <Value>k__BackingField:
         value: 1
         EditorValue: 1
-    - <Type>k__BackingField: 54
-      <Value>k__BackingField:
-        value: 1
-        EditorValue: 1
     - <Type>k__BackingField: 53
       <Value>k__BackingField:
         value: 1
@@ -376,10 +348,6 @@ MonoBehaviour:
         value: 1
         EditorValue: 1
     - <Type>k__BackingField: 52
-      <Value>k__BackingField:
-        value: 1
-        EditorValue: 1
-    - <Type>k__BackingField: 54
       <Value>k__BackingField:
         value: 1
         EditorValue: 1
@@ -429,10 +397,6 @@ MonoBehaviour:
       <Value>k__BackingField:
         value: 1
         EditorValue: 1
-    - <Type>k__BackingField: 54
-      <Value>k__BackingField:
-        value: 1
-        EditorValue: 1
     - <Type>k__BackingField: 53
       <Value>k__BackingField:
         value: 1
@@ -451,10 +415,6 @@ MonoBehaviour:
         value: 6000
         EditorValue: 6000
     - <Type>k__BackingField: 51
-      <Value>k__BackingField:
-        value: 1
-        EditorValue: 1
-    - <Type>k__BackingField: 54
       <Value>k__BackingField:
         value: 1
         EditorValue: 1
@@ -488,10 +448,6 @@ MonoBehaviour:
         value: 2
         EditorValue: 2
     - <Type>k__BackingField: 51
-      <Value>k__BackingField:
-        value: 2
-        EditorValue: 2
-    - <Type>k__BackingField: 54
       <Value>k__BackingField:
         value: 2
         EditorValue: 2

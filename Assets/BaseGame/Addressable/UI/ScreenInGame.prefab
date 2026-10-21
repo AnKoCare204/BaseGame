@@ -824,7 +824,6 @@ MonoBehaviour:
       - {fileID: 6329182380420824993}
       - {fileID: 2927883758557432119}
       - {fileID: 1486344578516482684}
-      - {fileID: 0}
       <AlertLevelDifficult>k__BackingField: {fileID: 2001987092651470774}
       <BoosterClaimRoot>k__BackingField: {fileID: 7832290440048217071}
       <NotificationItemUIPrefab>k__BackingField: {fileID: 1184967924912637546, guid: d43b5130a3042ec42ac39baa6bbac143, type: 3}

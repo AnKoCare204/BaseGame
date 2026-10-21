@@ -122,6 +122,14 @@ namespace Core.UI.Activities
                 View.HandClick.gameObject.SetActive(false);    
                 UnfocusButtonClick();
             }
+
+            // Activity có thể bị đóng ngang (thua / về Home gọi CloseAllActivities) trước khi người chơi bấm:
+            // gỡ listener khỏi nút thật, không thì lần bấm sau gọi vào view đã huỷ (MissingReferenceException).
+            public UniTask Cleanup(Memory<object> args)
+            {
+                if (Model.LinkButton != null) Model.LinkButton.onClick.RemoveListener(OnButtonFocusClick);
+                return UniTask.CompletedTask;
+            }
         }
     }
 }

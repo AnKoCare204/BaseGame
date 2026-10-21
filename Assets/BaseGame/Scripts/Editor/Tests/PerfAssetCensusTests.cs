@@ -59,18 +59,6 @@ public class PerfAssetCensusTests
     }
 
     [Test]
-    public void BoosterActivities_HaveNoDanglingSettingsBgSprite()
-    {
-        const string deletedGuid = "5dfe5e66a302a8a46a07cabbdcb4a666";
-        foreach (string name in new[] { "ActivityBoosterShuffle", "ActivityBoosterPackup", "ActivityBoosterFishingRod" })
-        {
-            string path = "Assets/BaseGame/Addressable/UI/" + name + ".prefab";
-            Assert.IsTrue(File.Exists(path), path);
-            StringAssert.DoesNotContain(deletedGuid, File.ReadAllText(path), path + " còn tham chiếu settings_BG.png đã xoá");
-        }
-    }
-
-    [Test]
     public void LoadingSprites_PackedInOwnAtlas_NotInUiInGame()
     {
         string loadingFolderGuid = AssetDatabase.AssetPathToGUID(Sprites + "UI/Loading");

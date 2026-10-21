@@ -19,6 +19,10 @@ public class Level : ABetterMonoBehaviour
     /// <summary>Bàn đã xong (thắng). Win() đặt true; GameManager.WinLevel chỉ chạy một lần mỗi màn.</summary>
     public bool IsCompleted { get; protected set; }
 
+    /// <summary>Tiến độ hiện tại / tổng để HUD vẽ (ScreenInGame đọc khi dựng, sau đó nghe GameGlobalEvent.OnProgressChanged).</summary>
+    public int Progress { get; private set; }
+    public int ProgressTotal { get; private set; }
+
     public int ReviveByAdsCount { get; set; }
     public int ReviveByCoinCount { get; set; }
     public LoseReason CurLoseReason { get; protected set; } = LoseReason.None;
@@ -77,6 +81,13 @@ public class Level : ABetterMonoBehaviour
         if (IsCompleted) return;
         CurLoseReason = reason;
         GameManager.Instance.LoseLevel().Forget();
+    }
+
+    protected void SetProgress(int current, int total)
+    {
+        Progress = current;
+        ProgressTotal = total;
+        Core.GamePlay.GameGlobalEvent.OnProgressChanged?.Invoke(current, total);
     }
 
     // ===== Input (InputManager gọi khi đang chơi, không pause; Down / Click bỏ qua khi con trỏ đè UI) =====

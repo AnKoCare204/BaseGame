@@ -163,7 +163,7 @@ namespace Core.UI.Screens
 
             public void UpdateProgress(int collected, int total)
             {
-                string progressText = total > 0 ? $"{collected/3}/{total/3}" : "";
+                string progressText = total > 0 ? $"{collected}/{total}" : "";
 
                 if (TextProgresses != null)
                 {
@@ -466,13 +466,16 @@ namespace Core.UI.Screens
                 if (View.NoAdsSwitchPosition != null) View.NoAdsSwitchPosition.Apply(hasBanner);
                 View.ShowInteractPanel();
                 InitBoosterSelectors();
-                // Level phát GameGlobalEvent.OnProgressChanged khi dựng bàn; ở đây chỉ xoá số của ván trước.
-                View.UpdateProgress(0, 0);
+                // Bàn đã dựng xong trước khi HUD này được tạo: lấy tiến độ hiện tại, các lần sau nghe GameGlobalEvent.OnProgressChanged.
+                Level level = LevelManager.Instance != null ? LevelManager.Instance.CurrentLevel : null;
+                View.UpdateProgress(level != null ? level.Progress : 0, level != null ? level.ProgressTotal : 0);
                 if (hasBanner) EventAdsManager.ShowBannerAds?.Invoke(true);
             }
 
             private void InitBoosterSelectors()
             {
+                // Bỏ ô trống (nút booster đã xoá khỏi prefab nhưng list còn giữ chỗ).
+                View.BoosterSelectors.RemoveAll(selector => selector == null);
                 for (int i = 0; i < View.BoosterSelectors.Count; i++)
                 {
                     View.BoosterSelectors[i].OnChangeLevel(GameManager.Instance.Level.Value);

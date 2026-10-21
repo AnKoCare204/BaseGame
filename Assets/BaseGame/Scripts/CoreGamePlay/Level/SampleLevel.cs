@@ -35,7 +35,7 @@ public class SampleLevel : Level
         };
         taps = 0;
         timeLeft = TimeLimit;
-        GameGlobalEvent.OnProgressChanged?.Invoke(taps, targetTaps);
+        SetProgress(taps, targetTaps);
         return UniTask.CompletedTask;
     }
 
@@ -43,6 +43,8 @@ public class SampleLevel : Level
     {
         if (IsCompleted || CurLoseReason != LoseReason.None) return;
         if (LevelManager.Instance == null || LevelManager.Instance.IsPause) return;
+        // Đang trong luồng nhận / ép dùng thử booster mới mở khoá (LevelManager bỏ pause để bấm được nút): chưa tính giờ.
+        if (!GetIsBoosterClaimFlowDone()) return;
         timeLeft -= Time.deltaTime;
         if (timeLeft <= 0f) Lose(LoseReason.TimeUp);
     }
@@ -80,7 +82,7 @@ public class SampleLevel : Level
     {
         if (IsCompleted || CurLoseReason != LoseReason.None) return;
         taps = Mathf.Min(targetTaps, taps + value);
-        GameGlobalEvent.OnProgressChanged?.Invoke(taps, targetTaps);
+        SetProgress(taps, targetTaps);
         if (taps >= targetTaps) Win();
     }
 }

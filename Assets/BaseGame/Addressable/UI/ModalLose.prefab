@@ -245,7 +245,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Clear out slots to keep playing!
+  m_text: Keep playing to save your progress!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a701a1cede32980488c286035a591271, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: acb3f27764a311041a7808b6e851d234, type: 2}
