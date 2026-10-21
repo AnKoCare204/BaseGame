@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 18aae49cdac14224d81216318f9f86e2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4396825618430188075
+    second: TreasureDive_lose_0
+  - first:
+      213: 1288839899155525744
+    second: TreasureDive_lose_1
+  - first:
+      213: 113091743077944138
+    second: TreasureDive_lose_2
+  - first:
+      213: -116911183523749304
+    second: TreasureDive_lose_3
+  - first:
+      213: -2031500129719056444
+    second: TreasureDive_lose_4
+  - first:
+      213: 550010225660733113
+    second: TreasureDive_lose_5
+  - first:
+      213: -1746981844692052824
+    second: TreasureDive_lose_6
+  - first:
+      213: 1429608578944659602
+    second: TreasureDive_lose_7
+  - first:
+      213: -2846048259755323309
+    second: TreasureDive_lose_8
+  - first:
+      213: -9029962675533281770
+    second: TreasureDive_lose_9
+  - first:
+      213: 3294902381313802264
+    second: TreasureDive_lose_10
+  - first:
+      213: -9062086641067836780
+    second: TreasureDive_lose_11
+  - first:
+      213: -9189840209149082449
+    second: TreasureDive_lose_12
+  - first:
+      213: 8992061205455612498
+    second: TreasureDive_lose_13
+  - first:
+      213: -1448588099479961590
+    second: TreasureDive_lose_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 48
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 48
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TreasureDive_lose_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 734
+        width: 204
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5a12a35665bf2c0800000000000000
+      internalID: -4396825618430188075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreasureDive_lose_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 783
+        width: 206
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070f3894f01e2e110800000000000000
+      internalID: 1288839899155525744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreasureDive_lose_2
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 515
+        width: 182
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4bc0355758c19100800000000000000
+      internalID: 113091743077944138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreasureDive_lose_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 515
+        width: 224
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 842ebc3e5e5a06ef0800000000000000
+      internalID: -116911183523749304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreasureDive_lose_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 313
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c78fe63569aec3e0800000000000000
+      internalID: -2031500129719056444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreasureDive_lose_5
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 485
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b6275bd26702a700800000000000000
+      internalID: 550010225660733113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreasureDive_lose_6
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 478
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4d216a44971c7e0800000000000000
+      internalID: -1746981844692052824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreasureDive_lose_7
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 304
+        width: 45
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 290f8db9d6df6d310800000000000000
+      internalID: 1429608578944659602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreasureDive_lose_8
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 452
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3505aafcf2ec088d0800000000000000
+      internalID: -2846048259755323309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreasureDive_lose_9
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 404
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6168dc51ac02fa280800000000000000
+      internalID: -9029962675533281770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreasureDive_lose_10
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 452
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8104cc73248d9bd20800000000000000
+      internalID: 3294902381313802264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreasureDive_lose_11
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 354
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49ab65386300d3280800000000000000
+      internalID: -9062086641067836780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreasureDive_lose_12
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 304
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa441170501277080800000000000000
+      internalID: -9189840209149082449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreasureDive_lose_13
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 206
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25aa0cd36083acc70800000000000000
+      internalID: 8992061205455612498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreasureDive_lose_14
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1
+        width: 101
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0083a86cc495ebe0800000000000000
+      internalID: -1448588099479961590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TreasureDive_lose_0: -4396825618430188075
+      TreasureDive_lose_1: 1288839899155525744
+      TreasureDive_lose_10: 3294902381313802264
+      TreasureDive_lose_11: -9062086641067836780
+      TreasureDive_lose_12: -9189840209149082449
+      TreasureDive_lose_13: 8992061205455612498
+      TreasureDive_lose_14: -1448588099479961590
+      TreasureDive_lose_2: 113091743077944138
+      TreasureDive_lose_3: -116911183523749304
+      TreasureDive_lose_4: -2031500129719056444
+      TreasureDive_lose_5: 550010225660733113
+      TreasureDive_lose_6: -1746981844692052824
+      TreasureDive_lose_7: 1429608578944659602
+      TreasureDive_lose_8: -2846048259755323309
+      TreasureDive_lose_9: -9029962675533281770
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: TextureImportRules:v1
+  assetBundleName: 
+  assetBundleVariant: 

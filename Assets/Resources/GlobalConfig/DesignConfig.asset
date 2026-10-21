@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecf8def7a5cc734db699757b8df7289, type: 3}
+  m_Name: DesignConfig
+  m_EditorClassIdentifier: Assembly-CSharp::DesignConfig
+  <BubblesPerRow>k__BackingField: 5
+  <FishPerRow>k__BackingField: 3
+  <FishSlotSize>k__BackingField: 60
+  <FishSlotExtraHeight>k__BackingField: 20
+  <PaletteSlotSize>k__BackingField: 70
+  <OrderPerRow>k__BackingField: 3
+  <BubbleColorDefault>k__BackingField: {r: 1, g: 1, b: 1, a: 0.04}
+  <SlotEmptyColor>k__BackingField: {r: 0, g: 0, b: 0, a: 0.25}
+  <SlotFilledColor>k__BackingField: {r: 1, g: 1, b: 1, a: 0.12}
+  <HoverColor>k__BackingField: {r: 1, g: 0.78, b: 0.2, a: 1}
+  <DeleteHotkey>k__BackingField: 127
+  <InsertBubbleHotkey>k__BackingField: 97
+  <RockIcon>k__BackingField: {fileID: 2800000, guid: 9092a364da5c4324393b4f032b5e4bd5, type: 3}
+  <ObstacleStyles>k__BackingField:
+  - Obstacle: 0
+    Label: "B\u0103ng (isIce)"
+    ShortLabel: "B\u0103ng"
+    Color: {r: 0.29, g: 0.62, b: 0.95, a: 0.45}
+    Hotkey: 105
+  - Obstacle: 2
+    Label: "Sinh b\xF3ng (isSpawner)"
+    ShortLabel: Sinh
+    Color: {r: 0.35, g: 0.8, b: 0.52, a: 0.45}
+    Hotkey: 115
+  - Obstacle: 3
+    Label: "\u1ED4 kho\xE1 (isLock)"
+    ShortLabel: "Kho\xE1"
+    Color: {r: 0.9, g: 0.36, b: 0.32, a: 0.45}
+    Hotkey: 108
+  - Obstacle: 4
+    Label: "Ch\xECa kho\xE1 (isKey)"
+    ShortLabel: "Ch\xECa"
+    Color: {r: 0.95, g: 0.6, b: 0.29, a: 0.45}
+    Hotkey: 107
+  - Obstacle: 5
+    Label: "M\xE1u b\xF3ng (isBubbleHp)"
+    ShortLabel: HP
+    Color: {r: 0.66, g: 0.51, b: 0.93, a: 0.45}
+    Hotkey: 98
+  - Obstacle: 6
+    Label: "\u0110\xE1 (isRock)"
+    ShortLabel: "\u0110\xE1"
+    Color: {r: 0.55, g: 0.55, b: 0.58, a: 0.45}
+    Hotkey: 114
+  - Obstacle: 7
+    Label: Order bubble (isOrderBubble)
+    ShortLabel: Order
+    Color: {r: 0.24, g: 0.78, b: 0.75, a: 0.45}
+    Hotkey: 111
+  - Obstacle: 8
+    Label: MultipleLayer
+    ShortLabel: Multiple
+    Color: {r: 0.23921566, g: 0.25536332, b: 0.78039217, a: 0.45}
+    Hotkey: 109
+  - Obstacle: 9
+    Label: Bundle bubble
+    ShortLabel: Bundle
+    Color: {r: 0.98, g: 0.85, b: 0.3, a: 0.45}
+    Hotkey: 103
+  - Obstacle: 10
+    Label: "B\u0103ng chuy\u1EC1n (isConveyor)"
+    ShortLabel: "B\u0103ng"
+    Color: {r: 0.62, g: 0.42, b: 0.24, a: 0.45}
+    Hotkey: 99

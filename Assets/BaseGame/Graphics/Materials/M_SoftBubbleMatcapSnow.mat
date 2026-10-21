@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_SoftBubbleMatcapSnow
+  m_Shader: {fileID: 4800000, guid: 80074d63a59834a4db38cfa2192e10cd, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _HighlightTex:
+        m_Texture: {fileID: 2800000, guid: 0acb0b673e874d909c1597e5d2fe398a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _InnerTex:
+        m_Texture: {fileID: 2800000, guid: a1436f1e97d04ded86a123357aa11ca0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OuterTex:
+        m_Texture: {fileID: 2800000, guid: 136ca2b52fbe4295b51221159d79e1b4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 1
+    - _Dissolve: 0
+    - _DissolveEdgeWidth: 0.08
+    - _DissolveNoiseScale: 3
+    - _EdgeFade: 0
+    - _HighlightOpacity: 1
+    - _HighlightOverFish: 1
+    - _Inflate: 0
+    - _InnerOpacity: 1.4
+    - _InnerOverFish: 1
+    - _OuterOpacity: 1
+    - _OuterOverFish: 1
+    - _RingStart: 0.882
+    - _Seed: 0
+    - _TexRadius: 1
+    - _TexRingStart: 0.829
+    m_Colors:
+    - _DissolveEdgeColor: {r: 1.5, g: 2.5, b: 4, a: 1}
+    - _HighlightTint: {r: 1, g: 1, b: 1, a: 1}
+    - _InnerTint: {r: 1, g: 1, b: 1, a: 1}
+    - _OuterTint: {r: 1, g: 1, b: 1, a: 1}
+    - _Tint: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

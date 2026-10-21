@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8bcac762c775004da47d7a36062b428, type: 3}
+  m_Name: ItemGlobalConfig
+  m_EditorClassIdentifier: Assembly-CSharp::ItemGlobalConfig
+  ResourceDatas:
+  - ResourceType: 1
+    Sprite: {fileID: 21300000, guid: 77ac4f3f7bfdf044f9ae8f8361ef9243, type: 3}
+  - ResourceType: 2
+    Sprite: {fileID: 21300000, guid: 9602f3845a7819148aace61a52c7612f, type: 3}
+  - ResourceType: 102
+    Sprite: {fileID: 21300000, guid: eba56c814c83ad24ba80bfdac7c8553b, type: 3}
+  - ResourceType: 20
+    Sprite: {fileID: 21300000, guid: a029b48e5f4d4d64d880b904f895ec42, type: 3}
+  - ResourceType: 51
+    Sprite: {fileID: 21300000, guid: 5ceb6492bfa7b4444bde676b2b470766, type: 3}
+  - ResourceType: 52
+    Sprite: {fileID: 21300000, guid: ab79aaec82ffbdb4fbcf6739c6644f75, type: 3}
+  - ResourceType: 53
+    Sprite: {fileID: 21300000, guid: 51f0ad763c8530a4d99ae8d412a8e0b1, type: 3}
+  - ResourceType: 54
+    Sprite: {fileID: 21300000, guid: 1a7041e64208a7743bfc599bb71b253d, type: 3}
+  - ResourceType: 56
+    Sprite: {fileID: 21300000, guid: 5b60c26b0598eef408c38e75b17dd45d, type: 3}
+  BooosterInfoDatas:
+  - ResourceType: 51
+    Name: Add Slot
+    Description: Adds one more holding slot.
+    LevelUnlock: 3
+    UnlockGiftAmount: 2
+    ForceUsePrefillCount: 0
+    MessageNoUse: Holding area is already full size!
+    MessageHoldingFull: 
+    Sprite: {fileID: 21300000, guid: 5ceb6492bfa7b4444bde676b2b470766, type: 3}
+    Price: 300
+    PriceX3: 1200
+    UnlockMidLevel: 0
+  - ResourceType: 52
+    Name: Fishing rod
+    Description: Fill two fish tanks.
+    LevelUnlock: 6
+    UnlockGiftAmount: 2
+    ForceUsePrefillCount: 0
+    MessageNoUse: No tank to fill!
+    MessageHoldingFull: 
+    Sprite: {fileID: 21300000, guid: ab79aaec82ffbdb4fbcf6739c6644f75, type: 3}
+    Price: 900
+    PriceX3: 2400
+    UnlockMidLevel: 0
+  - ResourceType: 53
+    Name: Shuffle
+    Description: Shuffle visible fish positions.
+    LevelUnlock: 9
+    UnlockGiftAmount: 2
+    ForceUsePrefillCount: 0
+    MessageNoUse: Need at least 2 bubbles!
+    MessageHoldingFull: Holding area is full! Free a slot first.
+    Sprite: {fileID: 21300000, guid: 51f0ad763c8530a4d99ae8d412a8e0b1, type: 3}
+    Price: 600
+    PriceX3: 1400
+    UnlockMidLevel: 0
+  - ResourceType: 54
+    Name: Pack Up
+    Description: Packs every fish in the holding area into a bag.
+    LevelUnlock: 12
+    UnlockGiftAmount: 2
+    ForceUsePrefillCount: 4
+    MessageNoUse: No fish in the holding area!
+    MessageHoldingFull: 
+    Sprite: {fileID: 21300000, guid: 1a7041e64208a7743bfc599bb71b253d, type: 3}
+    Price: 900
+    PriceX3: 2400
+    UnlockMidLevel: 0
+  - ResourceType: 56
+    Name: Unlock Tank
+    Description: Unlocks one more tank.
+    LevelUnlock: -1
+    UnlockGiftAmount: 1
+    ForceUsePrefillCount: 0
+    MessageNoUse: No locked tank left!
+    MessageHoldingFull: 
+    Sprite: {fileID: 21300000, guid: 5b60c26b0598eef408c38e75b17dd45d, type: 3}
+    Price: 900
+    PriceX3: 1800
+    UnlockMidLevel: 0
+  LevelDifficultyDatas:
+  - Type: 1
+    AlertLevelDifficultyData:
+      LineTopAlertSprite: {fileID: 21300000, guid: 0a787102f0d4b7b4ca71e2b7df96aada, type: 3}
+      LineBottomAlertSprite: {fileID: 21300000, guid: f98635e4ef3f49140ad60aeb4af031ef, type: 3}
+      WarningAlertSprite: {fileID: 21300000, guid: 5d93a163730c60d4fba2f2b454f0d69a, type: 3}
+      BodySprite: {fileID: 21300000, guid: 12c43a47f8445a24e99dc3abf05ce1c7, type: 3}
+      LevelDifficultyName: Hard
+      LevelDifficultyColor: {fileID: 2100000, guid: e08ec7c8a21e74a40b7865b530054b1a, type: 2}
+  - Type: 2
+    AlertLevelDifficultyData:
+      LineTopAlertSprite: {fileID: 21300000, guid: 0aac6bf46bdaea5438e50510b2e4ce79, type: 3}
+      LineBottomAlertSprite: {fileID: 21300000, guid: 1ec55f18c0e160747b498906d87a248b, type: 3}
+      WarningAlertSprite: {fileID: 21300000, guid: 5d93a163730c60d4fba2f2b454f0d69a, type: 3}
+      BodySprite: {fileID: 21300000, guid: 3b97c133b92ed6c46bc597ce449d8746, type: 3}
+      LevelDifficultyName: Super Hard
+      LevelDifficultyColor: {fileID: 2100000, guid: be5521152c7e41f49a699f651c35ef56, type: 2}

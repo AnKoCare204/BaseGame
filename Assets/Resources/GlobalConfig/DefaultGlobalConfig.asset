@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc2305644422bde4999ea35c50edee2a, type: 3}
+  m_Name: DefaultGlobalConfig
+  m_EditorClassIdentifier: Assembly-CSharp::DefaultGlobalConfig
+  <PlayGameAtStart>k__BackingField: 0
+  <DefaultBackToMenuLevel>k__BackingField: 10
+  <DefaultX2CoinLevel>k__BackingField: 5
+  <DefaultLevelPlaying>k__BackingField: 1
+  <DefaultFillHeartTime>k__BackingField: 30
+  <DefaultLife>k__BackingField: 5
+  <DefaultFullHeartCoin>k__BackingField: 900
+  <IsHeart>k__BackingField: 1
+  <WinGameReward>k__BackingField: 20
+  <ReviveCoins>k__BackingField: 840300006c070000fc080000
+  <ReviveSlot>k__BackingField: 2
+  <MaxHoldingSlots>k__BackingField: 7
+  <TimeDelayLose>k__BackingField: 1
+  <NumberShowNoAds>k__BackingField: 0100000005000000
+  <CountShowNoAdsMax>k__BackingField: 2
+  <IsUseADS>k__BackingField: 1
+  <IsShowAdsFillHeart>k__BackingField: 1
+  <DefaultlevelShowRate>k__BackingField: 12

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c04a878a0b48b6959ed062ca6faa88, type: 3}
+  m_Name: TMPSpriteAssetGenerator
+  m_EditorClassIdentifier: TW.Utility.Tool::TW.Utility.Tool.TMPSpriteAssetGenerator
+  <TMPSpriteAsset>k__BackingField: {fileID: 11400000, guid: 4b0d2218abcb1f44795464113da5fe8b, type: 2}
+  <Offset>k__BackingField: {x: 512, y: 512, z: 0}
+  <Scale>k__BackingField: 1
+  <MergeTexture2D>k__BackingField: {fileID: 2800000, guid: 079f108540063f542939a8bbaefa057f, type: 3}
+  <SpriteInCurrentPath>k__BackingField:
+  - {fileID: 21300000, guid: 77ac4f3f7bfdf044f9ae8f8361ef9243, type: 3}
+  - {fileID: 21300000, guid: 9602f3845a7819148aace61a52c7612f, type: 3}
+  - {fileID: 21300000, guid: eba56c814c83ad24ba80bfdac7c8553b, type: 3}
+  - {fileID: 21300000, guid: 04dff8285f86ae84eb28eb8126e95aac, type: 3}
+  - {fileID: 21300000, guid: a859c0de5cccb3c4b996fa7d7fe56d0d, type: 3}
+  - {fileID: 21300000, guid: 4134ca35bc183304e8fe5937a1ffa407, type: 3}
+  - {fileID: 21300000, guid: 1d41dddd1bf0b8c4e8bec050ed948c66, type: 3}
+  - {fileID: 21300000, guid: 2926ec0caae548f4987ecade10be985f, type: 3}
+  <Texture2DList>k__BackingField:
+  - {fileID: 2800000, guid: 77ac4f3f7bfdf044f9ae8f8361ef9243, type: 3}
+  - {fileID: 2800000, guid: 9602f3845a7819148aace61a52c7612f, type: 3}
+  - {fileID: 2800000, guid: eba56c814c83ad24ba80bfdac7c8553b, type: 3}
+  - {fileID: 2800000, guid: 04dff8285f86ae84eb28eb8126e95aac, type: 3}
+  - {fileID: 2800000, guid: a859c0de5cccb3c4b996fa7d7fe56d0d, type: 3}
+  - {fileID: 2800000, guid: 4134ca35bc183304e8fe5937a1ffa407, type: 3}
+  - {fileID: 2800000, guid: 1d41dddd1bf0b8c4e8bec050ed948c66, type: 3}
+  - {fileID: 2800000, guid: 2926ec0caae548f4987ecade10be985f, type: 3}
+  <ObjectName>k__BackingField: TMPSpriteAssetGenerator
+  <ObjectPath>k__BackingField: Assets/BaseGame/Graphics/Sprites/UI/SpriteSheet/TMPSpriteAssetGenerator.asset
+  <FolderPath>k__BackingField: Assets/BaseGame/Graphics/Sprites/UI/SpriteSheet
+  <TexturePath>k__BackingField: Assets/BaseGame/Graphics/Sprites/UI/SpriteSheet/TMPSpriteAssetGenerator.png
+  <TMPSpriteAssetPath>k__BackingField: Assets/BaseGame/Graphics/Sprites/SpriteAnt/SpriteSheet/TMPSpriteAssetGenerator_TMPSpriteAsset.asset
+  <Size>k__BackingField: {x: 512, y: 512}
+  <Row>k__BackingField: 3
+  <Column>k__BackingField: 3

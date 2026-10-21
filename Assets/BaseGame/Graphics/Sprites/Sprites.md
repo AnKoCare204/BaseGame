@@ -1,0 +1,1 @@
+Contains 2D sprite images used for game graphics.

@@ -1,0 +1,1 @@
+For any assets that don't fit into the defined categories.

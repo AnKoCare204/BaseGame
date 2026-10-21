@@ -1,0 +1,5 @@
+TreasureDive_leaf.png
+size:644,364
+filter:Linear,Linear
+bg/leaf1
+bounds:2,2,640,360

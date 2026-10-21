@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_SoftBubbleCartoonHp
+  m_Shader: {fileID: 4800000, guid: 11b6775984e360347812edf7f7724dd6, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 1
+    - _Dissolve: 0
+    - _DissolveEdgeWidth: 0.08
+    - _DissolveNoiseScale: 3
+    - _FillOpacityCenter: 0.55
+    - _FillOpacityEdge: 0.75
+    - _FillOpacityPower: 4
+    - _GradientSoftness: 1
+    - _HighlightCrescent: 0.1
+    - _HighlightLength: 1
+    - _HighlightOpacity: 0.95
+    - _HighlightRadius: 1
+    - _HighlightSoftness: 0.804
+    - _HighlightWidth: 0.01
+    - _OutlineOpacity: 1
+    - _OutlineSoftness: 0.082
+    - _OutlineStart: 1
+    - _RimOpacity: 1
+    - _RimSoftness: 0.5
+    - _RimStart: 1
+    - _Seed: 0
+    - _SpotOpacity: 0.477
+    - _SpotRadius: 0.577
+    - _SpotSize: 0.135
+    - _SpotSoftness: 0.112
+    m_Colors:
+    - _DissolveEdgeColor: {r: 1.5, g: 2.5, b: 4, a: 1}
+    - _FillColor: {r: 0.55, g: 0.45, b: 0.75, a: 1}
+    - _FillColorDark: {r: 0.35, g: 0.28, b: 0.55, a: 1}
+    - _GradientDir: {r: -0.6, g: 0.8, b: 0, a: 0}
+    - _HighlightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _HighlightDir: {r: 1.35, g: 0.78, b: 0, a: 0}
+    - _OutlineColor: {r: 0.759434, g: 0.9902822, b: 1, a: 1}
+    - _RimColor: {r: 0.6, g: 0.5, b: 0.9, a: 1}
+    - _SpotDir: {r: -5.17, g: 3.74, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

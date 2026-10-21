@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75197ee17eb448ab984ab6dab888130f, type: 3}
   m_Name: UnityScreenNavigatorSettings
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: TW.UGUI::TW.UGUI.Shared.UnityScreenNavigatorSettings
   _screenPushEnterAnimation: {fileID: 0}
   _screenPushExitAnimation: {fileID: 0}
   _screenPopEnterAnimation: {fileID: 0}

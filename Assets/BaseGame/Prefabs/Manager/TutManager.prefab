@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4407568528959697191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8388735296112982598}
+  - component: {fileID: 322254283041207665}
+  - component: {fileID: 7748675811505616588}
+  m_Layer: 0
+  m_Name: TutManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8388735296112982598
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4407568528959697191}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &322254283041207665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4407568528959697191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ef5d410ea74988bc436aef450b1925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Core.Manager.TutorialManager
+  <TutData>k__BackingField:
+    <Version>k__BackingField: 1
+    IsPassFirstTut: 0
+    DoneSteps: []
+  <TutObjects>k__BackingField:
+  - {fileID: 0}
+  - {fileID: 0}
+  <HandPrefab>k__BackingField: {fileID: 7416307696763797271, guid: a01c883f0fad6764a99bdf5a8bd529c3, type: 3}
+  <Texts>k__BackingField:
+    L1Match: Tap fish that match the order!
+    L1Goal: Fill every order to win!
+    L1Denied: Match the order!
+    L2NoOrder: No order for this one yet.
+    L2Waits: It waits here.
+    L2FillOrder: Complete an order to get a new one.
+    L2FlewIn: Its order is here! It flew in by itself.
+    L2FullRule: Don't fill all {0} slots!
+    Rescue: Slots full! We packed them for you.
+--- !u!114 &7748675811505616588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4407568528959697191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3d4b988d396c64f9dbba09ff0ea93d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Core.Tutorial.IdleHintController

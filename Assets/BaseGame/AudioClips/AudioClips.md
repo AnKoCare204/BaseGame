@@ -1,0 +1,1 @@
+Contains audio clips for sound effects or music.

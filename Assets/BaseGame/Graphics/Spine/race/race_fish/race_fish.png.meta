@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: e1d43b6bacb03f445a9ee82f5a57d2cf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -192791428793034022
+    second: race_fish_0
+  - first:
+      213: -6680060275146111782
+    second: race_fish_1
+  - first:
+      213: 280402755418339907
+    second: race_fish_2
+  - first:
+      213: 236044613336427624
+    second: race_fish_3
+  - first:
+      213: -8731298589620228731
+    second: race_fish_4
+  - first:
+      213: 2684835543587276940
+    second: race_fish_5
+  - first:
+      213: 1823235210241898060
+    second: race_fish_6
+  - first:
+      213: -5055480168321588890
+    second: race_fish_7
+  - first:
+      213: 6356417027402558383
+    second: race_fish_8
+  - first:
+      213: 2491235149553387160
+    second: race_fish_9
+  - first:
+      213: -7895095188016733301
+    second: race_fish_10
+  - first:
+      213: 4480323930366755620
+    second: race_fish_11
+  - first:
+      213: 2880123544897650186
+    second: race_fish_12
+  - first:
+      213: 6243564182993680905
+    second: race_fish_13
+  - first:
+      213: -2452550084948704474
+    second: race_fish_14
+  - first:
+      213: 1716002785103981033
+    second: race_fish_15
+  - first:
+      213: 6018203464594383780
+    second: race_fish_16
+  - first:
+      213: -2200268173418665111
+    second: race_fish_17
+  - first:
+      213: 4428305561538268353
+    second: race_fish_18
+  - first:
+      213: 842130874811528732
+    second: race_fish_19
+  - first:
+      213: -2637381724172367076
+    second: race_fish_20
+  - first:
+      213: 8703839505832597269
+    second: race_fish_21
+  - first:
+      213: -8801132359299259362
+    second: race_fish_22
+  - first:
+      213: 3795240304625966171
+    second: race_fish_23
+  - first:
+      213: 5567028381170362229
+    second: race_fish_24
+  - first:
+      213: -4968621632628145718
+    second: race_fish_25
+  - first:
+      213: -3890736899121331705
+    second: race_fish_26
+  - first:
+      213: -3841903436763434719
+    second: race_fish_27
+  - first:
+      213: -9154832589343272465
+    second: race_fish_28
+  - first:
+      213: -3583786566780993087
+    second: race_fish_29
+  - first:
+      213: -7175381447981152952
+    second: race_fish_30
+  - first:
+      213: 773833401438417593
+    second: race_fish_31
+  - first:
+      213: -6091175249545491772
+    second: race_fish_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 48
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 48
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: race_fish_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 870
+        width: 91
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada1d0b8731135df0800000000000000
+      internalID: -192791428793034022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 873
+        width: 91
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4c7bd7298ab43a0800000000000000
+      internalID: -6680060275146111782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 799
+        width: 91
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a30c602d034e300800000000000000
+      internalID: 280402755418339907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 846
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86cef014359964300800000000000000
+      internalID: 236044613336427624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 796
+        width: 91
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d21d1713234d680800000000000000
+      internalID: -8731298589620228731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_5
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 832
+        width: 35
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88ccd7b3b3724520800000000000000
+      internalID: 2684835543587276940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 722
+        width: 91
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46f37883ce6d4910800000000000000
+      internalID: 1823235210241898060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_7
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 725
+        width: 91
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 661e82e629357d9b0800000000000000
+      internalID: -5055480168321588890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_8
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 778
+        width: 41
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabe292db97863850800000000000000
+      internalID: 6356417027402558383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_9
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 727
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 896c81d5b25a29220800000000000000
+      internalID: 2491235149553387160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 648
+        width: 91
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b83ed5aa1ccfe6290800000000000000
+      internalID: -7895095188016733301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_11
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 651
+        width: 91
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423413c70ee4d2e30800000000000000
+      internalID: 4480323930366755620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_12
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 667
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0efcd2ca1148f720800000000000000
+      internalID: 2880123544897650186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_13
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 652
+        width: 39
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ab0bb6b8895a650800000000000000
+      internalID: 6243564182993680905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 574
+        width: 91
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62347c021bac6fdd0800000000000000
+      internalID: -2452550084948704474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_15
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 577
+        width: 91
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e924b7f07770d710800000000000000
+      internalID: 1716002785103981033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_16
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 527
+        width: 57
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a36c2d4a24f48350800000000000000
+      internalID: 6018203464594383780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_17
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 577
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b68c8f0c31771e0800000000000000
+      internalID: -2200268173418665111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 478
+        width: 123
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc00603270847d30800000000000000
+      internalID: 4428305561538268353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_19
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 547
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16b78f9199dfab00800000000000000
+      internalID: 842130874811528732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 382
+        width: 123
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b49999b43266bd0800000000000000
+      internalID: -2637381724172367076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_21
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 459
+        width: 62
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517d9276aef3ac870800000000000000
+      internalID: 8703839505832597269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_22
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 474
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e14a5c6efb81cd580800000000000000
+      internalID: -8801132359299259362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_23
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 410
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5cd972f2f66ba430800000000000000
+      internalID: 3795240304625966171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_24
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 382
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5776d2a31de024d40800000000000000
+      internalID: 5567028381170362229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_25
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 368
+        width: 74
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac1c0e333f8eb0bb0800000000000000
+      internalID: -4968621632628145718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_26
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 251
+        width: 143
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7024e5d7763510ac0800000000000000
+      internalID: -3890736899121331705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 277
+        width: 74
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 121fc56fd21deaac0800000000000000
+      internalID: -3841903436763434719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_28
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 186
+        width: 74
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1560ea34083f080800000000000000
+      internalID: -9154832589343272465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_29
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 120
+        width: 143
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c1c330fa15d34ec0800000000000000
+      internalID: -3583786566780993087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 151
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 845c721079ceb6c90800000000000000
+      internalID: -7175381447981152952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_31
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 95
+        width: 74
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2b110f0653dba00800000000000000
+      internalID: 773833401438417593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: race_fish_32
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 4
+        width: 74
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca803a026cc77ba0800000000000000
+      internalID: -6091175249545491772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      race_fish_0: -192791428793034022
+      race_fish_1: -6680060275146111782
+      race_fish_10: -7895095188016733301
+      race_fish_11: 4480323930366755620
+      race_fish_12: 2880123544897650186
+      race_fish_13: 6243564182993680905
+      race_fish_14: -2452550084948704474
+      race_fish_15: 1716002785103981033
+      race_fish_16: 6018203464594383780
+      race_fish_17: -2200268173418665111
+      race_fish_18: 4428305561538268353
+      race_fish_19: 842130874811528732
+      race_fish_2: 280402755418339907
+      race_fish_20: -2637381724172367076
+      race_fish_21: 8703839505832597269
+      race_fish_22: -8801132359299259362
+      race_fish_23: 3795240304625966171
+      race_fish_24: 5567028381170362229
+      race_fish_25: -4968621632628145718
+      race_fish_26: -3890736899121331705
+      race_fish_27: -3841903436763434719
+      race_fish_28: -9154832589343272465
+      race_fish_29: -3583786566780993087
+      race_fish_3: 236044613336427624
+      race_fish_30: -7175381447981152952
+      race_fish_31: 773833401438417593
+      race_fish_32: -6091175249545491772
+      race_fish_4: -8731298589620228731
+      race_fish_5: 2684835543587276940
+      race_fish_6: 1823235210241898060
+      race_fish_7: -5055480168321588890
+      race_fish_8: 6356417027402558383
+      race_fish_9: 2491235149553387160
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: TextureImportRules:v1
+  assetBundleName: 
+  assetBundleVariant: 

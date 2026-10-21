@@ -11,53 +11,243 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
   m_Name: Default Local Group
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: Default Local Group
-  m_GUID: b425484c630e7d84ea8da170d0ab27eb
+  m_GUID: bb2c817a93441b74584dba48abc8561d
   m_SerializeEntries:
-  - m_GUID: 093be94ed6d114b3dbe2834f3de64be6
-    m_Address: ModalLevelSelect
+  - m_GUID: 0232102ad9ada5b4eac4059a7891dac5
+    m_Address: ModalRate
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1fa179d6e52db4036b732476f21e8419
-    m_Address: ModalShop
+  - m_GUID: 02695dfba504e7b4c909f743666d0af1
+    m_Address: ActivityTipBooster
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4145d591cdce4a3418a19815a17ca5c5
-    m_Address: ActivityBlock
+  - m_GUID: 05fcbbdfbac8c6d43830a77d53c32f22
+    m_Address: ModalStarBlazeInfo
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4edb871a9f43b40449d7e074d4a89eeb
-    m_Address: ModalTeam
+  - m_GUID: 08f37cb62fdff574e901939972abd10f
+    m_Address: ModalRetryGame
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6db58417e33ea4773a6d3efaa814c277
-    m_Address: ModalLeaderboard
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7a15824f8fed7b642923948caa368253
+  - m_GUID: 0a7c38c0f7843b74f894b2518208a505
     m_Address: ActivityLoading
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d609c04217db0460996ca9bed3d3f2aa
-    m_Address: ModalCollection
+  - m_GUID: 0ca11ead2d601ac48ae6d1364d0b252c
+    m_Address: ModalWin
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f50cd5852ae5b3643933ca32a705adc8
-    m_Address: ScreenHome
+  - m_GUID: 123924ddbaf9a894890f755196f01a3b
+    m_Address: ActivityBoosterShuffle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 14c670ddeab2ee847867810997c600af
+    m_Address: ModalNewObject
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 22e2fa1490401af4d85fe9595a8a5b2a
+    m_Address: ModalShop
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2a0de4cfed1c89e4db81d8aece3e5940
+    m_Address: ModalComingSoon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3a28746d491d4284a072c2767c48e010
+    m_Address: ModalTreetop
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 43e832192956d7c47a12ef4b0574f02a
+    m_Address: ModalBooster
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a09b1c7a35d2a74b9ef68146d0c80bf
+    m_Address: ActivityCompleted
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c6d3f9733bd69b428602421701a6a48
+    m_Address: ModalFillHeart
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 510574f3799e8d74f9bf20f5d06e6259
+    m_Address: ModalNewObstacle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5166ac9ba941b9b49bbaea2e50c7f63a
+    m_Address: ModalNoAds
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 525987c72e8944e2a6e3f9b3a4b67a75
+    m_Address: ActivityBoatRaceInfo
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 53b09e60467bf76499809e1926ece866
+    m_Address: ModalHome
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5f2544121bf4594458ad9dcb17d20aa1
+    m_Address: ModalSetting
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 604ba211ad856614b825c62923dce948
+    m_Address: ScreenMainMenu
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6b56abef119f1304e83c35960baef355
+    m_Address: ActivityBoosterFishingRod
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 72bcd805186a31c4fbcac5b6d930537f
+    m_Address: ModalPause
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7524c13438344a9f9e6cd544a9a11057
+    m_Address: ModalJoinShipRaceStage3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75fd78aa9466a18488b250850c9c2c17
+    m_Address: ActivityNotificationOverlay
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7603fd58fa476554aba0bf8b08c4e0d8
+    m_Address: ActivityBoosterPackup
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a5f1c1d13a373a47a830d924fc71e29
+    m_Address: ActivityFocusButton
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 85cde767cc6a485bb4fa8f1ce48afb32
+    m_Address: ModalJoinShipRaceStage1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 88d28a54b13c0734a9338a232093e1ec
+    m_Address: ScreenInGame
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b2bcecbc347418ab317ec976576668e
+    m_Address: ActivityShowRewardTreetop
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d304579ef3d00a499ec9bb3768f24c6
+    m_Address: ModalUnlockTank
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 927a2474461d4f2e94525f2487d29e77
+    m_Address: ModalShipRaceStage1Info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 946dcbf233ad70a4c925cd6a7ae96920
+    m_Address: ModalProfile
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99f5996628306ee40880f4879ca12f12
+    m_Address: ModalLeaveGame
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e5ed7862fb4479880860a03d7505bf9
+    m_Address: ModalShipRaceStage3Info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a26c4fb0afe24a94a985fa9455eee734
+    m_Address: ActivityFirstTut
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: acddf5cf771127e46beac648912d94e3
+    m_Address: ModalDailyReward
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae72bc58fe8a1cb459d8a32365269dac
+    m_Address: ScreenEmpty
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b42ef96091aeedb4fa6554b0da04f0c0
+    m_Address: ModalReward
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7138473de68b0343bd5a217f9b4a8ee
+    m_Address: ModalLose
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da2df921e5f54a24b304dee86522a818
+    m_Address: ModalShipRaceStage2Info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: daa8b40c46db30e47ac0876ac0d7579d
+    m_Address: ActivityShowRewardOnTop
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e15e2b5648974b69b0d6e94c51a87169
+    m_Address: ActivityTreetopInfo
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8b85e9fecbd26e49aee247a89b70ce2
+    m_Address: ModalConfirmLose
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f20fa1a4a2a448f696ccb84738394c92
+    m_Address: ModalJoinShipRaceStage2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fdee72ae09870d249b2d458fe513a9b2
+    m_Address: ActivityClaimReward
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: feba658746775cd43839452f66ff7792
+    m_Address: DefaultModalBackdrop
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
-  m_Settings: {fileID: 11400000, guid: 42368d502395684409c074b5b34b8774, type: 2}
+  m_Settings: {fileID: 11400000, guid: 32bff79772804b9498e7ff8fa78ce98d, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 24b3839686e99ec4d9b0d1267adbf475, type: 2}
-    - {fileID: 11400000, guid: 618ae54a21beff14aa09ed1b45b281f5, type: 2}
+    - {fileID: 11400000, guid: 7812866eed6e7aa4b8f07df29a4e5d32, type: 2}
+    - {fileID: 11400000, guid: 1db43cb7cabedd54f8a37c7c0df37f13, type: 2}

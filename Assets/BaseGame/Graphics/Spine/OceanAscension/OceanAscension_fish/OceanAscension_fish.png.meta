@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: b052528f417ad664dbc2f6ef6d6b7c1a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6878973756415326974
+    second: OceanAscension_fish_0
+  - first:
+      213: 967483418685153757
+    second: OceanAscension_fish_1
+  - first:
+      213: 2216424225648068045
+    second: OceanAscension_fish_2
+  - first:
+      213: -1487601768956803075
+    second: OceanAscension_fish_3
+  - first:
+      213: 8060274047598610167
+    second: OceanAscension_fish_4
+  - first:
+      213: 3953251089660274197
+    second: OceanAscension_fish_5
+  - first:
+      213: -4942159401789843881
+    second: OceanAscension_fish_6
+  - first:
+      213: 7569112470860768086
+    second: OceanAscension_fish_7
+  - first:
+      213: -6417741235852369323
+    second: OceanAscension_fish_8
+  - first:
+      213: -7873594473693305009
+    second: OceanAscension_fish_9
+  - first:
+      213: -6170222437854310507
+    second: OceanAscension_fish_10
+  - first:
+      213: 4856026736655572276
+    second: OceanAscension_fish_11
+  - first:
+      213: 1843307977324266053
+    second: OceanAscension_fish_12
+  - first:
+      213: 6657335569230497715
+    second: OceanAscension_fish_13
+  - first:
+      213: -2670187435981011934
+    second: OceanAscension_fish_14
+  - first:
+      213: -4902921968050073699
+    second: OceanAscension_fish_15
+  - first:
+      213: 3263299906745342940
+    second: OceanAscension_fish_16
+  - first:
+      213: -3646856745031696383
+    second: OceanAscension_fish_17
+  - first:
+      213: 4717569075075679564
+    second: OceanAscension_fish_18
+  - first:
+      213: 9003226721032688714
+    second: OceanAscension_fish_19
+  - first:
+      213: -829787283089290975
+    second: OceanAscension_fish_20
+  - first:
+      213: 7287531343820195163
+    second: OceanAscension_fish_21
+  - first:
+      213: 2915357977715860667
+    second: OceanAscension_fish_22
+  - first:
+      213: 8332304692807463948
+    second: OceanAscension_fish_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 48
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 48
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OceanAscension_fish_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 286
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20541ad90d9f880a0800000000000000
+      internalID: -6878973756415326974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_1
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 216
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd12fc81b013d6d00800000000000000
+      internalID: 967483418685153757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_2
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 216
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc5c251171252ce10800000000000000
+      internalID: 2216424225648068045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_3
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 216
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df74612a21afa5be0800000000000000
+      internalID: -1487601768956803075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_4
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 238
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f64a678a88dbdf60800000000000000
+      internalID: 8060274047598610167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_5
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 236
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516602bbbe4ccd630800000000000000
+      internalID: 3953251089660274197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_6
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 199
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75695f0753ce96bb0800000000000000
+      internalID: -4942159401789843881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_7
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 193
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 653a2aa70b3ea0960800000000000000
+      internalID: 7569112470860768086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_8
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 193
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 552a4a0495a9fe6a0800000000000000
+      internalID: -6417741235852369323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_9
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 192
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f472802da8f5bb290800000000000000
+      internalID: -7873594473693305009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_10
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 199
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f8c8e4267fe5aa0800000000000000
+      internalID: -6170222437854310507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_11
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1
+        width: 187
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d9722b692146340800000000000000
+      internalID: 4856026736655572276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_12
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 216
+        width: 45
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5428e00d6deb49910800000000000000
+      internalID: 1843307977324266053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_13
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 216
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b78e8a9d6b936c50800000000000000
+      internalID: 6657335569230497715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_14
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 216
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22404aa9ca691fad0800000000000000
+      internalID: -2670187435981011934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_15
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1
+        width: 172
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f8ae4627255fbb0800000000000000
+      internalID: -4902921968050073699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_16
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 102
+        width: 65
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdb1f19b9f1994d20800000000000000
+      internalID: 3263299906745342940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_17
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 96
+        width: 49
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10006adbc13c36dc0800000000000000
+      internalID: -3646856745031696383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_18
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 147
+        width: 77
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45014b341c287140800000000000000
+      internalID: 4717569075075679564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_19
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 96
+        width: 79
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44557b6003e1fc70800000000000000
+      internalID: 9003226721032688714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_20
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 47
+        width: 46
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1298358ccd00c74f0800000000000000
+      internalID: -829787283089290975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_21
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 22
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b558ded6523822560800000000000000
+      internalID: 7287531343820195163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_22
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1
+        width: 127
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb4eade62ae657820800000000000000
+      internalID: 2915357977715860667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OceanAscension_fish_23
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04fb1fb8fa42a370800000000000000
+      internalID: 8332304692807463948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      OceanAscension_fish_0: -6878973756415326974
+      OceanAscension_fish_1: 967483418685153757
+      OceanAscension_fish_10: -6170222437854310507
+      OceanAscension_fish_11: 4856026736655572276
+      OceanAscension_fish_12: 1843307977324266053
+      OceanAscension_fish_13: 6657335569230497715
+      OceanAscension_fish_14: -2670187435981011934
+      OceanAscension_fish_15: -4902921968050073699
+      OceanAscension_fish_16: 3263299906745342940
+      OceanAscension_fish_17: -3646856745031696383
+      OceanAscension_fish_18: 4717569075075679564
+      OceanAscension_fish_19: 9003226721032688714
+      OceanAscension_fish_2: 2216424225648068045
+      OceanAscension_fish_20: -829787283089290975
+      OceanAscension_fish_21: 7287531343820195163
+      OceanAscension_fish_22: 2915357977715860667
+      OceanAscension_fish_23: 8332304692807463948
+      OceanAscension_fish_3: -1487601768956803075
+      OceanAscension_fish_4: 8060274047598610167
+      OceanAscension_fish_5: 3953251089660274197
+      OceanAscension_fish_6: -4942159401789843881
+      OceanAscension_fish_7: 7569112470860768086
+      OceanAscension_fish_8: -6417741235852369323
+      OceanAscension_fish_9: -7873594473693305009
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: TextureImportRules:v1
+  assetBundleName: 
+  assetBundleVariant: 

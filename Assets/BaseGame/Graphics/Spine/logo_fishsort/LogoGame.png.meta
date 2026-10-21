@@ -1,0 +1,1313 @@
+fileFormatVersion: 2
+guid: 50e5fe7f481f2024ba8d1900c82e41c0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2047226465448294288
+    second: LogoGame_0
+  - first:
+      213: -6121862913711445415
+    second: LogoGame_1
+  - first:
+      213: -3080101464142231461
+    second: LogoGame_2
+  - first:
+      213: -8661324496171067373
+    second: LogoGame_3
+  - first:
+      213: 3738929698782198986
+    second: LogoGame_4
+  - first:
+      213: -9214340519112710335
+    second: LogoGame_5
+  - first:
+      213: -2097807565208066116
+    second: LogoGame_6
+  - first:
+      213: 548640720595134319
+    second: LogoGame_7
+  - first:
+      213: -6524588288055678158
+    second: LogoGame_8
+  - first:
+      213: 7761283373297457345
+    second: LogoGame_9
+  - first:
+      213: 9173470599479921097
+    second: LogoGame_10
+  - first:
+      213: -7589486190317673692
+    second: LogoGame_11
+  - first:
+      213: -7044848265892209661
+    second: LogoGame_12
+  - first:
+      213: 7819787902879998022
+    second: LogoGame_13
+  - first:
+      213: 3603170662029496289
+    second: LogoGame_14
+  - first:
+      213: 8521025268007918161
+    second: LogoGame_15
+  - first:
+      213: -947321800898900233
+    second: LogoGame_16
+  - first:
+      213: -7869906162399075536
+    second: LogoGame_17
+  - first:
+      213: 4862797446104354827
+    second: LogoGame_18
+  - first:
+      213: 2353454300785204056
+    second: LogoGame_19
+  - first:
+      213: 3884427474435298126
+    second: LogoGame_20
+  - first:
+      213: -361814419505623435
+    second: LogoGame_21
+  - first:
+      213: 6306045843585061573
+    second: LogoGame_22
+  - first:
+      213: 9205505699100076158
+    second: LogoGame_23
+  - first:
+      213: -4128122088717974250
+    second: LogoGame_24
+  - first:
+      213: -4481617747909643832
+    second: LogoGame_25
+  - first:
+      213: -7401966750546340458
+    second: LogoGame_26
+  - first:
+      213: -6865075852469704449
+    second: LogoGame_27
+  - first:
+      213: 1597182293683205780
+    second: LogoGame_28
+  - first:
+      213: -5155720880509289205
+    second: LogoGame_29
+  - first:
+      213: -14717016021429886
+    second: LogoGame_30
+  - first:
+      213: 1723201536539909486
+    second: LogoGame_31
+  - first:
+      213: 4945178799597610819
+    second: LogoGame_32
+  - first:
+      213: -5821778246163652605
+    second: LogoGame_33
+  - first:
+      213: 2636846227628155233
+    second: LogoGame_34
+  - first:
+      213: -8584828468473419107
+    second: LogoGame_35
+  - first:
+      213: 6607025928389419045
+    second: LogoGame_36
+  - first:
+      213: 6778408864743411065
+    second: LogoGame_37
+  - first:
+      213: -2566895049417708544
+    second: LogoGame_38
+  - first:
+      213: -2965615643310413209
+    second: LogoGame_39
+  - first:
+      213: 587730548750629128
+    second: LogoGame_40
+  - first:
+      213: -239418449434050896
+    second: LogoGame_41
+  - first:
+      213: -4294192125120203887
+    second: LogoGame_42
+  - first:
+      213: 8591256353610468569
+    second: LogoGame_43
+  - first:
+      213: -6343486759525858504
+    second: LogoGame_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 48
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 48
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LogoGame_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 703
+        width: 304
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097f2d7af95396c10800000000000000
+      internalID: 2047226465448294288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_1
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 691
+        width: 315
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a67907d16ca0ba0800000000000000
+      internalID: -6121862913711445415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_2
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 679
+        width: 243
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5844a599084145d0800000000000000
+      internalID: -3080101464142231461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_3
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 947
+        width: 164
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3189559a24bccc780800000000000000
+      internalID: -8661324496171067373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_4
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 647
+        width: 274
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc321850c853e330800000000000000
+      internalID: 3738929698782198986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_5
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 947
+        width: 110
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1476cc61e16102080800000000000000
+      internalID: -9214340519112710335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_6
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 858
+        width: 189
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb765a4522713e2e0800000000000000
+      internalID: -2097807565208066116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_7
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 855
+        width: 177
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67236c14d92d9700800000000000000
+      internalID: 548640720595134319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_8
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 840
+        width: 196
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b64c055810475a0800000000000000
+      internalID: -6524588288055678158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_9
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 836
+        width: 107
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c85a826b1e95bb60800000000000000
+      internalID: 7761283373297457345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 353
+        width: 282
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c98d7738e6be4f70800000000000000
+      internalID: 9173470599479921097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_11
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 646
+        width: 115
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423e16e458abca690800000000000000
+      internalID: -7589486190317673692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_12
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 644
+        width: 163
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30cd7fec3dbab3e90800000000000000
+      internalID: -7044848265892209661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_13
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 638
+        width: 158
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6402f0aaaa7758c60800000000000000
+      internalID: 7819787902879998022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_14
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 628
+        width: 123
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef806f60a8010230800000000000000
+      internalID: 3603170662029496289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_15
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 699
+        width: 123
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a5dbdb553c04670800000000000000
+      internalID: 8521025268007918161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_16
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 515
+        width: 88
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe007957df6ad2f0800000000000000
+      internalID: -947321800898900233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_17
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 696
+        width: 135
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033ab86ba0a78c290800000000000000
+      internalID: -7869906162399075536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_18
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 348
+        width: 294
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b001ab553802c7340800000000000000
+      internalID: 4862797446104354827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_19
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 648
+        width: 73
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bda69a73629a020800000000000000
+      internalID: 2353454300785204056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_20
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 577
+        width: 84
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e43db79153248e530800000000000000
+      internalID: 3884427474435298126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_21
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 327
+        width: 296
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ec0c2d3b39afaf0800000000000000
+      internalID: -361814419505623435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_22
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 320
+        width: 246
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2573ca843938750800000000000000
+      internalID: 6306045843585061573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_23
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 508
+        width: 127
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e78a1b419a680cf70800000000000000
+      internalID: 9205505699100076158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_24
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 508
+        width: 143
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615858005d6f5b6c0800000000000000
+      internalID: -4128122088717974250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_25
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 430
+        width: 132
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c172c427681ec1c0800000000000000
+      internalID: -4481617747909643832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_26
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 521
+        width: 166
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695de6a257ee64990800000000000000
+      internalID: -7401966750546340458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_27
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 393
+        width: 164
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff86e6982e95ab0a0800000000000000
+      internalID: -6865075852469704449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_28
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 259
+        width: 208
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 496f78875d45a2610800000000000000
+      internalID: 1597182293683205780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_29
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 220
+        width: 145
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0dfd24ec233378b0800000000000000
+      internalID: -5155720880509289205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_30
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 194
+        width: 170
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28193efa3f6bbcff0800000000000000
+      internalID: -14717016021429886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_31
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 384
+        width: 121
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d5ed5eaaa0ae710800000000000000
+      internalID: 1723201536539909486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_32
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 354
+        width: 145
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347eec4eaedc0a440800000000000000
+      internalID: 4945178799597610819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_33
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 259
+        width: 177
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 300a15cb783e43fa0800000000000000
+      internalID: -5821778246163652605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_34
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 253
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161ea156ca5f79420800000000000000
+      internalID: 2636846227628155233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_35
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 2
+        width: 270
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a2bf60eff8cd880800000000000000
+      internalID: -8584828468473419107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_36
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1
+        width: 310
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520627b831fd0bb50800000000000000
+      internalID: 6607025928389419045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_37
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 1
+        width: 223
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97dc36de2feb11e50800000000000000
+      internalID: 6778408864743411065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_38
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 2
+        width: 224
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00cafb37d8e806cd0800000000000000
+      internalID: -2566895049417708544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_39
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 1
+        width: 153
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a2420f84408d6d0800000000000000
+      internalID: -2965615643310413209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_40
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1
+        width: 181
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8093de5f1d9082800800000000000000
+      internalID: 587730548750629128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_41
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 1
+        width: 170
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0befec0503a6dacf0800000000000000
+      internalID: -239418449434050896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_42
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 189
+        width: 145
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1933ee88307f764c0800000000000000
+      internalID: -4294192125120203887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_43
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 166
+        width: 178
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc054b92264a3770800000000000000
+      internalID: 8591256353610468569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGame_44
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1
+        width: 178
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8334115c66867f7a0800000000000000
+      internalID: -6343486759525858504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LogoGame_0: 2047226465448294288
+      LogoGame_1: -6121862913711445415
+      LogoGame_10: 9173470599479921097
+      LogoGame_11: -7589486190317673692
+      LogoGame_12: -7044848265892209661
+      LogoGame_13: 7819787902879998022
+      LogoGame_14: 3603170662029496289
+      LogoGame_15: 8521025268007918161
+      LogoGame_16: -947321800898900233
+      LogoGame_17: -7869906162399075536
+      LogoGame_18: 4862797446104354827
+      LogoGame_19: 2353454300785204056
+      LogoGame_2: -3080101464142231461
+      LogoGame_20: 3884427474435298126
+      LogoGame_21: -361814419505623435
+      LogoGame_22: 6306045843585061573
+      LogoGame_23: 9205505699100076158
+      LogoGame_24: -4128122088717974250
+      LogoGame_25: -4481617747909643832
+      LogoGame_26: -7401966750546340458
+      LogoGame_27: -6865075852469704449
+      LogoGame_28: 1597182293683205780
+      LogoGame_29: -5155720880509289205
+      LogoGame_3: -8661324496171067373
+      LogoGame_30: -14717016021429886
+      LogoGame_31: 1723201536539909486
+      LogoGame_32: 4945178799597610819
+      LogoGame_33: -5821778246163652605
+      LogoGame_34: 2636846227628155233
+      LogoGame_35: -8584828468473419107
+      LogoGame_36: 6607025928389419045
+      LogoGame_37: 6778408864743411065
+      LogoGame_38: -2566895049417708544
+      LogoGame_39: -2965615643310413209
+      LogoGame_4: 3738929698782198986
+      LogoGame_40: 587730548750629128
+      LogoGame_41: -239418449434050896
+      LogoGame_42: -4294192125120203887
+      LogoGame_43: 8591256353610468569
+      LogoGame_44: -6343486759525858504
+      LogoGame_5: -9214340519112710335
+      LogoGame_6: -2097807565208066116
+      LogoGame_7: 548640720595134319
+      LogoGame_8: -6524588288055678158
+      LogoGame_9: 7761283373297457345
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: TextureImportRules:v1
+  assetBundleName: 
+  assetBundleVariant: 

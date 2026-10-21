@@ -1,0 +1,1 @@
+Contains animation clips for character animations.

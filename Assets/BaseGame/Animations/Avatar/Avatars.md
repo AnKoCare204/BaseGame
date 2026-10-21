@@ -1,0 +1,1 @@
+Stores character avatars and rig configurations.

@@ -1,0 +1,563 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 913815dfeb8985c4e966480956cf081d, type: 3}
+  m_Name: LevelGlobalConfig
+  m_EditorClassIdentifier: Assembly-CSharp::CoreGame.GameGlobalConfig.LevelGlobalConfig
+  <LoopSourceFromLevel>k__BackingField: 50
+  <LoopSourceEndOffset>k__BackingField: 10
+  <LoopAvoidRecentCount>k__BackingField: 10
+  <LevelFolder>k__BackingField: Assets/BaseGame/TextAssets/LevelDataConverted
+  <IsDlbEnabled>k__BackingField: 1
+  <DlbCap>k__BackingField: 3
+  <GeneratorSeed>k__BackingField: 12345
+  levelMaxInConfig: 270
+  levelCache:
+  - Level: 1
+    Difficulty: 0
+  - Level: 2
+    Difficulty: 0
+  - Level: 3
+    Difficulty: 0
+  - Level: 4
+    Difficulty: 0
+  - Level: 5
+    Difficulty: 0
+  - Level: 6
+    Difficulty: 0
+  - Level: 7
+    Difficulty: 0
+  - Level: 8
+    Difficulty: 0
+  - Level: 9
+    Difficulty: 0
+  - Level: 10
+    Difficulty: 1
+  - Level: 11
+    Difficulty: 0
+  - Level: 12
+    Difficulty: 0
+  - Level: 13
+    Difficulty: 0
+  - Level: 14
+    Difficulty: 0
+  - Level: 15
+    Difficulty: 1
+  - Level: 16
+    Difficulty: 0
+  - Level: 17
+    Difficulty: 0
+  - Level: 18
+    Difficulty: 0
+  - Level: 19
+    Difficulty: 0
+  - Level: 20
+    Difficulty: 2
+  - Level: 21
+    Difficulty: 0
+  - Level: 22
+    Difficulty: 0
+  - Level: 23
+    Difficulty: 0
+  - Level: 24
+    Difficulty: 0
+  - Level: 25
+    Difficulty: 1
+  - Level: 26
+    Difficulty: 0
+  - Level: 27
+    Difficulty: 0
+  - Level: 28
+    Difficulty: 0
+  - Level: 29
+    Difficulty: 0
+  - Level: 30
+    Difficulty: 2
+  - Level: 31
+    Difficulty: 0
+  - Level: 32
+    Difficulty: 0
+  - Level: 33
+    Difficulty: 0
+  - Level: 34
+    Difficulty: 0
+  - Level: 35
+    Difficulty: 1
+  - Level: 36
+    Difficulty: 0
+  - Level: 37
+    Difficulty: 0
+  - Level: 38
+    Difficulty: 0
+  - Level: 39
+    Difficulty: 0
+  - Level: 40
+    Difficulty: 2
+  - Level: 41
+    Difficulty: 0
+  - Level: 42
+    Difficulty: 0
+  - Level: 43
+    Difficulty: 0
+  - Level: 44
+    Difficulty: 0
+  - Level: 45
+    Difficulty: 1
+  - Level: 46
+    Difficulty: 0
+  - Level: 47
+    Difficulty: 0
+  - Level: 48
+    Difficulty: 0
+  - Level: 49
+    Difficulty: 0
+  - Level: 50
+    Difficulty: 2
+  - Level: 51
+    Difficulty: 0
+  - Level: 52
+    Difficulty: 0
+  - Level: 53
+    Difficulty: 0
+  - Level: 54
+    Difficulty: 0
+  - Level: 55
+    Difficulty: 1
+  - Level: 56
+    Difficulty: 0
+  - Level: 57
+    Difficulty: 0
+  - Level: 58
+    Difficulty: 0
+  - Level: 59
+    Difficulty: 0
+  - Level: 60
+    Difficulty: 2
+  - Level: 61
+    Difficulty: 0
+  - Level: 62
+    Difficulty: 0
+  - Level: 63
+    Difficulty: 0
+  - Level: 64
+    Difficulty: 0
+  - Level: 65
+    Difficulty: 1
+  - Level: 66
+    Difficulty: 0
+  - Level: 67
+    Difficulty: 0
+  - Level: 68
+    Difficulty: 0
+  - Level: 69
+    Difficulty: 0
+  - Level: 70
+    Difficulty: 2
+  - Level: 71
+    Difficulty: 0
+  - Level: 72
+    Difficulty: 0
+  - Level: 73
+    Difficulty: 0
+  - Level: 74
+    Difficulty: 1
+  - Level: 75
+    Difficulty: 0
+  - Level: 76
+    Difficulty: 0
+  - Level: 77
+    Difficulty: 1
+  - Level: 78
+    Difficulty: 0
+  - Level: 79
+    Difficulty: 0
+  - Level: 80
+    Difficulty: 2
+  - Level: 81
+    Difficulty: 0
+  - Level: 82
+    Difficulty: 0
+  - Level: 83
+    Difficulty: 0
+  - Level: 84
+    Difficulty: 1
+  - Level: 85
+    Difficulty: 0
+  - Level: 86
+    Difficulty: 0
+  - Level: 87
+    Difficulty: 1
+  - Level: 88
+    Difficulty: 0
+  - Level: 89
+    Difficulty: 0
+  - Level: 90
+    Difficulty: 2
+  - Level: 91
+    Difficulty: 0
+  - Level: 92
+    Difficulty: 0
+  - Level: 93
+    Difficulty: 0
+  - Level: 94
+    Difficulty: 1
+  - Level: 95
+    Difficulty: 0
+  - Level: 96
+    Difficulty: 0
+  - Level: 97
+    Difficulty: 1
+  - Level: 98
+    Difficulty: 0
+  - Level: 99
+    Difficulty: 0
+  - Level: 100
+    Difficulty: 2
+  - Level: 101
+    Difficulty: 0
+  - Level: 102
+    Difficulty: 0
+  - Level: 103
+    Difficulty: 0
+  - Level: 104
+    Difficulty: 1
+  - Level: 105
+    Difficulty: 0
+  - Level: 106
+    Difficulty: 0
+  - Level: 107
+    Difficulty: 1
+  - Level: 108
+    Difficulty: 0
+  - Level: 109
+    Difficulty: 0
+  - Level: 110
+    Difficulty: 2
+  - Level: 111
+    Difficulty: 0
+  - Level: 112
+    Difficulty: 0
+  - Level: 113
+    Difficulty: 0
+  - Level: 114
+    Difficulty: 1
+  - Level: 115
+    Difficulty: 0
+  - Level: 116
+    Difficulty: 0
+  - Level: 117
+    Difficulty: 1
+  - Level: 118
+    Difficulty: 0
+  - Level: 119
+    Difficulty: 0
+  - Level: 120
+    Difficulty: 2
+  - Level: 121
+    Difficulty: 0
+  - Level: 122
+    Difficulty: 0
+  - Level: 123
+    Difficulty: 0
+  - Level: 124
+    Difficulty: 1
+  - Level: 125
+    Difficulty: 0
+  - Level: 126
+    Difficulty: 0
+  - Level: 127
+    Difficulty: 1
+  - Level: 128
+    Difficulty: 0
+  - Level: 129
+    Difficulty: 0
+  - Level: 130
+    Difficulty: 2
+  - Level: 131
+    Difficulty: 0
+  - Level: 132
+    Difficulty: 0
+  - Level: 133
+    Difficulty: 0
+  - Level: 134
+    Difficulty: 1
+  - Level: 135
+    Difficulty: 0
+  - Level: 136
+    Difficulty: 0
+  - Level: 137
+    Difficulty: 1
+  - Level: 138
+    Difficulty: 0
+  - Level: 139
+    Difficulty: 0
+  - Level: 140
+    Difficulty: 2
+  - Level: 141
+    Difficulty: 0
+  - Level: 142
+    Difficulty: 0
+  - Level: 143
+    Difficulty: 0
+  - Level: 144
+    Difficulty: 1
+  - Level: 145
+    Difficulty: 0
+  - Level: 146
+    Difficulty: 0
+  - Level: 147
+    Difficulty: 1
+  - Level: 148
+    Difficulty: 0
+  - Level: 149
+    Difficulty: 0
+  - Level: 150
+    Difficulty: 2
+  - Level: 151
+    Difficulty: 0
+  - Level: 152
+    Difficulty: 0
+  - Level: 153
+    Difficulty: 0
+  - Level: 154
+    Difficulty: 1
+  - Level: 155
+    Difficulty: 0
+  - Level: 156
+    Difficulty: 0
+  - Level: 157
+    Difficulty: 1
+  - Level: 158
+    Difficulty: 0
+  - Level: 159
+    Difficulty: 0
+  - Level: 160
+    Difficulty: 2
+  - Level: 161
+    Difficulty: 0
+  - Level: 162
+    Difficulty: 0
+  - Level: 163
+    Difficulty: 0
+  - Level: 164
+    Difficulty: 1
+  - Level: 165
+    Difficulty: 0
+  - Level: 166
+    Difficulty: 0
+  - Level: 167
+    Difficulty: 1
+  - Level: 168
+    Difficulty: 0
+  - Level: 169
+    Difficulty: 0
+  - Level: 170
+    Difficulty: 2
+  - Level: 171
+    Difficulty: 0
+  - Level: 172
+    Difficulty: 0
+  - Level: 173
+    Difficulty: 0
+  - Level: 174
+    Difficulty: 1
+  - Level: 175
+    Difficulty: 0
+  - Level: 176
+    Difficulty: 0
+  - Level: 177
+    Difficulty: 1
+  - Level: 178
+    Difficulty: 0
+  - Level: 179
+    Difficulty: 0
+  - Level: 180
+    Difficulty: 2
+  - Level: 181
+    Difficulty: 0
+  - Level: 182
+    Difficulty: 0
+  - Level: 183
+    Difficulty: 0
+  - Level: 184
+    Difficulty: 1
+  - Level: 185
+    Difficulty: 0
+  - Level: 186
+    Difficulty: 0
+  - Level: 187
+    Difficulty: 1
+  - Level: 188
+    Difficulty: 0
+  - Level: 189
+    Difficulty: 0
+  - Level: 190
+    Difficulty: 2
+  - Level: 191
+    Difficulty: 0
+  - Level: 192
+    Difficulty: 0
+  - Level: 193
+    Difficulty: 0
+  - Level: 194
+    Difficulty: 1
+  - Level: 195
+    Difficulty: 0
+  - Level: 196
+    Difficulty: 0
+  - Level: 197
+    Difficulty: 1
+  - Level: 198
+    Difficulty: 0
+  - Level: 199
+    Difficulty: 0
+  - Level: 200
+    Difficulty: 2
+  - Level: 201
+    Difficulty: 0
+  - Level: 202
+    Difficulty: 0
+  - Level: 203
+    Difficulty: 0
+  - Level: 204
+    Difficulty: 1
+  - Level: 205
+    Difficulty: 0
+  - Level: 206
+    Difficulty: 0
+  - Level: 207
+    Difficulty: 1
+  - Level: 208
+    Difficulty: 0
+  - Level: 209
+    Difficulty: 0
+  - Level: 210
+    Difficulty: 2
+  - Level: 211
+    Difficulty: 0
+  - Level: 212
+    Difficulty: 0
+  - Level: 213
+    Difficulty: 0
+  - Level: 214
+    Difficulty: 1
+  - Level: 215
+    Difficulty: 0
+  - Level: 216
+    Difficulty: 0
+  - Level: 217
+    Difficulty: 1
+  - Level: 218
+    Difficulty: 0
+  - Level: 219
+    Difficulty: 0
+  - Level: 220
+    Difficulty: 2
+  - Level: 221
+    Difficulty: 0
+  - Level: 222
+    Difficulty: 0
+  - Level: 223
+    Difficulty: 0
+  - Level: 224
+    Difficulty: 1
+  - Level: 225
+    Difficulty: 0
+  - Level: 226
+    Difficulty: 0
+  - Level: 227
+    Difficulty: 1
+  - Level: 228
+    Difficulty: 0
+  - Level: 229
+    Difficulty: 0
+  - Level: 230
+    Difficulty: 2
+  - Level: 231
+    Difficulty: 0
+  - Level: 232
+    Difficulty: 0
+  - Level: 233
+    Difficulty: 0
+  - Level: 234
+    Difficulty: 1
+  - Level: 235
+    Difficulty: 0
+  - Level: 236
+    Difficulty: 0
+  - Level: 237
+    Difficulty: 1
+  - Level: 238
+    Difficulty: 0
+  - Level: 239
+    Difficulty: 0
+  - Level: 240
+    Difficulty: 2
+  - Level: 241
+    Difficulty: 0
+  - Level: 242
+    Difficulty: 0
+  - Level: 243
+    Difficulty: 0
+  - Level: 244
+    Difficulty: 1
+  - Level: 245
+    Difficulty: 0
+  - Level: 246
+    Difficulty: 0
+  - Level: 247
+    Difficulty: 1
+  - Level: 248
+    Difficulty: 0
+  - Level: 249
+    Difficulty: 0
+  - Level: 250
+    Difficulty: 2
+  - Level: 251
+    Difficulty: 0
+  - Level: 252
+    Difficulty: 0
+  - Level: 253
+    Difficulty: 0
+  - Level: 254
+    Difficulty: 1
+  - Level: 255
+    Difficulty: 0
+  - Level: 256
+    Difficulty: 0
+  - Level: 257
+    Difficulty: 1
+  - Level: 258
+    Difficulty: 0
+  - Level: 259
+    Difficulty: 0
+  - Level: 260
+    Difficulty: 2
+  - Level: 261
+    Difficulty: 0
+  - Level: 262
+    Difficulty: 0
+  - Level: 263
+    Difficulty: 0
+  - Level: 264
+    Difficulty: 1
+  - Level: 265
+    Difficulty: 0
+  - Level: 266
+    Difficulty: 0
+  - Level: 267
+    Difficulty: 1
+  - Level: 268
+    Difficulty: 0
+  - Level: 269
+    Difficulty: 0
+  - Level: 270
+    Difficulty: 2

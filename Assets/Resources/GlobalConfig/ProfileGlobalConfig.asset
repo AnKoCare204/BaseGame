@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce5e2b185fdc4a688953f9db98e05908, type: 3}
+  m_Name: ProfileGlobalConfig
+  m_EditorClassIdentifier: Assembly-CSharp::ProfileGlobalConfig
+  UserAvatarDatas:
+  - Id: 0
+    Sprite: {fileID: 21300000, guid: 7c0a83c0019109d4b855f659684c2512, type: 3}
+    requireToUnlock: 0
+    levelRequire: 0
+    HowToCollect: 
+    priorityLevel: 5
+  - Id: 1
+    Sprite: {fileID: 21300000, guid: 28e039c88bfccef45bdfebf4794cb115, type: 3}
+    requireToUnlock: 0
+    levelRequire: 0
+    HowToCollect: 
+    priorityLevel: 4
+  - Id: 2
+    Sprite: {fileID: 21300000, guid: f258a0a919f1c884a97b48e3374d588f, type: 3}
+    requireToUnlock: 0
+    levelRequire: 0
+    HowToCollect: 
+    priorityLevel: 3
+  - Id: 3
+    Sprite: {fileID: 21300000, guid: ccb0da9bf806c534f80c2a90c0c1be3e, type: 3}
+    requireToUnlock: 0
+    levelRequire: 0
+    HowToCollect: 
+    priorityLevel: 2
+  - Id: 4
+    Sprite: {fileID: 21300000, guid: 2642697b75d00e04dbc8af5b86f5f4e9, type: 3}
+    requireToUnlock: 0
+    levelRequire: 0
+    HowToCollect: 
+    priorityLevel: 1
+  - Id: 5
+    Sprite: {fileID: 21300000, guid: 1404c483b0371cb46bbdd1ca05e58c09, type: 3}
+    requireToUnlock: 0
+    levelRequire: 0
+    HowToCollect: 
+    priorityLevel: 0
+  - Id: 6
+    Sprite: {fileID: 21300000, guid: 0c41080a536098147838cedc1371db09, type: 3}
+    requireToUnlock: 0
+    levelRequire: 0
+    HowToCollect: 
+    priorityLevel: 6
+  UserFrameDatas:
+  - Id: 0
+    Sprite: {fileID: 21300000, guid: 127b4618805bb1940a881b1f77984379, type: 3}
+    requireToUnlock: 0
+    levelRequire: 0
+    HowToCollect: 
+    priorityLevel: 5
+  - Id: 1
+    Sprite: {fileID: 21300000, guid: 0de774842c08084489db0ed192e666b8, type: 3}
+    requireToUnlock: 0
+    levelRequire: 0
+    HowToCollect: 
+    priorityLevel: 4
+  - Id: 2
+    Sprite: {fileID: 21300000, guid: a891ab6b8e1ae4446884c7554ae41e22, type: 3}
+    requireToUnlock: 0
+    levelRequire: 0
+    HowToCollect: 
+    priorityLevel: 3
+  - Id: 3
+    Sprite: {fileID: 21300000, guid: e3ac958655bf8bc4b86c86b22b0242b4, type: 3}
+    requireToUnlock: 0
+    levelRequire: 0
+    HowToCollect: 
+    priorityLevel: 2
+  - Id: 4
+    Sprite: {fileID: 21300000, guid: c5eab34b4a62d734d922a4f19abf2d0e, type: 3}
+    requireToUnlock: 0
+    levelRequire: 0
+    HowToCollect: 
+    priorityLevel: 1
+  - Id: 5
+    Sprite: {fileID: 21300000, guid: 6b0997262f67e58418f29abd46a8b956, type: 3}
+    requireToUnlock: 0
+    levelRequire: 0
+    HowToCollect: 
+    priorityLevel: 0
+  - Id: 6
+    Sprite: {fileID: 21300000, guid: 6889f632a5e3a5c4ab439f5f55cdb3b5, type: 3}
+    requireToUnlock: 0
+    levelRequire: 0
+    HowToCollect: 
+    priorityLevel: 0
+  UserBadgeDatas: []
+  UserNameDatas: []
+  frameRewards: []
+  avatarRewards: []
+  badgeRewards: []
+  nameRewards: []
+  avatarEditProfile:
+  - avatarIndex: 0
+    sizeRectTransformAvatar: -128
+    spriteAvatar: {fileID: 21300000, guid: 7c0a83c0019109d4b855f659684c2512, type: 3}
+  - avatarIndex: 1
+    sizeRectTransformAvatar: -128
+    spriteAvatar: {fileID: 21300000, guid: 28e039c88bfccef45bdfebf4794cb115, type: 3}
+  - avatarIndex: 2
+    sizeRectTransformAvatar: -128
+    spriteAvatar: {fileID: 21300000, guid: f258a0a919f1c884a97b48e3374d588f, type: 3}
+  - avatarIndex: 3
+    sizeRectTransformAvatar: -128
+    spriteAvatar: {fileID: 21300000, guid: ccb0da9bf806c534f80c2a90c0c1be3e, type: 3}
+  - avatarIndex: 4
+    sizeRectTransformAvatar: -128
+    spriteAvatar: {fileID: 21300000, guid: 2642697b75d00e04dbc8af5b86f5f4e9, type: 3}
+  - avatarIndex: 5
+    sizeRectTransformAvatar: -128
+    spriteAvatar: {fileID: 21300000, guid: 1404c483b0371cb46bbdd1ca05e58c09, type: 3}
+  - avatarIndex: 6
+    sizeRectTransformAvatar: -128
+    spriteAvatar: {fileID: 21300000, guid: 0c41080a536098147838cedc1371db09, type: 3}
+  frameEditProfile:
+  - frameIndex: 0
+    sizeRectTransformFrame: -95
+    spriteFrame: {fileID: 21300000, guid: 127b4618805bb1940a881b1f77984379, type: 3}
+  - frameIndex: 1
+    sizeRectTransformFrame: -95
+    spriteFrame: {fileID: 21300000, guid: 0de774842c08084489db0ed192e666b8, type: 3}
+  - frameIndex: 2
+    sizeRectTransformFrame: -95
+    spriteFrame: {fileID: 21300000, guid: a891ab6b8e1ae4446884c7554ae41e22, type: 3}
+  - frameIndex: 3
+    sizeRectTransformFrame: -95
+    spriteFrame: {fileID: 21300000, guid: e3ac958655bf8bc4b86c86b22b0242b4, type: 3}
+  - frameIndex: 4
+    sizeRectTransformFrame: -95
+    spriteFrame: {fileID: 21300000, guid: c5eab34b4a62d734d922a4f19abf2d0e, type: 3}
+  - frameIndex: 5
+    sizeRectTransformFrame: -95
+    spriteFrame: {fileID: 21300000, guid: 6b0997262f67e58418f29abd46a8b956, type: 3}
+  - frameIndex: 6
+    sizeRectTransformFrame: -95
+    spriteFrame: {fileID: 21300000, guid: 6889f632a5e3a5c4ab439f5f55cdb3b5, type: 3}
+  badgeEditProfile: []
+  nameEditProfile: []
+  hidenAvatarIds: 
+  hidenFrameIds: 
+  hidenBadgeIds: 
+  hidenNameIds: 

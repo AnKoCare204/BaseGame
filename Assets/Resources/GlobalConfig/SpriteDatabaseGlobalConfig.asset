@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d4188fa548f46559b44162a76a0c3dc, type: 3}
+  m_Name: SpriteDatabaseGlobalConfig
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteDatabaseGlobalConfig
+  <ResourceSpriteDatabaseConfigs>k__BackingField:
+  - <Key>k__BackingField: 1
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 77ac4f3f7bfdf044f9ae8f8361ef9243, type: 3}
+  - <Key>k__BackingField: 2
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 9602f3845a7819148aace61a52c7612f, type: 3}
+  - <Key>k__BackingField: 102
+    <Sprite>k__BackingField: {fileID: 21300000, guid: eba56c814c83ad24ba80bfdac7c8553b, type: 3}
+  - <Key>k__BackingField: 103
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 9602f3845a7819148aace61a52c7612f, type: 3}
+  - <Key>k__BackingField: 20
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 1d41dddd1bf0b8c4e8bec050ed948c66, type: 3}
+  - <Key>k__BackingField: 51
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 5ceb6492bfa7b4444bde676b2b470766, type: 3}
+  - <Key>k__BackingField: 52
+    <Sprite>k__BackingField: {fileID: 21300000, guid: ab79aaec82ffbdb4fbcf6739c6644f75, type: 3}
+  - <Key>k__BackingField: 53
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 51f0ad763c8530a4d99ae8d412a8e0b1, type: 3}
+  - <Key>k__BackingField: 54
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 1a7041e64208a7743bfc599bb71b253d, type: 3}
+  <ItemGroupSpriteDatabaseConfigs>k__BackingField:
+  - <Key>k__BackingField: 1
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 77ac4f3f7bfdf044f9ae8f8361ef9243, type: 3}
+  - <Key>k__BackingField: 2
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 9602f3845a7819148aace61a52c7612f, type: 3}
+  - <Key>k__BackingField: 102
+    <Sprite>k__BackingField: {fileID: 21300000, guid: eba56c814c83ad24ba80bfdac7c8553b, type: 3}
+  - <Key>k__BackingField: 103
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 9602f3845a7819148aace61a52c7612f, type: 3}
+  - <Key>k__BackingField: 20
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 1d41dddd1bf0b8c4e8bec050ed948c66, type: 3}
+  - <Key>k__BackingField: 10
+    <Sprite>k__BackingField: {fileID: 1308899928, guid: 6e0eeb8de98672148a586297e7a0980b, type: 3}
+  - <Key>k__BackingField: 11
+    <Sprite>k__BackingField: {fileID: 161173540, guid: 32149822bc6c15b449fce47452247d0a, type: 3}
+  - <Key>k__BackingField: 12
+    <Sprite>k__BackingField: {fileID: 316041283, guid: 0fb85b4ba3dd49b4296191205d7ba9ed, type: 3}
+  - <Key>k__BackingField: 13
+    <Sprite>k__BackingField: {fileID: 1341937957, guid: 0828218afbf8c8f4384781a1798322a6, type: 3}
+  - <Key>k__BackingField: 51
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 5ceb6492bfa7b4444bde676b2b470766, type: 3}
+  - <Key>k__BackingField: 52
+    <Sprite>k__BackingField: {fileID: 21300000, guid: ab79aaec82ffbdb4fbcf6739c6644f75, type: 3}
+  - <Key>k__BackingField: 53
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 51f0ad763c8530a4d99ae8d412a8e0b1, type: 3}
+  - <Key>k__BackingField: 54
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 1a7041e64208a7743bfc599bb71b253d, type: 3}
+  - <Key>k__BackingField: 104
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 59845dc7e74ac4d4fafc6d7303572d0a, type: 3}
+  - <Key>k__BackingField: 105
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 1ab0f75bcea1627469063c8cd28d7133, type: 3}
+  - <Key>k__BackingField: 106
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 7f7365e673821a241ae3583493fe7fb6, type: 3}
+  - <Key>k__BackingField: 107
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 0f4342a157eef4ba29763995899a38b5, type: 3}
+  - <Key>k__BackingField: 108
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 3bd0e6deb9e0c4bf6a38ea8cd423f37a, type: 3}
+  - <Key>k__BackingField: 109
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 7eaae6ef261464e58b1c17a502c8570d, type: 3}
+  - <Key>k__BackingField: 110
+    <Sprite>k__BackingField: {fileID: 21300000, guid: bd3476f05d47c40d18d55545d0f13f6d, type: 3}
+  - <Key>k__BackingField: 111
+    <Sprite>k__BackingField: {fileID: 21300000, guid: 7f7365e673821a241ae3583493fe7fb6, type: 3}

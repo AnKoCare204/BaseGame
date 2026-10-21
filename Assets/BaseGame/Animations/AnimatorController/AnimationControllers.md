@@ -1,0 +1,1 @@
+Houses animator controller files for managing character animations.
